@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certification RNCP CDA — WazabyCode</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/certification.css">
+</head>
+<body>
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <section class="rncp-hero">
+      <div class="container">
+        <p class="hero-badge">RNCP37873 · France Compétences</p>
+        <h1>Concepteur développeur d'applications</h1>
+        <p class="hero-lead">Référentiel officiel du titre professionnel — 3 certificats de compétences professionnelles (CCP).</p>
+      </div>
+    </section>
+
+    <div class="container rncp-content">
+      <section class="dashboard-card">
+        <h2 class="card-title">Informations certification</h2>
+        <div id="rncp-meta"></div>
+      </section>
+
+      <section class="dashboard-card">
+        <h2 class="card-title">Objectifs et contexte</h2>
+        <div id="rncp-contexte"></div>
+      </section>
+
+      <section class="dashboard-card">
+        <h2 class="card-title">Activités visées</h2>
+        <div id="rncp-activites"></div>
+      </section>
+
+      <section>
+        <h2 class="section-heading">Les 3 blocs de compétences (CCP)</h2>
+        <div id="rncp-blocs" class="rncp-blocs-grid"></div>
+      </section>
+
+      <section class="dashboard-card">
+        <h2 class="card-title">Session d'examen — vue d'ensemble</h2>
+        <div id="rncp-epreuve"></div>
+      </section>
+
+      <div class="two-col">
+        <section class="dashboard-card">
+          <h2 class="card-title">Secteurs d'activité</h2>
+          <div id="rncp-secteurs"></div>
+        </section>
+        <section class="dashboard-card">
+          <h2 class="card-title">Métiers accessibles</h2>
+          <div id="rncp-metiers"></div>
+        </section>
+      </div>
+
+      <section class="dashboard-card">
+        <h2 class="card-title">Voies d'accès</h2>
+        <div id="rncp-voies"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="footer-root"></div>
+
+  <script type="module">
+    import { initShell } from './js/ui/layout.js';
+    initShell('certification-rncp');
+  </script>
+  <script type="module" src="js/app/certification-rncp.js"></script>
+</body>
+</html>

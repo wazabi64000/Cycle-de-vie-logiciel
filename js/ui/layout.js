@@ -6,6 +6,7 @@ const NAV = [
   { id: 'modules', label: 'Cours', page: 'index.html#modules' },
   { id: 'guide', label: 'Guide', page: 'index.html#guide' },
   { id: 'dashboard', label: 'Tableau de bord', page: 'dashboard.html' },
+  { id: 'certification-rncp', label: 'Titre CDA', page: 'certification-rncp.html' },
   { id: 'certificate', label: 'Certificat', page: 'certificate.html' },
   { id: 'completion', label: 'Fin de parcours', page: 'completion.html' },
 ];
@@ -75,7 +76,8 @@ function footerHtml() {
               <li><a href="${href('index.html')}">Accueil</a></li>
               <li><a href="${href('index.html#guide')}">Guide</a></li>
               <li><a href="${href('dashboard.html')}">Tableau de bord</a></li>
-              <li><a href="${href('certificate.html')}">Certificat</a></li>
+              <li><a href="${href('certification-rncp.html')}">Référentiel RNCP</a></li>
+              <li><a href="${href('certificate.html')}">Certificat WazabyCode</a></li>
             </ul>
           </div>
           <div class="footer-col">

@@ -15,7 +15,9 @@ Plateforme **100 % statique** : HTML, CSS, JavaScript. Progression sauvegardée 
 | Fichier | Rôle |
 |---------|------|
 | `index.html` | Accueil + liste des 22 modules |
+| `certification-rncp.html` | Référentiel officiel RNCP37873 (3 blocs CCP) |
 | `dashboard.html` | Score, badges, progression |
+| `certification-rncp.html` | Référentiel officiel RNCP37873 (3 blocs CCP) |
 | `module.html?slug=05-javascript` | Vue module + cours |
 | `cours-cda/*/cours.html` | Contenu pédagogique |
 

@@ -16,6 +16,7 @@ export const PAGES = {
   dashboard: 'dashboard.html',
   module: 'module.html',
   certificate: 'certificate.html',
+  certificationRncp: 'certification-rncp.html',
   completion: 'completion.html',
   modulesJson: 'cours-cda/index.json',
   css: 'css/main.css',
