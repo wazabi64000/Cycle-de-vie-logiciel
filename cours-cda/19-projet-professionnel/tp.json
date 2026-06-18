@@ -1,0 +1,80 @@
+{
+  "module": "19-projet-professionnel",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Phase 1 — Conception",
+      "level": "Avancé",
+      "duration": "20h",
+      "description": "CDC, UML, MERISE, maquettes Figma de la marketplace.",
+      "objectifs": [
+        "Concevoir et développer une marketplace complète",
+        "Implémenter auth, messagerie, paiement, notifications",
+        "Créer dashboard utilisateur et administration"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Phase 2 — Backend API",
+      "level": "Expert",
+      "duration": "40h",
+      "description": "API REST complète : auth, CRUD, messagerie, paiement, tests.",
+      "objectifs": [
+        "Concevoir et développer une marketplace complète",
+        "Implémenter auth, messagerie, paiement, notifications",
+        "Créer dashboard utilisateur et administration"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Phase 3 — Frontend + Deploy",
+      "level": "Expert",
+      "duration": "60h",
+      "description": "Frontend React, tests E2E, CI/CD, Docker, déploiement production.",
+      "objectifs": [
+        "Concevoir et développer une marketplace complète",
+        "Implémenter auth, messagerie, paiement, notifications",
+        "Créer dashboard utilisateur et administration"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 14 — DevOps | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="14-devops"
+  data-module-id="14"
+  data-module-title="DevOps"
+  data-module-duration="40h"
+  data-module-level="Intermédiaire à Avancé">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 14 — DevOps</h1>
+        <p>Linux, Docker, Nginx et reverse proxy</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 40h</span>
+          <span class="cours-badge">📊 Intermédiaire à Avancé</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>DevOps comble le fossé entre développement et exploitation. Compétence très recherchée.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>Infrastructure cloud, déploiement, monitoring, automatisation.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout les déploiements manuels, les environnements « ça marche chez moi » et la scalabilité.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>DevOps : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Maîtriser les commandes Linux essentielles</li>
+          <li>Containeriser avec Docker (images, volumes, networks)</li>
+          <li>Orchestrer avec Docker Compose</li>
+          <li>Configurer Nginx et Traefik comme reverse proxy</li>
+          <li>Automatiser le déploiement d'infrastructure</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 14 — DevOps
+    ↓
+Introduction au DevOps
+    ↓
+Linux : commandes essentielles
+    ↓
+Gestion des processus et services
+    ↓
+Docker : images et conteneurs
+    ↓
+Docker : volumes et networks
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de devops.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec devops.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Stack production : Docker, Nginx, PostgreSQL, monitoring.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Stack Docker Compose <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Déployer une app fullstack avec PostgreSQL, API et frontend.</p>
+          <p><em>Durée : 5h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Reverse proxy Nginx <span class="cours-badge">Avancé</span></h4>
+          <p>Configurer Nginx avec SSL, cache et load balancing.</p>
+          <p><em>Durée : 4h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Infrastructure complète <span class="cours-badge">Expert</span></h4>
+          <p>Stack production : Docker, Nginx, PostgreSQL, monitoring.</p>
+          <p><em>Durée : 10h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Introduction au DevOps</a></li>
+          <li><a href="#chapitre-2">Linux : commandes essentielles</a></li>
+          <li><a href="#chapitre-3">Gestion des processus et services</a></li>
+          <li><a href="#chapitre-4">Docker : images et conteneurs</a></li>
+          <li><a href="#chapitre-5">Docker : volumes et networks</a></li>
+          <li><a href="#chapitre-6">Docker Compose multi-services</a></li>
+          <li><a href="#chapitre-7">Nginx : configuration et reverse proxy</a></li>
+          <li><a href="#chapitre-8">Traefik et routage dynamique</a></li>
+          <li><a href="#chapitre-9">Monitoring de base</a></li>
+          <li><a href="#chapitre-10">Infrastructure as Code — introduction</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Introduction au DevOps</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Introduction au DevOps</strong> dans le cadre du module DevOps.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de introduction au devops en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Introduction au DevOps intervient à l'étape 1 du module « DevOps ».
+      En projet professionnel, cette compétence permet de maîtriser les commandes linux essentielles.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Introduction au DevOps
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer introduction au devops et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer introduction au devops dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Introduction au DevOps — chapitre 1 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Stack Docker Compose »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Linux : commandes essentielles</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Linux : commandes essentielles</strong> dans le cadre du module DevOps.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de linux : commandes essentielles en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Linux : commandes essentielles intervient à l'étape 2 du module « DevOps ».
+      En projet professionnel, cette compétence permet de containeriser avec docker (images, volumes, networks).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Linux : commandes essentielles
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer linux : commandes essentielles et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer linux : commandes essentielles dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Linux : commandes essentielles — chapitre 2 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Reverse proxy Nginx »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Gestion des processus et services</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Gestion des processus et services</strong> dans le cadre du module DevOps.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de gestion des processus et services en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Gestion des processus et services intervient à l'étape 3 du module « DevOps ».
+      En projet professionnel, cette compétence permet de orchestrer avec docker compose.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Gestion des processus et services
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer gestion des processus et services et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer gestion des processus et services dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Gestion des processus et services — chapitre 3 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Infrastructure complète »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Docker : images et conteneurs</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Docker : images et conteneurs</strong> dans le cadre du module DevOps.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de docker : images et conteneurs en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Docker : images et conteneurs intervient à l'étape 4 du module « DevOps ».
+      En projet professionnel, cette compétence permet de configurer nginx et traefik comme reverse proxy.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Docker : images et conteneurs
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer docker : images et conteneurs et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer docker : images et conteneurs dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Docker : images et conteneurs — chapitre 4 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Infrastructure complète »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — Docker : volumes et networks</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Docker : volumes et networks</strong> dans le cadre du module DevOps.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de docker : volumes et networks en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Docker : volumes et networks intervient à l'étape 5 du module « DevOps ».
+      En projet professionnel, cette compétence permet de automatiser le déploiement d'infrastructure.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Docker : volumes et networks
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer docker : volumes et networks et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer docker : volumes et networks dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Docker : volumes et networks — chapitre 5 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Infrastructure complète »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Docker Compose multi-services</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Docker Compose multi-services</strong> dans le cadre du module DevOps.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de docker compose multi-services en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Docker Compose multi-services intervient à l'étape 6 du module « DevOps ».
+      En projet professionnel, cette compétence permet de maîtriser les commandes linux essentielles.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Docker Compose multi-services
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer docker compose multi-services et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer docker compose multi-services dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Docker Compose multi-services — chapitre 6 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Infrastructure complète »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Nginx : configuration et reverse proxy</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Nginx : configuration et reverse proxy</strong> dans le cadre du module DevOps.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de nginx : configuration et reverse proxy en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Nginx : configuration et reverse proxy intervient à l'étape 7 du module « DevOps ».
+      En projet professionnel, cette compétence permet de containeriser avec docker (images, volumes, networks).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Nginx : configuration et reverse proxy
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer nginx : configuration et reverse proxy et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer nginx : configuration et reverse proxy dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Nginx : configuration et reverse proxy — chapitre 7 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Infrastructure complète »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Traefik et routage dynamique</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Traefik et routage dynamique</strong> dans le cadre du module DevOps.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de traefik et routage dynamique en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Traefik et routage dynamique intervient à l'étape 8 du module « DevOps ».
+      En projet professionnel, cette compétence permet de orchestrer avec docker compose.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Traefik et routage dynamique
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer traefik et routage dynamique et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer traefik et routage dynamique dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Traefik et routage dynamique — chapitre 8 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Infrastructure complète »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Monitoring de base</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Monitoring de base</strong> dans le cadre du module DevOps.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de monitoring de base en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Monitoring de base intervient à l'étape 9 du module « DevOps ».
+      En projet professionnel, cette compétence permet de configurer nginx et traefik comme reverse proxy.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Monitoring de base
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer monitoring de base et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer monitoring de base dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Monitoring de base — chapitre 9 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Infrastructure complète »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Infrastructure as Code — introduction</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Infrastructure as Code — introduction</strong> dans le cadre du module DevOps.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de infrastructure as code — introduction en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Infrastructure as Code — introduction intervient à l'étape 10 du module « DevOps ».
+      En projet professionnel, cette compétence permet de automatiser le déploiement d'infrastructure.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Infrastructure as Code — introduction
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer infrastructure as code — introduction et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer infrastructure as code — introduction dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Infrastructure as Code — introduction — chapitre 10 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Infrastructure complète »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

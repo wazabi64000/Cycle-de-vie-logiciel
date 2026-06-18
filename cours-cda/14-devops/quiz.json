@@ -1,0 +1,549 @@
+{
+  "module": "14-devops",
+  "titre": "DevOps",
+  "seuil_reussite": 70,
+  "duree_minutes": 30,
+  "nombre_questions": 20,
+  "questions": [
+    {
+      "id": "q-01",
+      "chapitre": 1,
+      "type": "qcm",
+      "question": "Question 1 — Introduction au DevOps : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Introduction au DevOps »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 1 — Introduction au DevOps.",
+      "points": 1
+    },
+    {
+      "id": "q-02",
+      "chapitre": 1,
+      "type": "qcm",
+      "question": "Question 2 — Introduction au DevOps : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Introduction au DevOps »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 1 — Introduction au DevOps.",
+      "points": 1
+    },
+    {
+      "id": "q-03",
+      "chapitre": 2,
+      "type": "qcm",
+      "question": "Question 3 — Linux : commandes essentielles : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Linux : commandes essentielles »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 2 — Linux : commandes essentielles.",
+      "points": 1
+    },
+    {
+      "id": "q-04",
+      "chapitre": 2,
+      "type": "qcm",
+      "question": "Question 4 — Linux : commandes essentielles : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Linux : commandes essentielles »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 2 — Linux : commandes essentielles.",
+      "points": 1
+    },
+    {
+      "id": "q-05",
+      "chapitre": 3,
+      "type": "qcm",
+      "question": "Question 5 — Gestion des processus et services : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Gestion des processus et services »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 3 — Gestion des processus et services.",
+      "points": 1
+    },
+    {
+      "id": "q-06",
+      "chapitre": 3,
+      "type": "qcm",
+      "question": "Question 6 — Gestion des processus et services : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Gestion des processus et services »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 3 — Gestion des processus et services.",
+      "points": 1
+    },
+    {
+      "id": "q-07",
+      "chapitre": 4,
+      "type": "qcm",
+      "question": "Question 7 — Docker : images et conteneurs : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Docker : images et conteneurs »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 4 — Docker : images et conteneurs.",
+      "points": 1
+    },
+    {
+      "id": "q-08",
+      "chapitre": 4,
+      "type": "qcm",
+      "question": "Question 8 — Docker : images et conteneurs : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Docker : images et conteneurs »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 4 — Docker : images et conteneurs.",
+      "points": 1
+    },
+    {
+      "id": "q-09",
+      "chapitre": 5,
+      "type": "qcm",
+      "question": "Question 9 — Docker : volumes et networks : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Docker : volumes et networks »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 5 — Docker : volumes et networks.",
+      "points": 1
+    },
+    {
+      "id": "q-10",
+      "chapitre": 5,
+      "type": "qcm",
+      "question": "Question 10 — Docker : volumes et networks : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Docker : volumes et networks »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 5 — Docker : volumes et networks.",
+      "points": 1
+    },
+    {
+      "id": "q-11",
+      "chapitre": 6,
+      "type": "qcm",
+      "question": "Question 11 — Docker Compose multi-services : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Docker Compose multi-services »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 6 — Docker Compose multi-services.",
+      "points": 1
+    },
+    {
+      "id": "q-12",
+      "chapitre": 6,
+      "type": "qcm",
+      "question": "Question 12 — Docker Compose multi-services : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Docker Compose multi-services »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 6 — Docker Compose multi-services.",
+      "points": 1
+    },
+    {
+      "id": "q-13",
+      "chapitre": 7,
+      "type": "qcm",
+      "question": "Question 13 — Nginx : configuration et reverse proxy : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Nginx : configuration et reverse proxy »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 7 — Nginx : configuration et reverse proxy.",
+      "points": 1
+    },
+    {
+      "id": "q-14",
+      "chapitre": 7,
+      "type": "qcm",
+      "question": "Question 14 — Nginx : configuration et reverse proxy : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Nginx : configuration et reverse proxy »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 7 — Nginx : configuration et reverse proxy.",
+      "points": 1
+    },
+    {
+      "id": "q-15",
+      "chapitre": 8,
+      "type": "qcm",
+      "question": "Question 15 — Traefik et routage dynamique : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Traefik et routage dynamique »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 8 — Traefik et routage dynamique.",
+      "points": 1
+    },
+    {
+      "id": "q-16",
+      "chapitre": 8,
+      "type": "qcm",
+      "question": "Question 16 — Traefik et routage dynamique : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Traefik et routage dynamique »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 8 — Traefik et routage dynamique.",
+      "points": 1
+    },
+    {
+      "id": "q-17",
+      "chapitre": 9,
+      "type": "qcm",
+      "question": "Question 17 — Monitoring de base : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Monitoring de base »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 9 — Monitoring de base.",
+      "points": 1
+    },
+    {
+      "id": "q-18",
+      "chapitre": 9,
+      "type": "qcm",
+      "question": "Question 18 — Monitoring de base : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Monitoring de base »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 9 — Monitoring de base.",
+      "points": 1
+    },
+    {
+      "id": "q-19",
+      "chapitre": 10,
+      "type": "qcm",
+      "question": "Question 19 — Infrastructure as Code — introduction : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Infrastructure as Code — introduction »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 10 — Infrastructure as Code — introduction.",
+      "points": 1
+    },
+    {
+      "id": "q-20",
+      "chapitre": 10,
+      "type": "qcm",
+      "question": "Question 20 — Infrastructure as Code — introduction : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Infrastructure as Code — introduction »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 10 — Infrastructure as Code — introduction.",
+      "points": 1
+    }
+  ]
+}

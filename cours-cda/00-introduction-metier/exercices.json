@@ -1,0 +1,132 @@
+{
+  "module": "00-introduction-metier",
+  "exercices": [
+    {
+      "id": "exo-debutant-1",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 1 — Découverte du métier",
+      "enonce": "Mettre en pratique les concepts de Qu'est-ce que le développement logiciel ? au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Qu'est-ce que le développement logiciel ?",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-debutant-2",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 2 — Découverte du métier",
+      "enonce": "Mettre en pratique les concepts de Qu'est-ce que le développement logiciel ? au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Qu'est-ce que le développement logiciel ?",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-intermediaire-1",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 1 — Découverte du métier",
+      "enonce": "Mettre en pratique les concepts de Le développeur frontend au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Le développeur frontend",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-intermediaire-2",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 2 — Découverte du métier",
+      "enonce": "Mettre en pratique les concepts de Le développeur frontend au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Le développeur frontend",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-1",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 1 — Découverte du métier",
+      "enonce": "Mettre en pratique les concepts de Le développeur backend au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Le développeur backend",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-2",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 2 — Découverte du métier",
+      "enonce": "Mettre en pratique les concepts de Le développeur backend au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Le développeur backend",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-expert-1",
+      "niveau": "expert",
+      "titre": "Exercice Expert 1 — Découverte du métier",
+      "enonce": "Mettre en pratique les concepts de Le développeur fullstack au niveau Expert.",
+      "objectifs": [
+        "Comprendre Le développeur fullstack",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "120min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 4",
+        "Consulter les ressources.json"
+      ]
+    }
+  ]
+}

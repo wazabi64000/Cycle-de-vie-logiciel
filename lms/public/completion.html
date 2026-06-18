@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcours terminé — WazabyCode</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div id="completion-locked" class="container dashboard-card" style="text-align:center;padding:3rem;margin:2rem auto;max-width:600px">
+      <p>Continuez votre formation pour débloquer cette page.</p>
+      <a href="dashboard.html" class="btn btn-primary" style="margin-top:1rem">Tableau de bord</a>
+    </div>
+
+    <div id="completion-content" hidden>
+      <section class="completion-hero">
+        <p style="font-size:4rem;margin-bottom:1rem" aria-hidden="true">🎉</p>
+        <h1>Félicitations !</h1>
+        <p class="completion-message">
+          Vous avez terminé votre parcours WazabyCode.<br><br>
+          Votre projet a atteint un niveau professionnel.<br><br>
+          Vous disposez désormais des compétences nécessaires pour concevoir, développer,
+          tester, sécuriser et déployer une application moderne en environnement professionnel.
+        </p>
+
+        <div class="final-stats">
+          <div class="final-stat">
+            <strong id="final-score">0</strong>
+            <span>Score final / 1000</span>
+          </div>
+          <div class="final-stat">
+            <strong id="final-level" style="font-size:1.5rem">—</strong>
+            <span>Niveau final</span>
+          </div>
+          <div class="final-stat">
+            <strong id="final-name" style="font-size:1.25rem;color:var(--text)">—</strong>
+            <span>Apprenant</span>
+          </div>
+        </div>
+
+        <h2 style="font-size:1rem;color:var(--text-muted);margin-bottom:0.75rem">Compétences validées</h2>
+        <ul id="validated-skills" style="list-style:none;max-width:400px;margin:0 auto 1.5rem;text-align:left"></ul>
+
+        <h2 style="font-size:1rem;color:var(--text-muted);margin-bottom:0.75rem">Badges obtenus</h2>
+        <div id="final-badges" class="final-badges"></div>
+
+        <button id="view-certificate" class="btn btn-primary" style="margin-top:2rem;font-size:1rem;padding:0.75rem 2rem">
+          Voir mon certificat →
+        </button>
+      </section>
+    </div>
+  </main>
+
+  <div id="footer-root"></div>
+
+  <script type="module" src="/js/app/completion.js"></script>
+</body>
+</html>

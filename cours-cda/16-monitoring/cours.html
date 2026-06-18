@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 16 — Monitoring et observabilité | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="16-monitoring"
+  data-module-id="16"
+  data-module-title="Monitoring et observabilité"
+  data-module-duration="25h"
+  data-module-level="Intermédiaire à Avancé">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 16 — Monitoring et observabilité</h1>
+        <p>Logs, métriques, alertes et gestion d'erreurs</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 25h</span>
+          <span class="cours-badge">📊 Intermédiaire à Avancé</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>On ne peut pas améliorer ce qu'on ne mesure pas. Le monitoring est vital en production.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>Serveurs de production, APIs, applications critiques.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout la détection proactive des pannes, le debugging en production et la conformité SLA.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>Monitoring et observabilité : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Configurer des logs structurés avec Winston et Pino</li>
+          <li>Mettre en place Grafana et Prometheus</li>
+          <li>Configurer des alertes proactives</li>
+          <li>Intégrer Sentry pour le suivi d'erreurs</li>
+          <li>Construire des dashboards de monitoring</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 16 — Monitoring et observabilité
+    ↓
+Introduction à l'observabilité
+    ↓
+Logs structurés avec Winston
+    ↓
+Logs haute performance avec Pino
+    ↓
+Métriques avec Prometheus
+    ↓
+Dashboards Grafana
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de monitoring et observabilité.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec monitoring et observabilité.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Alertes Sentry + Prometheus avec notifications Slack.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Stack de logs <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Configurer Pino + agrégation de logs.</p>
+          <p><em>Durée : 4h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Dashboard Grafana <span class="cours-badge">Avancé</span></h4>
+          <p>Dashboard Prometheus/Grafana pour une API Node.js.</p>
+          <p><em>Durée : 5h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Alerting complet <span class="cours-badge">Expert</span></h4>
+          <p>Alertes Sentry + Prometheus avec notifications Slack.</p>
+          <p><em>Durée : 6h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Introduction à l'observabilité</a></li>
+          <li><a href="#chapitre-2">Logs structurés avec Winston</a></li>
+          <li><a href="#chapitre-3">Logs haute performance avec Pino</a></li>
+          <li><a href="#chapitre-4">Métriques avec Prometheus</a></li>
+          <li><a href="#chapitre-5">Dashboards Grafana</a></li>
+          <li><a href="#chapitre-6">Alertes et seuils</a></li>
+          <li><a href="#chapitre-7">Sentry : suivi d'erreurs</a></li>
+          <li><a href="#chapitre-8">Tracing distribué — introduction</a></li>
+          <li><a href="#chapitre-9">SLI, SLO et SLA</a></li>
+          <li><a href="#chapitre-10">Incident response</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Introduction à l'observabilité</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Introduction à l'observabilité</strong> dans le cadre du module Monitoring et observabilité.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de introduction à l'observabilité en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Introduction à l'observabilité intervient à l'étape 1 du module « Monitoring et observabilité ».
+      En projet professionnel, cette compétence permet de configurer des logs structurés avec winston et pino.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Introduction à l'observabilité
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer introduction à l'observabilité et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer introduction à l'observabilité dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Introduction à l'observabilité — chapitre 1 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Stack de logs »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Logs structurés avec Winston</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Logs structurés avec Winston</strong> dans le cadre du module Monitoring et observabilité.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de logs structurés avec winston en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Logs structurés avec Winston intervient à l'étape 2 du module « Monitoring et observabilité ».
+      En projet professionnel, cette compétence permet de mettre en place grafana et prometheus.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Logs structurés avec Winston
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer logs structurés avec winston et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer logs structurés avec winston dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Logs structurés avec Winston — chapitre 2 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Dashboard Grafana »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Logs haute performance avec Pino</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Logs haute performance avec Pino</strong> dans le cadre du module Monitoring et observabilité.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de logs haute performance avec pino en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Logs haute performance avec Pino intervient à l'étape 3 du module « Monitoring et observabilité ».
+      En projet professionnel, cette compétence permet de configurer des alertes proactives.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Logs haute performance avec Pino
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer logs haute performance avec pino et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer logs haute performance avec pino dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Logs haute performance avec Pino — chapitre 3 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Alerting complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Métriques avec Prometheus</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Métriques avec Prometheus</strong> dans le cadre du module Monitoring et observabilité.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de métriques avec prometheus en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Métriques avec Prometheus intervient à l'étape 4 du module « Monitoring et observabilité ».
+      En projet professionnel, cette compétence permet de intégrer sentry pour le suivi d'erreurs.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Métriques avec Prometheus
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer métriques avec prometheus et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer métriques avec prometheus dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Métriques avec Prometheus — chapitre 4 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Alerting complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — Dashboards Grafana</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Dashboards Grafana</strong> dans le cadre du module Monitoring et observabilité.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de dashboards grafana en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Dashboards Grafana intervient à l'étape 5 du module « Monitoring et observabilité ».
+      En projet professionnel, cette compétence permet de construire des dashboards de monitoring.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Dashboards Grafana
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer dashboards grafana et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer dashboards grafana dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Dashboards Grafana — chapitre 5 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Alerting complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Alertes et seuils</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Alertes et seuils</strong> dans le cadre du module Monitoring et observabilité.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de alertes et seuils en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Alertes et seuils intervient à l'étape 6 du module « Monitoring et observabilité ».
+      En projet professionnel, cette compétence permet de configurer des logs structurés avec winston et pino.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Alertes et seuils
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer alertes et seuils et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer alertes et seuils dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Alertes et seuils — chapitre 6 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Alerting complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Sentry : suivi d'erreurs</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Sentry : suivi d'erreurs</strong> dans le cadre du module Monitoring et observabilité.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de sentry : suivi d'erreurs en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Sentry : suivi d'erreurs intervient à l'étape 7 du module « Monitoring et observabilité ».
+      En projet professionnel, cette compétence permet de mettre en place grafana et prometheus.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Sentry : suivi d'erreurs
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer sentry : suivi d'erreurs et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer sentry : suivi d'erreurs dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Sentry : suivi d'erreurs — chapitre 7 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Alerting complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Tracing distribué — introduction</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Tracing distribué — introduction</strong> dans le cadre du module Monitoring et observabilité.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de tracing distribué — introduction en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Tracing distribué — introduction intervient à l'étape 8 du module « Monitoring et observabilité ».
+      En projet professionnel, cette compétence permet de configurer des alertes proactives.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Tracing distribué — introduction
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer tracing distribué — introduction et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer tracing distribué — introduction dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Tracing distribué — introduction — chapitre 8 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Alerting complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — SLI, SLO et SLA</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>SLI, SLO et SLA</strong> dans le cadre du module Monitoring et observabilité.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de sli, slo et sla en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      SLI, SLO et SLA intervient à l'étape 9 du module « Monitoring et observabilité ».
+      En projet professionnel, cette compétence permet de intégrer sentry pour le suivi d'erreurs.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — SLI, SLO et SLA
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer sli, slo et sla et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer sli, slo et sla dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>SLI, SLO et SLA — chapitre 9 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Alerting complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Incident response</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Incident response</strong> dans le cadre du module Monitoring et observabilité.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de incident response en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Incident response intervient à l'étape 10 du module « Monitoring et observabilité ».
+      En projet professionnel, cette compétence permet de construire des dashboards de monitoring.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Incident response
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer incident response et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer incident response dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Incident response — chapitre 10 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Alerting complet »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

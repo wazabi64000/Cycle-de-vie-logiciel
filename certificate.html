@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificat — WazabyCode</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="navbar-root"></div>
+
+  <main class="container page-main">
+    <div id="cert-locked" class="dashboard-card" style="text-align:center;padding:3rem;margin:2rem 0">
+      <p style="font-size:3rem">🔒</p>
+      <h2>Certificat non disponible</h2>
+      <p style="color:var(--text-muted);margin:1rem 0">
+        Conditions : Progression ≥ 90 %, Quiz ≥ 80 %, Projet ≥ 80 %
+      </p>
+      <a href="dashboard.html" class="btn btn-primary">Continuer ma formation</a>
+    </div>
+
+    <div id="cert-content" hidden>
+      <article class="certificate" role="article" aria-label="Certificat WazabyCode">
+        <div class="cert-logo">WazabyCode</div>
+        <p class="cert-title">Certificat de réussite</p>
+        <p style="color:var(--text-muted)">Décerné à</p>
+        <p class="cert-name" id="cert-name">Apprenant</p>
+        <p style="color:var(--text-muted)">
+          Pour avoir complété avec succès le parcours de formation<br>
+          Concepteur Développeur d'Applications
+        </p>
+        <div class="cert-meta">
+          <p>Date : <strong id="cert-date"></strong></p>
+          <p>Niveau atteint : <strong id="cert-level"></strong></p>
+          <p>Score obtenu : <strong id="cert-score-animated">0</strong> <span id="cert-score"></span></p>
+          <p style="font-size:0.8rem">Référence : <span id="cert-id"></span></p>
+        </div>
+        <div class="cert-signature">
+          WazabyCode — Formation professionnelle au développement logiciel
+        </div>
+      </article>
+      <div style="text-align:center;margin:2rem">
+        <button onclick="window.print()" class="btn btn-primary">Imprimer le certificat</button>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-root"></div>
+
+  <script type="module">
+    import { initShell } from './js/ui/layout.js';
+    initShell('certificate');
+  </script>
+  <script type="module" src="js/app/certificate.js"></script>
+</body>
+</html>

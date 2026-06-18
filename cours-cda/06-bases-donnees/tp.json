@@ -1,0 +1,80 @@
+{
+  "module": "06-bases-donnees",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Schéma e-commerce",
+      "level": "Intermédiaire",
+      "duration": "5h",
+      "description": "Concevoir et implémenter le schéma PostgreSQL d'un e-commerce.",
+      "objectifs": [
+        "Concevoir un schéma relationnel normalisé",
+        "Écrire des requêtes SQL complexes (jointures, sous-requêtes)",
+        "Utiliser PostgreSQL en production"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Requêtes analytiques",
+      "level": "Avancé",
+      "duration": "4h",
+      "description": "Écrire 15 requêtes SQL analytiques sur un jeu de données réel.",
+      "objectifs": [
+        "Concevoir un schéma relationnel normalisé",
+        "Écrire des requêtes SQL complexes (jointures, sous-requêtes)",
+        "Utiliser PostgreSQL en production"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Optimisation performance",
+      "level": "Expert",
+      "duration": "6h",
+      "description": "Diagnostiquer et optimiser des requêtes lentes avec EXPLAIN.",
+      "objectifs": [
+        "Concevoir un schéma relationnel normalisé",
+        "Écrire des requêtes SQL complexes (jointures, sous-requêtes)",
+        "Utiliser PostgreSQL en production"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

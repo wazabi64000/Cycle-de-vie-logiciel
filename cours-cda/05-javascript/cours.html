@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 05 — JavaScript ES2024 | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="05-javascript"
+  data-module-id="05"
+  data-module-title="JavaScript ES2024"
+  data-module-duration="60h"
+  data-module-level="Débutant à Avancé">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 05 — JavaScript ES2024</h1>
+        <p>Fondamentaux, programmation avancée et architecture</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 60h</span>
+          <span class="cours-badge">📊 Débutant à Avancé</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>JavaScript est le langage le plus utilisé au monde. Il anime le web, le mobile et le backend.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>Frontend (React, Vue), backend (Node.js), mobile (React Native), desktop (Electron).</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout l'interactivité web, la communication client-serveur et la logique métier côté client.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>JavaScript ES2024 : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Maîtriser variables, conditions, boucles et fonctions</li>
+          <li>Comprendre closures, promises et async/await</li>
+          <li>Utiliser les modules ES6+</li>
+          <li>Appliquer les patterns MVC, Services et Repositories</li>
+          <li>Manipuler le DOM et les événements</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 05 — JavaScript ES2024
+    ↓
+Variables, types et opérateurs
+    ↓
+Conditions et boucles
+    ↓
+Fonctions et portée
+    ↓
+Objets, tableaux et destructuring
+    ↓
+Closures et scope
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de javascript es2024.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec javascript es2024.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Implémenter un mini-framework MVC from scratch.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Todo List vanilla JS <span class="cours-badge">Débutant</span></h4>
+          <p>Application Todo avec localStorage et architecture MVC.</p>
+          <p><em>Durée : 4h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>API Client <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Client REST consommant une API publique avec gestion d'erreurs.</p>
+          <p><em>Durée : 6h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Mini-framework MVC <span class="cours-badge">Avancé</span></h4>
+          <p>Implémenter un mini-framework MVC from scratch.</p>
+          <p><em>Durée : 10h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Variables, types et opérateurs</a></li>
+          <li><a href="#chapitre-2">Conditions et boucles</a></li>
+          <li><a href="#chapitre-3">Fonctions et portée</a></li>
+          <li><a href="#chapitre-4">Objets, tableaux et destructuring</a></li>
+          <li><a href="#chapitre-5">Closures et scope</a></li>
+          <li><a href="#chapitre-6">Promises et async/await</a></li>
+          <li><a href="#chapitre-7">Modules ES6+</a></li>
+          <li><a href="#chapitre-8">DOM et événements</a></li>
+          <li><a href="#chapitre-9">Fetch API et consommation REST</a></li>
+          <li><a href="#chapitre-10">Architecture MVC, Services et Repositories</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Variables, types et opérateurs</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Variables, types et opérateurs</strong> dans le cadre du module JavaScript ES2024.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de variables, types et opérateurs en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Variables, types et opérateurs intervient à l'étape 1 du module « JavaScript ES2024 ».
+      En projet professionnel, cette compétence permet de maîtriser variables, conditions, boucles et fonctions.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Variables, types et opérateurs
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer variables, types et opérateurs et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer variables, types et opérateurs dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Variables, types et opérateurs — chapitre 1 / 10</li>
+      <li>Durée module : 60h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Todo List vanilla JS »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Conditions et boucles</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Conditions et boucles</strong> dans le cadre du module JavaScript ES2024.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de conditions et boucles en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Conditions et boucles intervient à l'étape 2 du module « JavaScript ES2024 ».
+      En projet professionnel, cette compétence permet de comprendre closures, promises et async/await.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Conditions et boucles
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer conditions et boucles et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer conditions et boucles dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Conditions et boucles — chapitre 2 / 10</li>
+      <li>Durée module : 60h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « API Client »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Fonctions et portée</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Fonctions et portée</strong> dans le cadre du module JavaScript ES2024.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de fonctions et portée en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Fonctions et portée intervient à l'étape 3 du module « JavaScript ES2024 ».
+      En projet professionnel, cette compétence permet de utiliser les modules es6+.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Fonctions et portée
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer fonctions et portée et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer fonctions et portée dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Fonctions et portée — chapitre 3 / 10</li>
+      <li>Durée module : 60h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Mini-framework MVC »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Objets, tableaux et destructuring</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Objets, tableaux et destructuring</strong> dans le cadre du module JavaScript ES2024.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de objets, tableaux et destructuring en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Objets, tableaux et destructuring intervient à l'étape 4 du module « JavaScript ES2024 ».
+      En projet professionnel, cette compétence permet de appliquer les patterns mvc, services et repositories.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Objets, tableaux et destructuring
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer objets, tableaux et destructuring et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer objets, tableaux et destructuring dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Objets, tableaux et destructuring — chapitre 4 / 10</li>
+      <li>Durée module : 60h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Mini-framework MVC »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — Closures et scope</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Closures et scope</strong> dans le cadre du module JavaScript ES2024.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de closures et scope en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Closures et scope intervient à l'étape 5 du module « JavaScript ES2024 ».
+      En projet professionnel, cette compétence permet de manipuler le dom et les événements.
+    </p>
+
+    <h3>Exemple de code</h3><pre class="code-block">const fetchData = async (url) => {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(res.statusText);
+  return res.json();
+};</pre>
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Closures et scope
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer closures et scope et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer closures et scope dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Closures et scope — chapitre 5 / 10</li>
+      <li>Durée module : 60h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Mini-framework MVC »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Promises et async/await</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Promises et async/await</strong> dans le cadre du module JavaScript ES2024.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de promises et async/await en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Promises et async/await intervient à l'étape 6 du module « JavaScript ES2024 ».
+      En projet professionnel, cette compétence permet de maîtriser variables, conditions, boucles et fonctions.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Promises et async/await
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer promises et async/await et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer promises et async/await dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Promises et async/await — chapitre 6 / 10</li>
+      <li>Durée module : 60h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Mini-framework MVC »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Modules ES6+</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Modules ES6+</strong> dans le cadre du module JavaScript ES2024.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de modules es6+ en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Modules ES6+ intervient à l'étape 7 du module « JavaScript ES2024 ».
+      En projet professionnel, cette compétence permet de comprendre closures, promises et async/await.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Modules ES6+
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer modules es6+ et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer modules es6+ dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Modules ES6+ — chapitre 7 / 10</li>
+      <li>Durée module : 60h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Mini-framework MVC »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — DOM et événements</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>DOM et événements</strong> dans le cadre du module JavaScript ES2024.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de dom et événements en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      DOM et événements intervient à l'étape 8 du module « JavaScript ES2024 ».
+      En projet professionnel, cette compétence permet de utiliser les modules es6+.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — DOM et événements
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer dom et événements et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer dom et événements dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>DOM et événements — chapitre 8 / 10</li>
+      <li>Durée module : 60h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Mini-framework MVC »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Fetch API et consommation REST</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Fetch API et consommation REST</strong> dans le cadre du module JavaScript ES2024.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de fetch api et consommation rest en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Fetch API et consommation REST intervient à l'étape 9 du module « JavaScript ES2024 ».
+      En projet professionnel, cette compétence permet de appliquer les patterns mvc, services et repositories.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Fetch API et consommation REST
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer fetch api et consommation rest et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer fetch api et consommation rest dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Fetch API et consommation REST — chapitre 9 / 10</li>
+      <li>Durée module : 60h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Mini-framework MVC »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Architecture MVC, Services et Repositories</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Architecture MVC, Services et Repositories</strong> dans le cadre du module JavaScript ES2024.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de architecture mvc, services et repositories en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Architecture MVC, Services et Repositories intervient à l'étape 10 du module « JavaScript ES2024 ».
+      En projet professionnel, cette compétence permet de manipuler le dom et les événements.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Architecture MVC, Services et Repositories
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer architecture mvc, services et repositories et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer architecture mvc, services et repositories dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Architecture MVC, Services et Repositories — chapitre 10 / 10</li>
+      <li>Durée module : 60h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Mini-framework MVC »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

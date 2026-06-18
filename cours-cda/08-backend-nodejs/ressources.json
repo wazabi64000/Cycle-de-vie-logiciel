@@ -1,0 +1,54 @@
+{
+  "module": "08-backend-nodejs",
+  "documentation": [
+    {
+      "titre": "Documentation officielle — Backend Node.js",
+      "url": "#",
+      "type": "officielle"
+    },
+    {
+      "titre": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/fr/",
+      "type": "reference"
+    }
+  ],
+  "videos": [
+    {
+      "titre": "Introduction à Backend Node.js",
+      "url": "#",
+      "duree": "15min",
+      "source": "YouTube"
+    }
+  ],
+  "livres": [
+    {
+      "titre": "Livre de référence — Backend Node.js",
+      "auteur": "À définir",
+      "isbn": null
+    }
+  ],
+  "outils": [
+    {
+      "nom": "VS Code",
+      "url": "https://code.visualstudio.com/",
+      "usage": "Éditeur de code"
+    },
+    {
+      "nom": "Git",
+      "url": "https://git-scm.com/",
+      "usage": "Versionning"
+    }
+  ],
+  "communautes": [
+    {
+      "nom": "Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "type": "forum"
+    },
+    {
+      "nom": "Dev.to",
+      "url": "https://dev.to/",
+      "type": "blog"
+    }
+  ]
+}

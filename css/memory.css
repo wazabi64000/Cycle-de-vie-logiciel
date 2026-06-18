@@ -1,0 +1,292 @@
+/* ─── Mémoire apprenant : modale, barre reprise, historique ─── */
+
+.resume-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.resume-modal-overlay.visible {
+  opacity: 1;
+}
+
+.resume-modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  max-width: 480px;
+  width: 100%;
+  padding: 2rem;
+  transform: translateY(16px) scale(0.98);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.resume-modal-overlay.visible .resume-modal {
+  transform: translateY(0) scale(1);
+}
+
+.resume-modal-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume-modal h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.resume-modal-lead {
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.resume-modal-body {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.resume-modal-body p {
+  margin-bottom: 0.5rem;
+}
+
+.resume-path {
+  color: var(--text);
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  margin: 0.75rem 0 !important;
+}
+
+.resume-progress {
+  color: var(--text) !important;
+  font-size: 1.05rem;
+}
+
+.resume-sub {
+  font-size: 0.875rem;
+}
+
+.resume-meta {
+  font-size: 0.8rem;
+  margin-top: 0.75rem !important;
+}
+
+.resume-detail {
+  font-size: 0.875rem;
+}
+
+.resume-modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.resume-modal-actions .btn {
+  justify-content: center;
+  width: 100%;
+}
+
+.resume-reset {
+  font-size: 0.8rem !important;
+  color: var(--text-muted) !important;
+}
+
+/* Barre reprise dashboard */
+.resume-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, var(--accent-soft), transparent);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-lg);
+}
+
+.resume-bar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.resume-bar-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.resume-bar-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.resume-bar-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.resume-bar-chapter {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0.15rem 0;
+}
+
+.resume-bar-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.resume-bar-btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* Timeline historique */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.45rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.5rem;
+  width: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  background: var(--bg-card);
+}
+
+.timeline-content strong {
+  font-size: 0.85rem;
+}
+
+.timeline-content p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0.15rem 0;
+}
+
+.timeline-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Statistiques */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
+
+/* Navigation chapitres (page module) */
+.chapter-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.chapter-nav-item {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: none;
+  text-align: left;
+  font-family: inherit;
+  width: 100%;
+  transition: var(--transition);
+}
+
+.chapter-nav-item:hover,
+.chapter-nav-item.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.chapter-nav-item.active {
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .resume-bar {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .resume-bar-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

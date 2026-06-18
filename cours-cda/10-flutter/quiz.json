@@ -1,0 +1,549 @@
+{
+  "module": "10-flutter",
+  "titre": "Flutter",
+  "seuil_reussite": 70,
+  "duree_minutes": 30,
+  "nombre_questions": 20,
+  "questions": [
+    {
+      "id": "q-01",
+      "chapitre": 1,
+      "type": "qcm",
+      "question": "Question 1 — Introduction à Flutter et Dart : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Introduction à Flutter et Dart »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 1 — Introduction à Flutter et Dart.",
+      "points": 1
+    },
+    {
+      "id": "q-02",
+      "chapitre": 1,
+      "type": "qcm",
+      "question": "Question 2 — Introduction à Flutter et Dart : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Introduction à Flutter et Dart »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 1 — Introduction à Flutter et Dart.",
+      "points": 1
+    },
+    {
+      "id": "q-03",
+      "chapitre": 2,
+      "type": "qcm",
+      "question": "Question 3 — Widgets Stateless et Stateful : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Widgets Stateless et Stateful »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 2 — Widgets Stateless et Stateful.",
+      "points": 1
+    },
+    {
+      "id": "q-04",
+      "chapitre": 2,
+      "type": "qcm",
+      "question": "Question 4 — Widgets Stateless et Stateful : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Widgets Stateless et Stateful »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 2 — Widgets Stateless et Stateful.",
+      "points": 1
+    },
+    {
+      "id": "q-05",
+      "chapitre": 3,
+      "type": "qcm",
+      "question": "Question 5 — Layouts et responsive : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Layouts et responsive »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 3 — Layouts et responsive.",
+      "points": 1
+    },
+    {
+      "id": "q-06",
+      "chapitre": 3,
+      "type": "qcm",
+      "question": "Question 6 — Layouts et responsive : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Layouts et responsive »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 3 — Layouts et responsive.",
+      "points": 1
+    },
+    {
+      "id": "q-07",
+      "chapitre": 4,
+      "type": "qcm",
+      "question": "Question 7 — State management : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « State management »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 4 — State management.",
+      "points": 1
+    },
+    {
+      "id": "q-08",
+      "chapitre": 4,
+      "type": "qcm",
+      "question": "Question 8 — State management : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « State management »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 4 — State management.",
+      "points": 1
+    },
+    {
+      "id": "q-09",
+      "chapitre": 5,
+      "type": "qcm",
+      "question": "Question 9 — Navigation et routing : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Navigation et routing »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 5 — Navigation et routing.",
+      "points": 1
+    },
+    {
+      "id": "q-10",
+      "chapitre": 5,
+      "type": "qcm",
+      "question": "Question 10 — Navigation et routing : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Navigation et routing »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 5 — Navigation et routing.",
+      "points": 1
+    },
+    {
+      "id": "q-11",
+      "chapitre": 6,
+      "type": "qcm",
+      "question": "Question 11 — Consommation d'API : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Consommation d'API »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 6 — Consommation d'API.",
+      "points": 1
+    },
+    {
+      "id": "q-12",
+      "chapitre": 6,
+      "type": "qcm",
+      "question": "Question 12 — Consommation d'API : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Consommation d'API »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 6 — Consommation d'API.",
+      "points": 1
+    },
+    {
+      "id": "q-13",
+      "chapitre": 7,
+      "type": "qcm",
+      "question": "Question 13 — Stockage local : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Stockage local »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 7 — Stockage local.",
+      "points": 1
+    },
+    {
+      "id": "q-14",
+      "chapitre": 7,
+      "type": "qcm",
+      "question": "Question 14 — Stockage local : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Stockage local »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 7 — Stockage local.",
+      "points": 1
+    },
+    {
+      "id": "q-15",
+      "chapitre": 8,
+      "type": "qcm",
+      "question": "Question 15 — Tests Flutter : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Tests Flutter »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 8 — Tests Flutter.",
+      "points": 1
+    },
+    {
+      "id": "q-16",
+      "chapitre": 8,
+      "type": "qcm",
+      "question": "Question 16 — Tests Flutter : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Tests Flutter »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 8 — Tests Flutter.",
+      "points": 1
+    },
+    {
+      "id": "q-17",
+      "chapitre": 9,
+      "type": "qcm",
+      "question": "Question 17 — Publication Android : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Publication Android »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 9 — Publication Android.",
+      "points": 1
+    },
+    {
+      "id": "q-18",
+      "chapitre": 9,
+      "type": "qcm",
+      "question": "Question 18 — Publication Android : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Publication Android »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 9 — Publication Android.",
+      "points": 1
+    },
+    {
+      "id": "q-19",
+      "chapitre": 10,
+      "type": "qcm",
+      "question": "Question 19 — Publication iOS : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Publication iOS »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 10 — Publication iOS.",
+      "points": 1
+    },
+    {
+      "id": "q-20",
+      "chapitre": 10,
+      "type": "qcm",
+      "question": "Question 20 — Publication iOS : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Publication iOS »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 10 — Publication iOS.",
+      "points": 1
+    }
+  ]
+}

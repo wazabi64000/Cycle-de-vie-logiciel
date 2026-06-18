@@ -1,0 +1,132 @@
+{
+  "module": "05-javascript",
+  "exercices": [
+    {
+      "id": "exo-debutant-1",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 1 — JavaScript ES2024",
+      "enonce": "Mettre en pratique les concepts de Variables, types et opérateurs au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Variables, types et opérateurs",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-debutant-2",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 2 — JavaScript ES2024",
+      "enonce": "Mettre en pratique les concepts de Variables, types et opérateurs au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Variables, types et opérateurs",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-intermediaire-1",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 1 — JavaScript ES2024",
+      "enonce": "Mettre en pratique les concepts de Conditions et boucles au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Conditions et boucles",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-intermediaire-2",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 2 — JavaScript ES2024",
+      "enonce": "Mettre en pratique les concepts de Conditions et boucles au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Conditions et boucles",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-1",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 1 — JavaScript ES2024",
+      "enonce": "Mettre en pratique les concepts de Fonctions et portée au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Fonctions et portée",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-2",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 2 — JavaScript ES2024",
+      "enonce": "Mettre en pratique les concepts de Fonctions et portée au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Fonctions et portée",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-expert-1",
+      "niveau": "expert",
+      "titre": "Exercice Expert 1 — JavaScript ES2024",
+      "enonce": "Mettre en pratique les concepts de Objets, tableaux et destructuring au niveau Expert.",
+      "objectifs": [
+        "Comprendre Objets, tableaux et destructuring",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "120min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 4",
+        "Consulter les ressources.json"
+      ]
+    }
+  ]
+}

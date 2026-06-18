@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 15 — CI/CD | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="15-cicd"
+  data-module-id="15"
+  data-module-title="CI/CD"
+  data-module-duration="25h"
+  data-module-level="Intermédiaire à Avancé">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 15 — CI/CD</h1>
+        <p>GitHub Actions et pipelines automatisés</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 25h</span>
+          <span class="cours-badge">📊 Intermédiaire à Avancé</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>La CI/CD automatise la qualité et le déploiement. Standard dans toute entreprise moderne.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>À chaque push, merge request, release.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout les déploiements manuels error-prone et les régressions non détectées.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>CI/CD : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Comprendre les principes CI/CD</li>
+          <li>Créer des pipelines GitHub Actions complets</li>
+          <li>Automatiser lint, tests, build et deploy</li>
+          <li>Gérer les environnements (dev, staging, prod)</li>
+          <li>Implémenter le déploiement continu</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 15 — CI/CD
+    ↓
+Introduction CI/CD
+    ↓
+GitHub Actions : concepts
+    ↓
+Workflow : lint et formatage
+    ↓
+Workflow : tests automatisés
+    ↓
+Workflow : build et artifacts
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de ci/cd.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec ci/cd.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>CI/CD avec dev, staging et production automatisés.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Pipeline lint + test <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Pipeline GitHub Actions avec ESLint et Jest.</p>
+          <p><em>Durée : 3h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Pipeline complet <span class="cours-badge">Avancé</span></h4>
+          <p>Push → Lint → Tests → Build → Deploy sur VPS.</p>
+          <p><em>Durée : 6h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Multi-environnements <span class="cours-badge">Expert</span></h4>
+          <p>CI/CD avec dev, staging et production automatisés.</p>
+          <p><em>Durée : 8h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Introduction CI/CD</a></li>
+          <li><a href="#chapitre-2">GitHub Actions : concepts</a></li>
+          <li><a href="#chapitre-3">Workflow : lint et formatage</a></li>
+          <li><a href="#chapitre-4">Workflow : tests automatisés</a></li>
+          <li><a href="#chapitre-5">Workflow : build et artifacts</a></li>
+          <li><a href="#chapitre-6">Workflow : déploiement</a></li>
+          <li><a href="#chapitre-7">Environnements et secrets</a></li>
+          <li><a href="#chapitre-8">Matrix builds et parallélisation</a></li>
+          <li><a href="#chapitre-9">Notifications et monitoring CI</a></li>
+          <li><a href="#chapitre-10">Bonnes pratiques CI/CD</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Introduction CI/CD</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Introduction CI/CD</strong> dans le cadre du module CI/CD.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de introduction ci/cd en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Introduction CI/CD intervient à l'étape 1 du module « CI/CD ».
+      En projet professionnel, cette compétence permet de comprendre les principes ci/cd.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Introduction CI/CD
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer introduction ci/cd et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer introduction ci/cd dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Introduction CI/CD — chapitre 1 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Pipeline lint + test »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — GitHub Actions : concepts</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>GitHub Actions : concepts</strong> dans le cadre du module CI/CD.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de github actions : concepts en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      GitHub Actions : concepts intervient à l'étape 2 du module « CI/CD ».
+      En projet professionnel, cette compétence permet de créer des pipelines github actions complets.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — GitHub Actions : concepts
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer github actions : concepts et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer github actions : concepts dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>GitHub Actions : concepts — chapitre 2 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Pipeline complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Workflow : lint et formatage</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Workflow : lint et formatage</strong> dans le cadre du module CI/CD.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de workflow : lint et formatage en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Workflow : lint et formatage intervient à l'étape 3 du module « CI/CD ».
+      En projet professionnel, cette compétence permet de automatiser lint, tests, build et deploy.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Workflow : lint et formatage
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer workflow : lint et formatage et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer workflow : lint et formatage dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Workflow : lint et formatage — chapitre 3 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Multi-environnements »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Workflow : tests automatisés</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Workflow : tests automatisés</strong> dans le cadre du module CI/CD.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de workflow : tests automatisés en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Workflow : tests automatisés intervient à l'étape 4 du module « CI/CD ».
+      En projet professionnel, cette compétence permet de gérer les environnements (dev, staging, prod).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Workflow : tests automatisés
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer workflow : tests automatisés et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer workflow : tests automatisés dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Workflow : tests automatisés — chapitre 4 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Multi-environnements »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — Workflow : build et artifacts</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Workflow : build et artifacts</strong> dans le cadre du module CI/CD.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de workflow : build et artifacts en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Workflow : build et artifacts intervient à l'étape 5 du module « CI/CD ».
+      En projet professionnel, cette compétence permet de implémenter le déploiement continu.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Workflow : build et artifacts
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer workflow : build et artifacts et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer workflow : build et artifacts dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Workflow : build et artifacts — chapitre 5 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Multi-environnements »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Workflow : déploiement</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Workflow : déploiement</strong> dans le cadre du module CI/CD.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de workflow : déploiement en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Workflow : déploiement intervient à l'étape 6 du module « CI/CD ».
+      En projet professionnel, cette compétence permet de comprendre les principes ci/cd.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Workflow : déploiement
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer workflow : déploiement et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer workflow : déploiement dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Workflow : déploiement — chapitre 6 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Multi-environnements »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Environnements et secrets</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Environnements et secrets</strong> dans le cadre du module CI/CD.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de environnements et secrets en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Environnements et secrets intervient à l'étape 7 du module « CI/CD ».
+      En projet professionnel, cette compétence permet de créer des pipelines github actions complets.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Environnements et secrets
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer environnements et secrets et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer environnements et secrets dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Environnements et secrets — chapitre 7 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Multi-environnements »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Matrix builds et parallélisation</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Matrix builds et parallélisation</strong> dans le cadre du module CI/CD.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de matrix builds et parallélisation en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Matrix builds et parallélisation intervient à l'étape 8 du module « CI/CD ».
+      En projet professionnel, cette compétence permet de automatiser lint, tests, build et deploy.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Matrix builds et parallélisation
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer matrix builds et parallélisation et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer matrix builds et parallélisation dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Matrix builds et parallélisation — chapitre 8 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Multi-environnements »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Notifications et monitoring CI</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Notifications et monitoring CI</strong> dans le cadre du module CI/CD.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de notifications et monitoring ci en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Notifications et monitoring CI intervient à l'étape 9 du module « CI/CD ».
+      En projet professionnel, cette compétence permet de gérer les environnements (dev, staging, prod).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Notifications et monitoring CI
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer notifications et monitoring ci et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer notifications et monitoring ci dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Notifications et monitoring CI — chapitre 9 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Multi-environnements »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Bonnes pratiques CI/CD</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Bonnes pratiques CI/CD</strong> dans le cadre du module CI/CD.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de bonnes pratiques ci/cd en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Bonnes pratiques CI/CD intervient à l'étape 10 du module « CI/CD ».
+      En projet professionnel, cette compétence permet de implémenter le déploiement continu.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Bonnes pratiques CI/CD
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer bonnes pratiques ci/cd et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer bonnes pratiques ci/cd dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Bonnes pratiques CI/CD — chapitre 10 / 10</li>
+      <li>Durée module : 25h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Multi-environnements »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

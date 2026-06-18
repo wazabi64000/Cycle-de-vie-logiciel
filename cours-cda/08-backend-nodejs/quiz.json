@@ -1,0 +1,549 @@
+{
+  "module": "08-backend-nodejs",
+  "titre": "Backend Node.js",
+  "seuil_reussite": 70,
+  "duree_minutes": 30,
+  "nombre_questions": 20,
+  "questions": [
+    {
+      "id": "q-01",
+      "chapitre": 1,
+      "type": "qcm",
+      "question": "Question 1 — Node.js et l'écosystème npm : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Node.js et l'écosystème npm »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 1 — Node.js et l'écosystème npm.",
+      "points": 1
+    },
+    {
+      "id": "q-02",
+      "chapitre": 1,
+      "type": "qcm",
+      "question": "Question 2 — Node.js et l'écosystème npm : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Node.js et l'écosystème npm »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 1 — Node.js et l'écosystème npm.",
+      "points": 1
+    },
+    {
+      "id": "q-03",
+      "chapitre": 2,
+      "type": "qcm",
+      "question": "Question 3 — Express : routes et middleware : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Express : routes et middleware »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 2 — Express : routes et middleware.",
+      "points": 1
+    },
+    {
+      "id": "q-04",
+      "chapitre": 2,
+      "type": "qcm",
+      "question": "Question 4 — Express : routes et middleware : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Express : routes et middleware »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 2 — Express : routes et middleware.",
+      "points": 1
+    },
+    {
+      "id": "q-05",
+      "chapitre": 3,
+      "type": "qcm",
+      "question": "Question 5 — Architecture en couches : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Architecture en couches »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 3 — Architecture en couches.",
+      "points": 1
+    },
+    {
+      "id": "q-06",
+      "chapitre": 3,
+      "type": "qcm",
+      "question": "Question 6 — Architecture en couches : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Architecture en couches »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 3 — Architecture en couches.",
+      "points": 1
+    },
+    {
+      "id": "q-07",
+      "chapitre": 4,
+      "type": "qcm",
+      "question": "Question 7 — Controllers et Services : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Controllers et Services »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 4 — Controllers et Services.",
+      "points": 1
+    },
+    {
+      "id": "q-08",
+      "chapitre": 4,
+      "type": "qcm",
+      "question": "Question 8 — Controllers et Services : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Controllers et Services »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 4 — Controllers et Services.",
+      "points": 1
+    },
+    {
+      "id": "q-09",
+      "chapitre": 5,
+      "type": "qcm",
+      "question": "Question 9 — Repository pattern avec PostgreSQL : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Repository pattern avec PostgreSQL »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 5 — Repository pattern avec PostgreSQL.",
+      "points": 1
+    },
+    {
+      "id": "q-10",
+      "chapitre": 5,
+      "type": "qcm",
+      "question": "Question 10 — Repository pattern avec PostgreSQL : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Repository pattern avec PostgreSQL »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 5 — Repository pattern avec PostgreSQL.",
+      "points": 1
+    },
+    {
+      "id": "q-11",
+      "chapitre": 6,
+      "type": "qcm",
+      "question": "Question 11 — Authentification JWT : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Authentification JWT »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 6 — Authentification JWT.",
+      "points": 1
+    },
+    {
+      "id": "q-12",
+      "chapitre": 6,
+      "type": "qcm",
+      "question": "Question 12 — Authentification JWT : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Authentification JWT »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 6 — Authentification JWT.",
+      "points": 1
+    },
+    {
+      "id": "q-13",
+      "chapitre": 7,
+      "type": "qcm",
+      "question": "Question 13 — Refresh Token et sessions : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Refresh Token et sessions »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 7 — Refresh Token et sessions.",
+      "points": 1
+    },
+    {
+      "id": "q-14",
+      "chapitre": 7,
+      "type": "qcm",
+      "question": "Question 14 — Refresh Token et sessions : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Refresh Token et sessions »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 7 — Refresh Token et sessions.",
+      "points": 1
+    },
+    {
+      "id": "q-15",
+      "chapitre": 8,
+      "type": "qcm",
+      "question": "Question 15 — RBAC et autorisation : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « RBAC et autorisation »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 8 — RBAC et autorisation.",
+      "points": 1
+    },
+    {
+      "id": "q-16",
+      "chapitre": 8,
+      "type": "qcm",
+      "question": "Question 16 — RBAC et autorisation : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « RBAC et autorisation »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 8 — RBAC et autorisation.",
+      "points": 1
+    },
+    {
+      "id": "q-17",
+      "chapitre": 9,
+      "type": "qcm",
+      "question": "Question 17 — Validation et gestion d'erreurs : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Validation et gestion d'erreurs »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 9 — Validation et gestion d'erreurs.",
+      "points": 1
+    },
+    {
+      "id": "q-18",
+      "chapitre": 9,
+      "type": "qcm",
+      "question": "Question 18 — Validation et gestion d'erreurs : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Validation et gestion d'erreurs »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 9 — Validation et gestion d'erreurs.",
+      "points": 1
+    },
+    {
+      "id": "q-19",
+      "chapitre": 10,
+      "type": "qcm",
+      "question": "Question 19 — Optimisation et bonnes pratiques : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Optimisation et bonnes pratiques »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 10 — Optimisation et bonnes pratiques.",
+      "points": 1
+    },
+    {
+      "id": "q-20",
+      "chapitre": 10,
+      "type": "qcm",
+      "question": "Question 20 — Optimisation et bonnes pratiques : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Optimisation et bonnes pratiques »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 10 — Optimisation et bonnes pratiques.",
+      "points": 1
+    }
+  ]
+}

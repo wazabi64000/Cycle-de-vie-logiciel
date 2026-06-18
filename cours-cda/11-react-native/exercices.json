@@ -1,0 +1,132 @@
+{
+  "module": "11-react-native",
+  "exercices": [
+    {
+      "id": "exo-debutant-1",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 1 — React Native",
+      "enonce": "Mettre en pratique les concepts de Introduction à React Native au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Introduction à React Native",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-debutant-2",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 2 — React Native",
+      "enonce": "Mettre en pratique les concepts de Introduction à React Native au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Introduction à React Native",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-intermediaire-1",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 1 — React Native",
+      "enonce": "Mettre en pratique les concepts de Composants natifs vs web au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Composants natifs vs web",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-intermediaire-2",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 2 — React Native",
+      "enonce": "Mettre en pratique les concepts de Composants natifs vs web au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Composants natifs vs web",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-1",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 1 — React Native",
+      "enonce": "Mettre en pratique les concepts de Styles et Flexbox mobile au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Styles et Flexbox mobile",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-2",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 2 — React Native",
+      "enonce": "Mettre en pratique les concepts de Styles et Flexbox mobile au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Styles et Flexbox mobile",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-expert-1",
+      "niveau": "expert",
+      "titre": "Exercice Expert 1 — React Native",
+      "enonce": "Mettre en pratique les concepts de React Navigation au niveau Expert.",
+      "objectifs": [
+        "Comprendre React Navigation",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "120min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 4",
+        "Consulter les ressources.json"
+      ]
+    }
+  ]
+}

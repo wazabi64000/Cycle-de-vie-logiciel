@@ -1,0 +1,549 @@
+{
+  "module": "06-bases-donnees",
+  "titre": "Bases de données",
+  "seuil_reussite": 70,
+  "duree_minutes": 30,
+  "nombre_questions": 20,
+  "questions": [
+    {
+      "id": "q-01",
+      "chapitre": 1,
+      "type": "qcm",
+      "question": "Question 1 — Introduction aux bases de données relationnelles : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Introduction aux bases de données relationnelles »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 1 — Introduction aux bases de données relationnelles.",
+      "points": 1
+    },
+    {
+      "id": "q-02",
+      "chapitre": 1,
+      "type": "qcm",
+      "question": "Question 2 — Introduction aux bases de données relationnelles : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Introduction aux bases de données relationnelles »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 1 — Introduction aux bases de données relationnelles.",
+      "points": 1
+    },
+    {
+      "id": "q-03",
+      "chapitre": 2,
+      "type": "qcm",
+      "question": "Question 3 — Modélisation et normalisation : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Modélisation et normalisation »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 2 — Modélisation et normalisation.",
+      "points": 1
+    },
+    {
+      "id": "q-04",
+      "chapitre": 2,
+      "type": "qcm",
+      "question": "Question 4 — Modélisation et normalisation : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Modélisation et normalisation »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 2 — Modélisation et normalisation.",
+      "points": 1
+    },
+    {
+      "id": "q-05",
+      "chapitre": 3,
+      "type": "qcm",
+      "question": "Question 5 — SQL : CRUD et filtres : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « SQL : CRUD et filtres »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 3 — SQL : CRUD et filtres.",
+      "points": 1
+    },
+    {
+      "id": "q-06",
+      "chapitre": 3,
+      "type": "qcm",
+      "question": "Question 6 — SQL : CRUD et filtres : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « SQL : CRUD et filtres »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 3 — SQL : CRUD et filtres.",
+      "points": 1
+    },
+    {
+      "id": "q-07",
+      "chapitre": 4,
+      "type": "qcm",
+      "question": "Question 7 — Jointures et agrégations : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Jointures et agrégations »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 4 — Jointures et agrégations.",
+      "points": 1
+    },
+    {
+      "id": "q-08",
+      "chapitre": 4,
+      "type": "qcm",
+      "question": "Question 8 — Jointures et agrégations : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Jointures et agrégations »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 4 — Jointures et agrégations.",
+      "points": 1
+    },
+    {
+      "id": "q-09",
+      "chapitre": 5,
+      "type": "qcm",
+      "question": "Question 9 — Sous-requêtes et CTE : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Sous-requêtes et CTE »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 5 — Sous-requêtes et CTE.",
+      "points": 1
+    },
+    {
+      "id": "q-10",
+      "chapitre": 5,
+      "type": "qcm",
+      "question": "Question 10 — Sous-requêtes et CTE : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Sous-requêtes et CTE »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 5 — Sous-requêtes et CTE.",
+      "points": 1
+    },
+    {
+      "id": "q-11",
+      "chapitre": 6,
+      "type": "qcm",
+      "question": "Question 11 — Transactions et ACID : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Transactions et ACID »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 6 — Transactions et ACID.",
+      "points": 1
+    },
+    {
+      "id": "q-12",
+      "chapitre": 6,
+      "type": "qcm",
+      "question": "Question 12 — Transactions et ACID : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Transactions et ACID »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 6 — Transactions et ACID.",
+      "points": 1
+    },
+    {
+      "id": "q-13",
+      "chapitre": 7,
+      "type": "qcm",
+      "question": "Question 13 — PostgreSQL : types, extensions, JSONB : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « PostgreSQL : types, extensions, JSONB »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 7 — PostgreSQL : types, extensions, JSONB.",
+      "points": 1
+    },
+    {
+      "id": "q-14",
+      "chapitre": 7,
+      "type": "qcm",
+      "question": "Question 14 — PostgreSQL : types, extensions, JSONB : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « PostgreSQL : types, extensions, JSONB »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 7 — PostgreSQL : types, extensions, JSONB.",
+      "points": 1
+    },
+    {
+      "id": "q-15",
+      "chapitre": 8,
+      "type": "qcm",
+      "question": "Question 15 — Index et optimisation : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Index et optimisation »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 8 — Index et optimisation.",
+      "points": 1
+    },
+    {
+      "id": "q-16",
+      "chapitre": 8,
+      "type": "qcm",
+      "question": "Question 16 — Index et optimisation : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Index et optimisation »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 8 — Index et optimisation.",
+      "points": 1
+    },
+    {
+      "id": "q-17",
+      "chapitre": 9,
+      "type": "qcm",
+      "question": "Question 17 — Migrations et versioning de schéma : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Migrations et versioning de schéma »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 9 — Migrations et versioning de schéma.",
+      "points": 1
+    },
+    {
+      "id": "q-18",
+      "chapitre": 9,
+      "type": "qcm",
+      "question": "Question 18 — Migrations et versioning de schéma : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Migrations et versioning de schéma »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 9 — Migrations et versioning de schéma.",
+      "points": 1
+    },
+    {
+      "id": "q-19",
+      "chapitre": 10,
+      "type": "qcm",
+      "question": "Question 19 — NoSQL : introduction et cas d'usage : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « NoSQL : introduction et cas d'usage »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 10 — NoSQL : introduction et cas d'usage.",
+      "points": 1
+    },
+    {
+      "id": "q-20",
+      "chapitre": 10,
+      "type": "qcm",
+      "question": "Question 20 — NoSQL : introduction et cas d'usage : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « NoSQL : introduction et cas d'usage »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 10 — NoSQL : introduction et cas d'usage.",
+      "points": 1
+    }
+  ]
+}

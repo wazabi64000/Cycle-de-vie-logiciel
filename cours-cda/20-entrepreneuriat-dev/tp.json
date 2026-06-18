@@ -1,0 +1,80 @@
+{
+  "module": "20-entrepreneuriat-dev",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Business Model Canvas",
+      "level": "Débutant",
+      "duration": "3h",
+      "description": "Remplir un BMC pour un projet SaaS.",
+      "objectifs": [
+        "Comprendre les modèles économiques du numérique",
+        "Identifier une opportunité et valider un MVP",
+        "Créer un business plan simplifié"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "MVP en 1 semaine",
+      "level": "Intermédiaire",
+      "duration": "10h",
+      "description": "Construire et lancer un MVP minimal.",
+      "objectifs": [
+        "Comprendre les modèles économiques du numérique",
+        "Identifier une opportunité et valider un MVP",
+        "Créer un business plan simplifié"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Pitch deck",
+      "level": "Avancé",
+      "duration": "4h",
+      "description": "Créer un pitch deck de 10 slides pour investisseurs.",
+      "objectifs": [
+        "Comprendre les modèles économiques du numérique",
+        "Identifier une opportunité et valider un MVP",
+        "Créer un business plan simplifié"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

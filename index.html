@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WazabyCode — Formation CDA</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-badge">100 % statique · localStorage · sans compte</p>
+        <h1>Formez-vous comme un <span class="text-accent">professionnel</span></h1>
+        <p class="hero-lead">
+          WazabyCode : 22 modules, progression, badges et certificat.
+          Aucune installation serveur — HTML, CSS et JavaScript uniquement.
+        </p>
+        <div class="hero-actions">
+          <a href="dashboard.html" class="btn btn-primary btn-lg">Tableau de bord →</a>
+          <a href="#guide" class="btn btn-ghost btn-lg">Guide utilisateur</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="guide" class="guide-section">
+      <div class="container">
+        <header class="guide-header">
+          <h2>Guide utilisateur</h2>
+          <p>Ouvrez le site avec un serveur local simple (voir ci-dessous).</p>
+        </header>
+
+        <div class="guide-steps">
+          <article class="guide-step">
+            <span class="guide-step-num">1</span>
+            <div>
+              <h3>Lancer le site</h3>
+              <p>Ouvrez le <a href="dashboard.html">tableau de bord</a> pour commencer.</p>
+              <p class="footer-muted" style="margin-top:0.5rem;font-size:0.9rem">
+                En local : <code>python3 -m http.server 3000</code> puis
+                <a href="http://localhost:3000/dashboard.html">localhost:3000/dashboard.html</a>
+              </p>
+            </div>
+          </article>
+          <article class="guide-step">
+            <span class="guide-step-num">2</span>
+            <div>
+              <h3>Tableau de bord</h3>
+              <p>Saisissez votre nom, suivez votre score /1000 et ouvrez les modules.</p>
+              <a href="dashboard.html" class="guide-link">→ Ouvrir le dashboard</a>
+            </div>
+          </article>
+          <article class="guide-step">
+            <span class="guide-step-num">3</span>
+            <div>
+              <h3>Progression locale</h3>
+              <p>Tout est sauvegardé dans <strong>localStorage</strong> de votre navigateur. Pas de compte, pas de base de données.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="guide-cta">
+          <a href="dashboard.html" class="btn btn-primary btn-lg">Commencer →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-root"></div>
+
+  <script type="module">
+    import { initShell } from './js/ui/layout.js';
+    initShell('home', { showCta: true });
+  </script>
+  <script type="module" src="js/app/home.js"></script>
+</body>
+</html>

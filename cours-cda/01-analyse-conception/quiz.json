@@ -1,0 +1,549 @@
+{
+  "module": "01-analyse-conception",
+  "titre": "Analyse et conception",
+  "seuil_reussite": 70,
+  "duree_minutes": 30,
+  "nombre_questions": 20,
+  "questions": [
+    {
+      "id": "q-01",
+      "chapitre": 1,
+      "type": "qcm",
+      "question": "Question 1 — Recueil du besoin : client, utilisateur, problème, solution : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Recueil du besoin : client, utilisateur, problème, solution »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 1 — Recueil du besoin : client, utilisateur, problème, solution.",
+      "points": 1
+    },
+    {
+      "id": "q-02",
+      "chapitre": 1,
+      "type": "qcm",
+      "question": "Question 2 — Recueil du besoin : client, utilisateur, problème, solution : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Recueil du besoin : client, utilisateur, problème, solution »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 1 — Recueil du besoin : client, utilisateur, problème, solution.",
+      "points": 1
+    },
+    {
+      "id": "q-03",
+      "chapitre": 2,
+      "type": "qcm",
+      "question": "Question 3 — Le cahier des charges : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Le cahier des charges »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 2 — Le cahier des charges.",
+      "points": 1
+    },
+    {
+      "id": "q-04",
+      "chapitre": 2,
+      "type": "qcm",
+      "question": "Question 4 — Le cahier des charges : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Le cahier des charges »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 2 — Le cahier des charges.",
+      "points": 1
+    },
+    {
+      "id": "q-05",
+      "chapitre": 3,
+      "type": "qcm",
+      "question": "Question 5 — Les User Stories : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Les User Stories »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 3 — Les User Stories.",
+      "points": 1
+    },
+    {
+      "id": "q-06",
+      "chapitre": 3,
+      "type": "qcm",
+      "question": "Question 6 — Les User Stories : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Les User Stories »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 3 — Les User Stories.",
+      "points": 1
+    },
+    {
+      "id": "q-07",
+      "chapitre": 4,
+      "type": "qcm",
+      "question": "Question 7 — UML — Diagrammes de cas d'utilisation : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « UML — Diagrammes de cas d'utilisation »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 4 — UML — Diagrammes de cas d'utilisation.",
+      "points": 1
+    },
+    {
+      "id": "q-08",
+      "chapitre": 4,
+      "type": "qcm",
+      "question": "Question 8 — UML — Diagrammes de cas d'utilisation : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « UML — Diagrammes de cas d'utilisation »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 4 — UML — Diagrammes de cas d'utilisation.",
+      "points": 1
+    },
+    {
+      "id": "q-09",
+      "chapitre": 5,
+      "type": "qcm",
+      "question": "Question 9 — UML — Diagrammes de classes : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « UML — Diagrammes de classes »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 5 — UML — Diagrammes de classes.",
+      "points": 1
+    },
+    {
+      "id": "q-10",
+      "chapitre": 5,
+      "type": "qcm",
+      "question": "Question 10 — UML — Diagrammes de classes : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « UML — Diagrammes de classes »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 5 — UML — Diagrammes de classes.",
+      "points": 1
+    },
+    {
+      "id": "q-11",
+      "chapitre": 6,
+      "type": "qcm",
+      "question": "Question 11 — UML — Diagrammes de séquence : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « UML — Diagrammes de séquence »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 6 — UML — Diagrammes de séquence.",
+      "points": 1
+    },
+    {
+      "id": "q-12",
+      "chapitre": 6,
+      "type": "qcm",
+      "question": "Question 12 — UML — Diagrammes de séquence : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « UML — Diagrammes de séquence »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 6 — UML — Diagrammes de séquence.",
+      "points": 1
+    },
+    {
+      "id": "q-13",
+      "chapitre": 7,
+      "type": "qcm",
+      "question": "Question 13 — UML — Diagrammes d'activité et d'état : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « UML — Diagrammes d'activité et d'état »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 7 — UML — Diagrammes d'activité et d'état.",
+      "points": 1
+    },
+    {
+      "id": "q-14",
+      "chapitre": 7,
+      "type": "qcm",
+      "question": "Question 14 — UML — Diagrammes d'activité et d'état : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « UML — Diagrammes d'activité et d'état »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 7 — UML — Diagrammes d'activité et d'état.",
+      "points": 1
+    },
+    {
+      "id": "q-15",
+      "chapitre": 8,
+      "type": "qcm",
+      "question": "Question 15 — MERISE et modélisation de données : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « MERISE et modélisation de données »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 8 — MERISE et modélisation de données.",
+      "points": 1
+    },
+    {
+      "id": "q-16",
+      "chapitre": 8,
+      "type": "qcm",
+      "question": "Question 16 — MERISE et modélisation de données : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « MERISE et modélisation de données »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 8 — MERISE et modélisation de données.",
+      "points": 1
+    },
+    {
+      "id": "q-17",
+      "chapitre": 9,
+      "type": "qcm",
+      "question": "Question 17 — Du MCD au MPD : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Du MCD au MPD »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 9 — Du MCD au MPD.",
+      "points": 1
+    },
+    {
+      "id": "q-18",
+      "chapitre": 9,
+      "type": "qcm",
+      "question": "Question 18 — Du MCD au MPD : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Du MCD au MPD »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 9 — Du MCD au MPD.",
+      "points": 1
+    },
+    {
+      "id": "q-19",
+      "chapitre": 10,
+      "type": "qcm",
+      "question": "Question 19 — Maquettage UI/UX avec Figma : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Maquettage UI/UX avec Figma »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 10 — Maquettage UI/UX avec Figma.",
+      "points": 1
+    },
+    {
+      "id": "q-20",
+      "chapitre": 10,
+      "type": "qcm",
+      "question": "Question 20 — Maquettage UI/UX avec Figma : Quelle affirmation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Réponse correcte liée à « Maquettage UI/UX avec Figma »"
+        },
+        {
+          "id": "b",
+          "text": "Réponse incorrecte — distracteur 1"
+        },
+        {
+          "id": "c",
+          "text": "Réponse incorrecte — distracteur 2"
+        },
+        {
+          "id": "d",
+          "text": "Réponse incorrecte — distracteur 3"
+        }
+      ],
+      "reponse": "a",
+      "explication": "Ce concept est détaillé dans le chapitre 10 — Maquettage UI/UX avec Figma.",
+      "points": 1
+    }
+  ]
+}

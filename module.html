@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module — WazabyCode</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="navbar-root"></div>
+
+  <main class="container module-layout page-main">
+    <div>
+      <iframe id="course-frame" class="course-frame" title="Cours"></iframe>
+    </div>
+    <aside class="module-sidebar">
+      <section class="dashboard-card">
+        <h2 class="card-title">Progression</h2>
+        <div class="progress-track"><div id="module-progress-bar" class="progress-fill" style="width:0"></div></div>
+        <p id="module-progress-label" style="text-align:right;font-size:0.9rem;margin-top:0.5rem">0%</p>
+      </section>
+      <section class="dashboard-card">
+        <h2 class="card-title">Score quiz (%)</h2>
+        <input type="number" id="quiz-score" min="0" max="100" placeholder="0-100" style="width:100%;padding:0.5rem;border:1px solid var(--border);border-radius:8px">
+      </section>
+      <section class="dashboard-card" id="module-checklists"></section>
+      <section class="dashboard-card">
+        <div id="chapter-nav"></div>
+        <a id="open-full-course" href="#" class="btn btn-ghost" style="width:100%;margin-top:1rem;justify-content:center">Cours pleine page ↗</a>
+      </section>
+    </aside>
+  </main>
+
+  <div id="footer-root"></div>
+
+  <script type="module">
+    import { initShell } from './js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="js/app/module-page.js"></script>
+</body>
+</html>

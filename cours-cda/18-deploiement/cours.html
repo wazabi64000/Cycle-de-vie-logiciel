@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 18 — Déploiement | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="18-deploiement"
+  data-module-id="18"
+  data-module-title="Déploiement"
+  data-module-duration="30h"
+  data-module-level="Intermédiaire à Avancé">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 18 — Déploiement</h1>
+        <p>Front, backend, VPS, SSL et automatisation</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 30h</span>
+          <span class="cours-badge">📊 Intermédiaire à Avancé</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>Un logiciel non déployé n'a aucune valeur. Le déploiement est l'étape finale du cycle de vie.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>Mise en production, staging, preview deployments.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout la mise à disposition du logiciel aux utilisateurs finaux.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>Déploiement : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Déployer un frontend sur Vercel, Netlify ou Cloudflare</li>
+          <li>Déployer un backend sur VPS, Railway ou Render</li>
+          <li>Configurer un serveur Linux (Ubuntu/Debian)</li>
+          <li>Installer et renouveler SSL avec Let's Encrypt</li>
+          <li>Automatiser le déploiement avec Coolify</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 18 — Déploiement
+    ↓
+Stratégies de déploiement
+    ↓
+Déploiement frontend : Vercel
+    ↓
+Déploiement frontend : Netlify et Cloudflare
+    ↓
+Déploiement backend : Railway et Render
+    ↓
+VPS : configuration Ubuntu
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de déploiement.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec déploiement.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Déployer une stack fullstack avec Coolify et CI/CD.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Deploy frontend Vercel <span class="cours-badge">Débutant</span></h4>
+          <p>Déployer une SPA React sur Vercel avec domaine custom.</p>
+          <p><em>Durée : 2h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>VPS complet <span class="cours-badge">Avancé</span></h4>
+          <p>Configurer un VPS Ubuntu avec Nginx, SSL et API Node.js.</p>
+          <p><em>Durée : 8h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Stack Coolify <span class="cours-badge">Expert</span></h4>
+          <p>Déployer une stack fullstack avec Coolify et CI/CD.</p>
+          <p><em>Durée : 6h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Stratégies de déploiement</a></li>
+          <li><a href="#chapitre-2">Déploiement frontend : Vercel</a></li>
+          <li><a href="#chapitre-3">Déploiement frontend : Netlify et Cloudflare</a></li>
+          <li><a href="#chapitre-4">Déploiement backend : Railway et Render</a></li>
+          <li><a href="#chapitre-5">VPS : configuration Ubuntu</a></li>
+          <li><a href="#chapitre-6">Nginx et reverse proxy en production</a></li>
+          <li><a href="#chapitre-7">SSL avec Let's Encrypt</a></li>
+          <li><a href="#chapitre-8">Coolify : PaaS self-hosted</a></li>
+          <li><a href="#chapitre-9">Blue-green et rolling deployment</a></li>
+          <li><a href="#chapitre-10">Rollback et disaster recovery</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Stratégies de déploiement</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Stratégies de déploiement</strong> dans le cadre du module Déploiement.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de stratégies de déploiement en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Stratégies de déploiement intervient à l'étape 1 du module « Déploiement ».
+      En projet professionnel, cette compétence permet de déployer un frontend sur vercel, netlify ou cloudflare.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Stratégies de déploiement
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer stratégies de déploiement et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer stratégies de déploiement dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Stratégies de déploiement — chapitre 1 / 10</li>
+      <li>Durée module : 30h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Deploy frontend Vercel »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Déploiement frontend : Vercel</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Déploiement frontend : Vercel</strong> dans le cadre du module Déploiement.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de déploiement frontend : vercel en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Déploiement frontend : Vercel intervient à l'étape 2 du module « Déploiement ».
+      En projet professionnel, cette compétence permet de déployer un backend sur vps, railway ou render.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Déploiement frontend : Vercel
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer déploiement frontend : vercel et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer déploiement frontend : vercel dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Déploiement frontend : Vercel — chapitre 2 / 10</li>
+      <li>Durée module : 30h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « VPS complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Déploiement frontend : Netlify et Cloudflare</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Déploiement frontend : Netlify et Cloudflare</strong> dans le cadre du module Déploiement.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de déploiement frontend : netlify et cloudflare en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Déploiement frontend : Netlify et Cloudflare intervient à l'étape 3 du module « Déploiement ».
+      En projet professionnel, cette compétence permet de configurer un serveur linux (ubuntu/debian).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Déploiement frontend : Netlify et Cloudflare
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer déploiement frontend : netlify et cloudflare et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer déploiement frontend : netlify et cloudflare dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Déploiement frontend : Netlify et Cloudflare — chapitre 3 / 10</li>
+      <li>Durée module : 30h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Stack Coolify »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Déploiement backend : Railway et Render</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Déploiement backend : Railway et Render</strong> dans le cadre du module Déploiement.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de déploiement backend : railway et render en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Déploiement backend : Railway et Render intervient à l'étape 4 du module « Déploiement ».
+      En projet professionnel, cette compétence permet de installer et renouveler ssl avec let's encrypt.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Déploiement backend : Railway et Render
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer déploiement backend : railway et render et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer déploiement backend : railway et render dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Déploiement backend : Railway et Render — chapitre 4 / 10</li>
+      <li>Durée module : 30h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Stack Coolify »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — VPS : configuration Ubuntu</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>VPS : configuration Ubuntu</strong> dans le cadre du module Déploiement.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de vps : configuration ubuntu en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      VPS : configuration Ubuntu intervient à l'étape 5 du module « Déploiement ».
+      En projet professionnel, cette compétence permet de automatiser le déploiement avec coolify.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — VPS : configuration Ubuntu
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer vps : configuration ubuntu et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer vps : configuration ubuntu dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>VPS : configuration Ubuntu — chapitre 5 / 10</li>
+      <li>Durée module : 30h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Stack Coolify »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Nginx et reverse proxy en production</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Nginx et reverse proxy en production</strong> dans le cadre du module Déploiement.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de nginx et reverse proxy en production en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Nginx et reverse proxy en production intervient à l'étape 6 du module « Déploiement ».
+      En projet professionnel, cette compétence permet de déployer un frontend sur vercel, netlify ou cloudflare.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Nginx et reverse proxy en production
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer nginx et reverse proxy en production et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer nginx et reverse proxy en production dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Nginx et reverse proxy en production — chapitre 6 / 10</li>
+      <li>Durée module : 30h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Stack Coolify »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — SSL avec Let's Encrypt</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>SSL avec Let's Encrypt</strong> dans le cadre du module Déploiement.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de ssl avec let's encrypt en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      SSL avec Let's Encrypt intervient à l'étape 7 du module « Déploiement ».
+      En projet professionnel, cette compétence permet de déployer un backend sur vps, railway ou render.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — SSL avec Let's Encrypt
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer ssl avec let's encrypt et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer ssl avec let's encrypt dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>SSL avec Let's Encrypt — chapitre 7 / 10</li>
+      <li>Durée module : 30h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Stack Coolify »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Coolify : PaaS self-hosted</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Coolify : PaaS self-hosted</strong> dans le cadre du module Déploiement.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de coolify : paas self-hosted en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Coolify : PaaS self-hosted intervient à l'étape 8 du module « Déploiement ».
+      En projet professionnel, cette compétence permet de configurer un serveur linux (ubuntu/debian).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Coolify : PaaS self-hosted
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer coolify : paas self-hosted et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer coolify : paas self-hosted dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Coolify : PaaS self-hosted — chapitre 8 / 10</li>
+      <li>Durée module : 30h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Stack Coolify »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Blue-green et rolling deployment</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Blue-green et rolling deployment</strong> dans le cadre du module Déploiement.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de blue-green et rolling deployment en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Blue-green et rolling deployment intervient à l'étape 9 du module « Déploiement ».
+      En projet professionnel, cette compétence permet de installer et renouveler ssl avec let's encrypt.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Blue-green et rolling deployment
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer blue-green et rolling deployment et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer blue-green et rolling deployment dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Blue-green et rolling deployment — chapitre 9 / 10</li>
+      <li>Durée module : 30h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Stack Coolify »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Rollback et disaster recovery</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Rollback et disaster recovery</strong> dans le cadre du module Déploiement.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de rollback et disaster recovery en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Rollback et disaster recovery intervient à l'étape 10 du module « Déploiement ».
+      En projet professionnel, cette compétence permet de automatiser le déploiement avec coolify.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Rollback et disaster recovery
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer rollback et disaster recovery et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer rollback et disaster recovery dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Rollback et disaster recovery — chapitre 10 / 10</li>
+      <li>Durée module : 30h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Stack Coolify »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

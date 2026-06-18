@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 04 — HTML5 et CSS3 | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="04-html-css"
+  data-module-id="04"
+  data-module-title="HTML5 et CSS3"
+  data-module-duration="50h"
+  data-module-level="Débutant à Avancé">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 04 — HTML5 et CSS3</h1>
+        <p>Structure sémantique, accessibilité, responsive et animations</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 50h</span>
+          <span class="cours-badge">📊 Débutant à Avancé</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>HTML et CSS sont la base de tout le web. Aucune application web ne peut exister sans eux.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>Dans chaque page web, chaque email, chaque interface utilisateur.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout la structuration du contenu, l'affichage multi-écrans et l'accessibilité pour tous les utilisateurs.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>HTML5 et CSS3 : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Structurer une page avec header, main, aside, footer</li>
+          <li>Appliquer les normes WCAG et ARIA pour l'accessibilité</li>
+          <li>Optimiser le SEO technique</li>
+          <li>Créer des layouts responsive (Mobile First)</li>
+          <li>Maîtriser Flexbox et CSS Grid</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 04 — HTML5 et CSS3
+    ↓
+Introduction au HTML5 sémantique
+    ↓
+Structure : header, main, aside, footer
+    ↓
+Formulaires et validation HTML5
+    ↓
+Accessibilité WCAG et ARIA
+    ↓
+SEO technique
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de html5 et css3.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec html5 et css3.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Portfolio personnel avec animations CSS avancées.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Landing page accessible <span class="cours-badge">Débutant</span></h4>
+          <p>Créer une landing page responsive et accessible WCAG AA.</p>
+          <p><em>Durée : 4h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Dashboard CSS Grid <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Construire un dashboard admin avec Grid et Flexbox.</p>
+          <p><em>Durée : 6h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Portfolio animé <span class="cours-badge">Avancé</span></h4>
+          <p>Portfolio personnel avec animations CSS avancées.</p>
+          <p><em>Durée : 8h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Introduction au HTML5 sémantique</a></li>
+          <li><a href="#chapitre-2">Structure : header, main, aside, footer</a></li>
+          <li><a href="#chapitre-3">Formulaires et validation HTML5</a></li>
+          <li><a href="#chapitre-4">Accessibilité WCAG et ARIA</a></li>
+          <li><a href="#chapitre-5">SEO technique</a></li>
+          <li><a href="#chapitre-6">CSS fondamentaux et cascade</a></li>
+          <li><a href="#chapitre-7">Flexbox — cours complet</a></li>
+          <li><a href="#chapitre-8">CSS Grid — cours complet</a></li>
+          <li><a href="#chapitre-9">Responsive et Mobile First</a></li>
+          <li><a href="#chapitre-10">Animations, transitions et keyframes</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Introduction au HTML5 sémantique</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Introduction au HTML5 sémantique</strong> dans le cadre du module HTML5 et CSS3.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de introduction au html5 sémantique en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Introduction au HTML5 sémantique intervient à l'étape 1 du module « HTML5 et CSS3 ».
+      En projet professionnel, cette compétence permet de structurer une page avec header, main, aside, footer.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Introduction au HTML5 sémantique
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer introduction au html5 sémantique et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer introduction au html5 sémantique dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Introduction au HTML5 sémantique — chapitre 1 / 10</li>
+      <li>Durée module : 50h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Landing page accessible »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Structure : header, main, aside, footer</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Structure : header, main, aside, footer</strong> dans le cadre du module HTML5 et CSS3.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de structure : header, main, aside, footer en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Structure : header, main, aside, footer intervient à l'étape 2 du module « HTML5 et CSS3 ».
+      En projet professionnel, cette compétence permet de appliquer les normes wcag et aria pour l'accessibilité.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Structure : header, main, aside, footer
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer structure : header, main, aside, footer et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer structure : header, main, aside, footer dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Structure : header, main, aside, footer — chapitre 2 / 10</li>
+      <li>Durée module : 50h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Dashboard CSS Grid »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Formulaires et validation HTML5</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Formulaires et validation HTML5</strong> dans le cadre du module HTML5 et CSS3.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de formulaires et validation html5 en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Formulaires et validation HTML5 intervient à l'étape 3 du module « HTML5 et CSS3 ».
+      En projet professionnel, cette compétence permet de optimiser le seo technique.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Formulaires et validation HTML5
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer formulaires et validation html5 et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer formulaires et validation html5 dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Formulaires et validation HTML5 — chapitre 3 / 10</li>
+      <li>Durée module : 50h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Portfolio animé »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Accessibilité WCAG et ARIA</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Accessibilité WCAG et ARIA</strong> dans le cadre du module HTML5 et CSS3.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de accessibilité wcag et aria en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Accessibilité WCAG et ARIA intervient à l'étape 4 du module « HTML5 et CSS3 ».
+      En projet professionnel, cette compétence permet de créer des layouts responsive (mobile first).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Accessibilité WCAG et ARIA
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer accessibilité wcag et aria et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer accessibilité wcag et aria dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Accessibilité WCAG et ARIA — chapitre 4 / 10</li>
+      <li>Durée module : 50h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Portfolio animé »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — SEO technique</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>SEO technique</strong> dans le cadre du module HTML5 et CSS3.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de seo technique en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      SEO technique intervient à l'étape 5 du module « HTML5 et CSS3 ».
+      En projet professionnel, cette compétence permet de maîtriser flexbox et css grid.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — SEO technique
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer seo technique et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer seo technique dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>SEO technique — chapitre 5 / 10</li>
+      <li>Durée module : 50h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Portfolio animé »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — CSS fondamentaux et cascade</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>CSS fondamentaux et cascade</strong> dans le cadre du module HTML5 et CSS3.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de css fondamentaux et cascade en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      CSS fondamentaux et cascade intervient à l'étape 6 du module « HTML5 et CSS3 ».
+      En projet professionnel, cette compétence permet de réaliser des animations avec transitions et keyframes.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — CSS fondamentaux et cascade
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer css fondamentaux et cascade et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer css fondamentaux et cascade dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>CSS fondamentaux et cascade — chapitre 6 / 10</li>
+      <li>Durée module : 50h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Portfolio animé »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Flexbox — cours complet</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Flexbox — cours complet</strong> dans le cadre du module HTML5 et CSS3.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de flexbox — cours complet en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Flexbox — cours complet intervient à l'étape 7 du module « HTML5 et CSS3 ».
+      En projet professionnel, cette compétence permet de structurer une page avec header, main, aside, footer.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Flexbox — cours complet
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer flexbox — cours complet et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer flexbox — cours complet dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Flexbox — cours complet — chapitre 7 / 10</li>
+      <li>Durée module : 50h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Portfolio animé »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — CSS Grid — cours complet</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>CSS Grid — cours complet</strong> dans le cadre du module HTML5 et CSS3.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de css grid — cours complet en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      CSS Grid — cours complet intervient à l'étape 8 du module « HTML5 et CSS3 ».
+      En projet professionnel, cette compétence permet de appliquer les normes wcag et aria pour l'accessibilité.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — CSS Grid — cours complet
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer css grid — cours complet et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer css grid — cours complet dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>CSS Grid — cours complet — chapitre 8 / 10</li>
+      <li>Durée module : 50h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Portfolio animé »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Responsive et Mobile First</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Responsive et Mobile First</strong> dans le cadre du module HTML5 et CSS3.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de responsive et mobile first en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Responsive et Mobile First intervient à l'étape 9 du module « HTML5 et CSS3 ».
+      En projet professionnel, cette compétence permet de optimiser le seo technique.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Responsive et Mobile First
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer responsive et mobile first et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer responsive et mobile first dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Responsive et Mobile First — chapitre 9 / 10</li>
+      <li>Durée module : 50h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Portfolio animé »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Animations, transitions et keyframes</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Animations, transitions et keyframes</strong> dans le cadre du module HTML5 et CSS3.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de animations, transitions et keyframes en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Animations, transitions et keyframes intervient à l'étape 10 du module « HTML5 et CSS3 ».
+      En projet professionnel, cette compétence permet de créer des layouts responsive (mobile first).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Animations, transitions et keyframes
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer animations, transitions et keyframes et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer animations, transitions et keyframes dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Animations, transitions et keyframes — chapitre 10 / 10</li>
+      <li>Durée module : 50h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Portfolio animé »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+{
+  "module": "00-introduction-metier",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Fiche métier",
+      "level": "Débutant",
+      "duration": "2h",
+      "description": "Rédiger une fiche métier complète pour le rôle de votre choix (frontend, backend, DevOps...).",
+      "objectifs": [
+        "Identifier les rôles clés d'une équipe de développement",
+        "Distinguer frontend, backend, fullstack, DevOps et QA",
+        "Comprendre le cycle de vie d'un logiciel"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Roadmap personnelle",
+      "level": "Intermédiaire",
+      "duration": "3h",
+      "description": "Créer une roadmap de compétences sur 12 mois avec jalons mensuels.",
+      "objectifs": [
+        "Identifier les rôles clés d'une équipe de développement",
+        "Distinguer frontend, backend, fullstack, DevOps et QA",
+        "Comprendre le cycle de vie d'un logiciel"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Objectifs professionnels",
+      "level": "Avancé",
+      "duration": "2h",
+      "description": "Définir 3 objectifs SMART et un plan d'action pour les atteindre.",
+      "objectifs": [
+        "Identifier les rôles clés d'une équipe de développement",
+        "Distinguer frontend, backend, fullstack, DevOps et QA",
+        "Comprendre le cycle de vie d'un logiciel"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "module": "10-flutter",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "App météo",
+      "level": "Débutant",
+      "duration": "5h",
+      "description": "Application météo consommant une API publique.",
+      "objectifs": [
+        "Comprendre le modèle Widget de Flutter",
+        "Gérer l'état (setState, Provider, Riverpod)",
+        "Implémenter la navigation multi-écrans"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Todo mobile",
+      "level": "Intermédiaire",
+      "duration": "6h",
+      "description": "Todo list avec stockage local et navigation.",
+      "objectifs": [
+        "Comprendre le modèle Widget de Flutter",
+        "Gérer l'état (setState, Provider, Riverpod)",
+        "Implémenter la navigation multi-écrans"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "App e-commerce mobile",
+      "level": "Avancé",
+      "duration": "12h",
+      "description": "Application e-commerce complète avec auth et panier.",
+      "objectifs": [
+        "Comprendre le modèle Widget de Flutter",
+        "Gérer l'état (setState, Provider, Riverpod)",
+        "Implémenter la navigation multi-écrans"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

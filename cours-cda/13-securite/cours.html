@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 13 — Sécurité applicative | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="13-securite"
+  data-module-id="13"
+  data-module-title="Sécurité applicative"
+  data-module-duration="35h"
+  data-module-level="Intermédiaire à Expert">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 13 — Sécurité applicative</h1>
+        <p>OWASP Top 10, authentification et sécurité API</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 35h</span>
+          <span class="cours-badge">📊 Intermédiaire à Expert</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>Une faille de sécurité peut détruire une entreprise. Le RGPD impose des obligations strictes.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>Chaque ligne de code, chaque endpoint API, chaque formulaire.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout les fuites de données, les accès non autorisés et les vulnérabilités OWASP.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>Sécurité applicative : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Maîtriser l'OWASP Top 10 en détail</li>
+          <li>Implémenter JWT, sessions, OAuth et 2FA</li>
+          <li>Sécuriser une API (rate limit, helmet, validation)</li>
+          <li>Prévenir les injections SQL et l'escalade de privilèges</li>
+          <li>Gérer les secrets de manière sécurisée</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 13 — Sécurité applicative
+    ↓
+Introduction à la cybersécurité applicative
+    ↓
+OWASP Top 10 — vue d'ensemble
+    ↓
+Injection et XSS
+    ↓
+Authentification cassée et gestion de session
+    ↓
+JWT, OAuth 2.0 et 2FA
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de sécurité applicative.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec sécurité applicative.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Sécuriser une API complète : helmet, CORS, validation, RBAC.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Audit OWASP <span class="cours-badge">Avancé</span></h4>
+          <p>Auditer une application vulnérable et corriger les 10 failles OWASP.</p>
+          <p><em>Durée : 6h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Auth sécurisée <span class="cours-badge">Avancé</span></h4>
+          <p>Implémenter auth JWT + 2FA + rate limiting.</p>
+          <p><em>Durée : 8h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>API sécurisée <span class="cours-badge">Expert</span></h4>
+          <p>Sécuriser une API complète : helmet, CORS, validation, RBAC.</p>
+          <p><em>Durée : 10h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Introduction à la cybersécurité applicative</a></li>
+          <li><a href="#chapitre-2">OWASP Top 10 — vue d'ensemble</a></li>
+          <li><a href="#chapitre-3">Injection et XSS</a></li>
+          <li><a href="#chapitre-4">Authentification cassée et gestion de session</a></li>
+          <li><a href="#chapitre-5">JWT, OAuth 2.0 et 2FA</a></li>
+          <li><a href="#chapitre-6">Sécurité API : rate limiting et helmet</a></li>
+          <li><a href="#chapitre-7">Validation et sanitization</a></li>
+          <li><a href="#chapitre-8">Injection SQL et ORM sécurisé</a></li>
+          <li><a href="#chapitre-9">Gestion des secrets et variables d'environnement</a></li>
+          <li><a href="#chapitre-10">Audit de sécurité et pentest défensif</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Introduction à la cybersécurité applicative</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Introduction à la cybersécurité applicative</strong> dans le cadre du module Sécurité applicative.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de introduction à la cybersécurité applicative en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Introduction à la cybersécurité applicative intervient à l'étape 1 du module « Sécurité applicative ».
+      En projet professionnel, cette compétence permet de maîtriser l'owasp top 10 en détail.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Introduction à la cybersécurité applicative
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer introduction à la cybersécurité applicative et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer introduction à la cybersécurité applicative dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Introduction à la cybersécurité applicative — chapitre 1 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Expert</li>
+      <li>Prépare le TP : « Audit OWASP »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — OWASP Top 10 — vue d'ensemble</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>OWASP Top 10 — vue d'ensemble</strong> dans le cadre du module Sécurité applicative.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de owasp top 10 — vue d'ensemble en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      OWASP Top 10 — vue d'ensemble intervient à l'étape 2 du module « Sécurité applicative ».
+      En projet professionnel, cette compétence permet de implémenter jwt, sessions, oauth et 2fa.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — OWASP Top 10 — vue d'ensemble
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer owasp top 10 — vue d'ensemble et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer owasp top 10 — vue d'ensemble dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>OWASP Top 10 — vue d'ensemble — chapitre 2 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Expert</li>
+      <li>Prépare le TP : « Auth sécurisée »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Injection et XSS</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Injection et XSS</strong> dans le cadre du module Sécurité applicative.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de injection et xss en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Injection et XSS intervient à l'étape 3 du module « Sécurité applicative ».
+      En projet professionnel, cette compétence permet de sécuriser une api (rate limit, helmet, validation).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Injection et XSS
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer injection et xss et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer injection et xss dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Injection et XSS — chapitre 3 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Expert</li>
+      <li>Prépare le TP : « API sécurisée »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Authentification cassée et gestion de session</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Authentification cassée et gestion de session</strong> dans le cadre du module Sécurité applicative.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de authentification cassée et gestion de session en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Authentification cassée et gestion de session intervient à l'étape 4 du module « Sécurité applicative ».
+      En projet professionnel, cette compétence permet de prévenir les injections sql et l'escalade de privilèges.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Authentification cassée et gestion de session
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer authentification cassée et gestion de session et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer authentification cassée et gestion de session dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Authentification cassée et gestion de session — chapitre 4 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Expert</li>
+      <li>Prépare le TP : « API sécurisée »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — JWT, OAuth 2.0 et 2FA</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>JWT, OAuth 2.0 et 2FA</strong> dans le cadre du module Sécurité applicative.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de jwt, oauth 2.0 et 2fa en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      JWT, OAuth 2.0 et 2FA intervient à l'étape 5 du module « Sécurité applicative ».
+      En projet professionnel, cette compétence permet de gérer les secrets de manière sécurisée.
+    </p>
+
+    <h3>Exemple de code</h3><pre class="code-block">// Rate limiting + helmet
+app.use(helmet());
+app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 100 }));</pre>
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — JWT, OAuth 2.0 et 2FA
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer jwt, oauth 2.0 et 2fa et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer jwt, oauth 2.0 et 2fa dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>JWT, OAuth 2.0 et 2FA — chapitre 5 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Expert</li>
+      <li>Prépare le TP : « API sécurisée »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Sécurité API : rate limiting et helmet</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Sécurité API : rate limiting et helmet</strong> dans le cadre du module Sécurité applicative.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de sécurité api : rate limiting et helmet en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Sécurité API : rate limiting et helmet intervient à l'étape 6 du module « Sécurité applicative ».
+      En projet professionnel, cette compétence permet de maîtriser l'owasp top 10 en détail.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Sécurité API : rate limiting et helmet
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer sécurité api : rate limiting et helmet et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer sécurité api : rate limiting et helmet dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Sécurité API : rate limiting et helmet — chapitre 6 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Expert</li>
+      <li>Prépare le TP : « API sécurisée »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Validation et sanitization</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Validation et sanitization</strong> dans le cadre du module Sécurité applicative.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de validation et sanitization en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Validation et sanitization intervient à l'étape 7 du module « Sécurité applicative ».
+      En projet professionnel, cette compétence permet de implémenter jwt, sessions, oauth et 2fa.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Validation et sanitization
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer validation et sanitization et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer validation et sanitization dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Validation et sanitization — chapitre 7 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Expert</li>
+      <li>Prépare le TP : « API sécurisée »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Injection SQL et ORM sécurisé</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Injection SQL et ORM sécurisé</strong> dans le cadre du module Sécurité applicative.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de injection sql et orm sécurisé en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Injection SQL et ORM sécurisé intervient à l'étape 8 du module « Sécurité applicative ».
+      En projet professionnel, cette compétence permet de sécuriser une api (rate limit, helmet, validation).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Injection SQL et ORM sécurisé
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer injection sql et orm sécurisé et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer injection sql et orm sécurisé dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Injection SQL et ORM sécurisé — chapitre 8 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Expert</li>
+      <li>Prépare le TP : « API sécurisée »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Gestion des secrets et variables d'environnement</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Gestion des secrets et variables d'environnement</strong> dans le cadre du module Sécurité applicative.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de gestion des secrets et variables d'environnement en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Gestion des secrets et variables d'environnement intervient à l'étape 9 du module « Sécurité applicative ».
+      En projet professionnel, cette compétence permet de prévenir les injections sql et l'escalade de privilèges.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Gestion des secrets et variables d'environnement
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer gestion des secrets et variables d'environnement et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer gestion des secrets et variables d'environnement dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Gestion des secrets et variables d'environnement — chapitre 9 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Expert</li>
+      <li>Prépare le TP : « API sécurisée »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Audit de sécurité et pentest défensif</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Audit de sécurité et pentest défensif</strong> dans le cadre du module Sécurité applicative.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de audit de sécurité et pentest défensif en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Audit de sécurité et pentest défensif intervient à l'étape 10 du module « Sécurité applicative ».
+      En projet professionnel, cette compétence permet de gérer les secrets de manière sécurisée.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Audit de sécurité et pentest défensif
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer audit de sécurité et pentest défensif et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer audit de sécurité et pentest défensif dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Audit de sécurité et pentest défensif — chapitre 10 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Expert</li>
+      <li>Prépare le TP : « API sécurisée »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

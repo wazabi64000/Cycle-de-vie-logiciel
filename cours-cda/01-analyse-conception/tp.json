@@ -1,0 +1,80 @@
+{
+  "module": "01-analyse-conception",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Cahier des charges complet",
+      "level": "Intermédiaire",
+      "duration": "6h",
+      "description": "Rédiger le CDC d'une application de gestion de tâches.",
+      "objectifs": [
+        "Recueillir et formaliser un besoin client",
+        "Rédiger un cahier des charges structuré",
+        "Rédiger des User Stories au format standard"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Modélisation UML + MERISE",
+      "level": "Avancé",
+      "duration": "8h",
+      "description": "Modéliser un système de réservation en ligne (UML + MCD/MLD/MPD).",
+      "objectifs": [
+        "Recueillir et formaliser un besoin client",
+        "Rédiger un cahier des charges structuré",
+        "Rédiger des User Stories au format standard"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Maquettes Figma",
+      "level": "Intermédiaire",
+      "duration": "5h",
+      "description": "Créer les maquettes desktop et mobile d'une marketplace.",
+      "objectifs": [
+        "Recueillir et formaliser un besoin client",
+        "Rédiger un cahier des charges structuré",
+        "Rédiger des User Stories au format standard"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

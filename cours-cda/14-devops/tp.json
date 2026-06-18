@@ -1,0 +1,80 @@
+{
+  "module": "14-devops",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Stack Docker Compose",
+      "level": "Intermédiaire",
+      "duration": "5h",
+      "description": "Déployer une app fullstack avec PostgreSQL, API et frontend.",
+      "objectifs": [
+        "Maîtriser les commandes Linux essentielles",
+        "Containeriser avec Docker (images, volumes, networks)",
+        "Orchestrer avec Docker Compose"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Reverse proxy Nginx",
+      "level": "Avancé",
+      "duration": "4h",
+      "description": "Configurer Nginx avec SSL, cache et load balancing.",
+      "objectifs": [
+        "Maîtriser les commandes Linux essentielles",
+        "Containeriser avec Docker (images, volumes, networks)",
+        "Orchestrer avec Docker Compose"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Infrastructure complète",
+      "level": "Expert",
+      "duration": "10h",
+      "description": "Stack production : Docker, Nginx, PostgreSQL, monitoring.",
+      "objectifs": [
+        "Maîtriser les commandes Linux essentielles",
+        "Containeriser avec Docker (images, volumes, networks)",
+        "Orchestrer avec Docker Compose"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

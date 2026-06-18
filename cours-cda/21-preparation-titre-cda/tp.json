@@ -1,0 +1,80 @@
+{
+  "module": "21-preparation-titre-cda",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Dossier professionnel",
+      "level": "Avancé",
+      "duration": "8h",
+      "description": "Rédiger le dossier professionnel complet.",
+      "objectifs": [
+        "Préparer le dossier professionnel CDA",
+        "Structurer la soutenance technique",
+        "Présenter le projet professionnel"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Simulation soutenance",
+      "level": "Expert",
+      "duration": "4h",
+      "description": "Simulation complète de soutenance avec feedback.",
+      "objectifs": [
+        "Préparer le dossier professionnel CDA",
+        "Structurer la soutenance technique",
+        "Présenter le projet professionnel"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Portfolio final",
+      "level": "Avancé",
+      "duration": "6h",
+      "description": "Portfolio GitHub, CV et profil LinkedIn optimisés.",
+      "objectifs": [
+        "Préparer le dossier professionnel CDA",
+        "Structurer la soutenance technique",
+        "Présenter le projet professionnel"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

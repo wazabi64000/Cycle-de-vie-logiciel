@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 02 — Gestion de projet | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="02-gestion-projet"
+  data-module-id="02"
+  data-module-title="Gestion de projet"
+  data-module-duration="40h"
+  data-module-level="Débutant à Intermédiaire">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 02 — Gestion de projet</h1>
+        <p>Cycle en V, Agile, Scrum, Kanban et estimation</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 40h</span>
+          <span class="cours-badge">📊 Débutant à Intermédiaire</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>Un développeur professionnel travaille en équipe sur des projets contraints par le temps et le budget.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>Dans toute équipe de développement, du startup de 3 personnes au grand compte.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Évite les dépassements de délais, les priorités floues et la surcharge des développeurs.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>Gestion de projet : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Comprendre le cycle en V et ses phases</li>
+          <li>Appliquer Scrum, Kanban et Lean</li>
+          <li>Utiliser Jira pour gérer Epics, Stories, Tasks et Bugs</li>
+          <li>Estimer avec Planning Poker, Story Points et T-Shirt Size</li>
+          <li>Répartir un budget temps réaliste sur un projet de 100h</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 02 — Gestion de projet
+    ↓
+Introduction à la gestion de projet IT
+    ↓
+Le cycle en V
+    ↓
+Les méthodes Agile
+    ↓
+Scrum en profondeur
+    ↓
+Kanban et flux continu
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de gestion de projet.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec gestion de projet.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Répartir 100h sur analyse, conception, dev, tests, doc et déploiement.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Backlog Scrum <span class="cours-badge">Débutant</span></h4>
+          <p>Créer un backlog complet avec Epics et User Stories pour un projet e-commerce.</p>
+          <p><em>Durée : 3h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Tableau Kanban <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Configurer un flux Kanban avec WIP limits et métriques.</p>
+          <p><em>Durée : 2h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Planning 100h <span class="cours-badge">Avancé</span></h4>
+          <p>Répartir 100h sur analyse, conception, dev, tests, doc et déploiement.</p>
+          <p><em>Durée : 4h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Introduction à la gestion de projet IT</a></li>
+          <li><a href="#chapitre-2">Le cycle en V</a></li>
+          <li><a href="#chapitre-3">Les méthodes Agile</a></li>
+          <li><a href="#chapitre-4">Scrum en profondeur</a></li>
+          <li><a href="#chapitre-5">Kanban et flux continu</a></li>
+          <li><a href="#chapitre-6">Lean et élimination des gaspillages</a></li>
+          <li><a href="#chapitre-7">Jira : Epics, Stories, Tasks, Bugs</a></li>
+          <li><a href="#chapitre-8">Estimation : Planning Poker et Story Points</a></li>
+          <li><a href="#chapitre-9">Répartition temps réel d'un projet</a></li>
+          <li><a href="#chapitre-10">Rétrospective et amélioration continue</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Introduction à la gestion de projet IT</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Introduction à la gestion de projet IT</strong> dans le cadre du module Gestion de projet.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de introduction à la gestion de projet it en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Introduction à la gestion de projet IT intervient à l'étape 1 du module « Gestion de projet ».
+      En projet professionnel, cette compétence permet de comprendre le cycle en v et ses phases.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Introduction à la gestion de projet IT
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer introduction à la gestion de projet it et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer introduction à la gestion de projet it dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Introduction à la gestion de projet IT — chapitre 1 / 10</li>
+      <li>Durée module : 40h · Niveau : Débutant à Intermédiaire</li>
+      <li>Prépare le TP : « Backlog Scrum »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Le cycle en V</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Le cycle en V</strong> dans le cadre du module Gestion de projet.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de le cycle en v en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Le cycle en V intervient à l'étape 2 du module « Gestion de projet ».
+      En projet professionnel, cette compétence permet de appliquer scrum, kanban et lean.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Le cycle en V
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer le cycle en v et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer le cycle en v dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Le cycle en V — chapitre 2 / 10</li>
+      <li>Durée module : 40h · Niveau : Débutant à Intermédiaire</li>
+      <li>Prépare le TP : « Tableau Kanban »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Les méthodes Agile</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Les méthodes Agile</strong> dans le cadre du module Gestion de projet.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de les méthodes agile en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Les méthodes Agile intervient à l'étape 3 du module « Gestion de projet ».
+      En projet professionnel, cette compétence permet de utiliser jira pour gérer epics, stories, tasks et bugs.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Les méthodes Agile
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer les méthodes agile et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer les méthodes agile dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Les méthodes Agile — chapitre 3 / 10</li>
+      <li>Durée module : 40h · Niveau : Débutant à Intermédiaire</li>
+      <li>Prépare le TP : « Planning 100h »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Scrum en profondeur</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Scrum en profondeur</strong> dans le cadre du module Gestion de projet.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de scrum en profondeur en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Scrum en profondeur intervient à l'étape 4 du module « Gestion de projet ».
+      En projet professionnel, cette compétence permet de estimer avec planning poker, story points et t-shirt size.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Scrum en profondeur
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer scrum en profondeur et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer scrum en profondeur dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Scrum en profondeur — chapitre 4 / 10</li>
+      <li>Durée module : 40h · Niveau : Débutant à Intermédiaire</li>
+      <li>Prépare le TP : « Planning 100h »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — Kanban et flux continu</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Kanban et flux continu</strong> dans le cadre du module Gestion de projet.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de kanban et flux continu en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Kanban et flux continu intervient à l'étape 5 du module « Gestion de projet ».
+      En projet professionnel, cette compétence permet de répartir un budget temps réaliste sur un projet de 100h.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Kanban et flux continu
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer kanban et flux continu et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer kanban et flux continu dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Kanban et flux continu — chapitre 5 / 10</li>
+      <li>Durée module : 40h · Niveau : Débutant à Intermédiaire</li>
+      <li>Prépare le TP : « Planning 100h »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Lean et élimination des gaspillages</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Lean et élimination des gaspillages</strong> dans le cadre du module Gestion de projet.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de lean et élimination des gaspillages en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Lean et élimination des gaspillages intervient à l'étape 6 du module « Gestion de projet ».
+      En projet professionnel, cette compétence permet de comprendre le cycle en v et ses phases.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Lean et élimination des gaspillages
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer lean et élimination des gaspillages et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer lean et élimination des gaspillages dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Lean et élimination des gaspillages — chapitre 6 / 10</li>
+      <li>Durée module : 40h · Niveau : Débutant à Intermédiaire</li>
+      <li>Prépare le TP : « Planning 100h »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Jira : Epics, Stories, Tasks, Bugs</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Jira : Epics, Stories, Tasks, Bugs</strong> dans le cadre du module Gestion de projet.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de jira : epics, stories, tasks, bugs en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Jira : Epics, Stories, Tasks, Bugs intervient à l'étape 7 du module « Gestion de projet ».
+      En projet professionnel, cette compétence permet de appliquer scrum, kanban et lean.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Jira : Epics, Stories, Tasks, Bugs
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer jira : epics, stories, tasks, bugs et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer jira : epics, stories, tasks, bugs dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Jira : Epics, Stories, Tasks, Bugs — chapitre 7 / 10</li>
+      <li>Durée module : 40h · Niveau : Débutant à Intermédiaire</li>
+      <li>Prépare le TP : « Planning 100h »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Estimation : Planning Poker et Story Points</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Estimation : Planning Poker et Story Points</strong> dans le cadre du module Gestion de projet.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de estimation : planning poker et story points en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Estimation : Planning Poker et Story Points intervient à l'étape 8 du module « Gestion de projet ».
+      En projet professionnel, cette compétence permet de utiliser jira pour gérer epics, stories, tasks et bugs.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Estimation : Planning Poker et Story Points
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer estimation : planning poker et story points et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer estimation : planning poker et story points dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Estimation : Planning Poker et Story Points — chapitre 8 / 10</li>
+      <li>Durée module : 40h · Niveau : Débutant à Intermédiaire</li>
+      <li>Prépare le TP : « Planning 100h »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Répartition temps réel d'un projet</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Répartition temps réel d'un projet</strong> dans le cadre du module Gestion de projet.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de répartition temps réel d'un projet en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Répartition temps réel d'un projet intervient à l'étape 9 du module « Gestion de projet ».
+      En projet professionnel, cette compétence permet de estimer avec planning poker, story points et t-shirt size.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Répartition temps réel d'un projet
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer répartition temps réel d'un projet et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer répartition temps réel d'un projet dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Répartition temps réel d'un projet — chapitre 9 / 10</li>
+      <li>Durée module : 40h · Niveau : Débutant à Intermédiaire</li>
+      <li>Prépare le TP : « Planning 100h »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Rétrospective et amélioration continue</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Rétrospective et amélioration continue</strong> dans le cadre du module Gestion de projet.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de rétrospective et amélioration continue en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Rétrospective et amélioration continue intervient à l'étape 10 du module « Gestion de projet ».
+      En projet professionnel, cette compétence permet de répartir un budget temps réaliste sur un projet de 100h.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Rétrospective et amélioration continue
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer rétrospective et amélioration continue et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer rétrospective et amélioration continue dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Rétrospective et amélioration continue — chapitre 10 / 10</li>
+      <li>Durée module : 40h · Niveau : Débutant à Intermédiaire</li>
+      <li>Prépare le TP : « Planning 100h »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

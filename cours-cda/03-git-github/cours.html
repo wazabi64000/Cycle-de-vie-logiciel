@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 03 — Git, GitHub et GitLab | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="03-git-github"
+  data-module-id="03"
+  data-module-title="Git, GitHub et GitLab"
+  data-module-duration="30h"
+  data-module-level="Débutant à Avancé">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 03 — Git, GitHub et GitLab</h1>
+        <p>Versionning, branching et collaboration en équipe</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 30h</span>
+          <span class="cours-badge">📊 Débutant à Avancé</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>Git est le standard universel de gestion de versions. Aucune entreprise ne recrute sans cette compétence.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>À chaque ligne de code écrite, dans chaque pipeline CI/CD, sur chaque Pull Request.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout la perte de code, les versions concurrentes, le travail en parallèle et la traçabilité des modifications.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>Git, GitHub et GitLab : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Comprendre pourquoi Git existe et quels problèmes il résout</li>
+          <li>Maîtriser les commandes Git essentielles</li>
+          <li>Appliquer Git Flow, GitHub Flow et Trunk Based Development</li>
+          <li>Créer et gérer des Pull Requests et Merge Requests</li>
+          <li>Effectuer des code reviews et résoudre les conflits</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 03 — Git, GitHub et GitLab
+    ↓
+Pourquoi Git ? Histoire et problèmes résolus
+    ↓
+Installation et configuration
+    ↓
+Commits, branches et merges
+    ↓
+Git Flow
+    ↓
+GitHub Flow
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de git, github et gitlab.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec git, github et gitlab.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Mettre en place Git Flow sur un projet avec releases et hotfixes.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Workflow collaboratif <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Simuler un projet à 3 développeurs avec branches, PR et reviews.</p>
+          <p><em>Durée : 4h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Résolution de conflits <span class="cours-badge">Avancé</span></h4>
+          <p>Résoudre 5 scénarios de conflits Git complexes.</p>
+          <p><em>Durée : 3h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Git Flow complet <span class="cours-badge">Expert</span></h4>
+          <p>Mettre en place Git Flow sur un projet avec releases et hotfixes.</p>
+          <p><em>Durée : 5h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Pourquoi Git ? Histoire et problèmes résolus</a></li>
+          <li><a href="#chapitre-2">Installation et configuration</a></li>
+          <li><a href="#chapitre-3">Commits, branches et merges</a></li>
+          <li><a href="#chapitre-4">Git Flow</a></li>
+          <li><a href="#chapitre-5">GitHub Flow</a></li>
+          <li><a href="#chapitre-6">Trunk Based Development</a></li>
+          <li><a href="#chapitre-7">Pull Requests et code review</a></li>
+          <li><a href="#chapitre-8">Résolution de conflits</a></li>
+          <li><a href="#chapitre-9">GitLab CI et intégration</a></li>
+          <li><a href="#chapitre-10">Bonnes pratiques en équipe</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Pourquoi Git ? Histoire et problèmes résolus</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Pourquoi Git ? Histoire et problèmes résolus</strong> dans le cadre du module Git, GitHub et GitLab.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de pourquoi git ? histoire et problèmes résolus en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Pourquoi Git ? Histoire et problèmes résolus intervient à l'étape 1 du module « Git, GitHub et GitLab ».
+      En projet professionnel, cette compétence permet de comprendre pourquoi git existe et quels problèmes il résout.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Pourquoi Git ? Histoire et problèmes résolus
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer pourquoi git ? histoire et problèmes résolus et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer pourquoi git ? histoire et problèmes résolus dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Pourquoi Git ? Histoire et problèmes résolus — chapitre 1 / 10</li>
+      <li>Durée module : 30h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Workflow collaboratif »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Installation et configuration</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Installation et configuration</strong> dans le cadre du module Git, GitHub et GitLab.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de installation et configuration en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Installation et configuration intervient à l'étape 2 du module « Git, GitHub et GitLab ».
+      En projet professionnel, cette compétence permet de maîtriser les commandes git essentielles.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Installation et configuration
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer installation et configuration et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer installation et configuration dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Installation et configuration — chapitre 2 / 10</li>
+      <li>Durée module : 30h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Résolution de conflits »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Commits, branches et merges</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Commits, branches et merges</strong> dans le cadre du module Git, GitHub et GitLab.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de commits, branches et merges en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Commits, branches et merges intervient à l'étape 3 du module « Git, GitHub et GitLab ».
+      En projet professionnel, cette compétence permet de appliquer git flow, github flow et trunk based development.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Commits, branches et merges
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer commits, branches et merges et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer commits, branches et merges dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Commits, branches et merges — chapitre 3 / 10</li>
+      <li>Durée module : 30h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Git Flow complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Git Flow</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Git Flow</strong> dans le cadre du module Git, GitHub et GitLab.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de git flow en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Git Flow intervient à l'étape 4 du module « Git, GitHub et GitLab ».
+      En projet professionnel, cette compétence permet de créer et gérer des pull requests et merge requests.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Git Flow
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer git flow et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer git flow dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Git Flow — chapitre 4 / 10</li>
+      <li>Durée module : 30h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Git Flow complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — GitHub Flow</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>GitHub Flow</strong> dans le cadre du module Git, GitHub et GitLab.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de github flow en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      GitHub Flow intervient à l'étape 5 du module « Git, GitHub et GitLab ».
+      En projet professionnel, cette compétence permet de effectuer des code reviews et résoudre les conflits.
+    </p>
+
+    <h3>Exemple de code</h3><pre class="code-block">git init
+git add .
+git commit -m "feat: initial commit"
+git branch feature/login
+git checkout feature/login</pre>
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — GitHub Flow
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer github flow et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer github flow dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>GitHub Flow — chapitre 5 / 10</li>
+      <li>Durée module : 30h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Git Flow complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Trunk Based Development</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Trunk Based Development</strong> dans le cadre du module Git, GitHub et GitLab.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de trunk based development en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Trunk Based Development intervient à l'étape 6 du module « Git, GitHub et GitLab ».
+      En projet professionnel, cette compétence permet de comprendre pourquoi git existe et quels problèmes il résout.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Trunk Based Development
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer trunk based development et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer trunk based development dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Trunk Based Development — chapitre 6 / 10</li>
+      <li>Durée module : 30h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Git Flow complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Pull Requests et code review</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Pull Requests et code review</strong> dans le cadre du module Git, GitHub et GitLab.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de pull requests et code review en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Pull Requests et code review intervient à l'étape 7 du module « Git, GitHub et GitLab ».
+      En projet professionnel, cette compétence permet de maîtriser les commandes git essentielles.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Pull Requests et code review
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer pull requests et code review et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer pull requests et code review dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Pull Requests et code review — chapitre 7 / 10</li>
+      <li>Durée module : 30h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Git Flow complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Résolution de conflits</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Résolution de conflits</strong> dans le cadre du module Git, GitHub et GitLab.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de résolution de conflits en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Résolution de conflits intervient à l'étape 8 du module « Git, GitHub et GitLab ».
+      En projet professionnel, cette compétence permet de appliquer git flow, github flow et trunk based development.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Résolution de conflits
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer résolution de conflits et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer résolution de conflits dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Résolution de conflits — chapitre 8 / 10</li>
+      <li>Durée module : 30h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Git Flow complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — GitLab CI et intégration</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>GitLab CI et intégration</strong> dans le cadre du module Git, GitHub et GitLab.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de gitlab ci et intégration en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      GitLab CI et intégration intervient à l'étape 9 du module « Git, GitHub et GitLab ».
+      En projet professionnel, cette compétence permet de créer et gérer des pull requests et merge requests.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — GitLab CI et intégration
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer gitlab ci et intégration et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer gitlab ci et intégration dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>GitLab CI et intégration — chapitre 9 / 10</li>
+      <li>Durée module : 30h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Git Flow complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Bonnes pratiques en équipe</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Bonnes pratiques en équipe</strong> dans le cadre du module Git, GitHub et GitLab.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de bonnes pratiques en équipe en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Bonnes pratiques en équipe intervient à l'étape 10 du module « Git, GitHub et GitLab ».
+      En projet professionnel, cette compétence permet de effectuer des code reviews et résoudre les conflits.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Bonnes pratiques en équipe
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer bonnes pratiques en équipe et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer bonnes pratiques en équipe dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Bonnes pratiques en équipe — chapitre 10 / 10</li>
+      <li>Durée module : 30h · Niveau : Débutant à Avancé</li>
+      <li>Prépare le TP : « Git Flow complet »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

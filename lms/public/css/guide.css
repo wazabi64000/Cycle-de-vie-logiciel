@@ -1,0 +1,169 @@
+/* ─── Page d'accueil & guide utilisateur ─── */
+
+.hero {
+  background: linear-gradient(160deg, var(--accent-soft) 0%, var(--bg) 55%);
+  padding: 5rem 0 4rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-inner {
+  max-width: 720px;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.hero-lead {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Guide */
+.guide-section {
+  padding: 4rem 0 5rem;
+}
+
+.guide-header {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 3rem;
+}
+
+.guide-header h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.guide-header p {
+  color: var(--text-muted);
+}
+
+.guide-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+
+.guide-step {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.guide-step-num {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.guide-step h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.guide-step p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.guide-step code {
+  font-size: 0.85em;
+  background: var(--bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.guide-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.guide-tips {
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  padding: 1.5rem;
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.guide-tips h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.guide-tips ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.guide-cta {
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .guide-step {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "module": "06-bases-donnees",
+  "titre": "Évaluation — Bases de données",
+  "seuil_validation": 70,
+  "ponderation": {
+    "quiz": 30,
+    "exercices": 30,
+    "tp": 40
+  },
+  "grille": [
+    {
+      "critere": "Compréhension théorique",
+      "poids": 25,
+      "indicateurs": [
+        "Réponses quiz > 70%",
+        "Capacité à expliquer les concepts"
+      ]
+    },
+    {
+      "critere": "Mise en pratique",
+      "poids": 35,
+      "indicateurs": [
+        "Exercices complétés",
+        "Qualité des livrables"
+      ]
+    },
+    {
+      "critere": "Travaux pratiques",
+      "poids": 30,
+      "indicateurs": [
+        "TP fonctionnels",
+        "Respect des critères",
+        "Documentation"
+      ]
+    },
+    {
+      "critere": "Autonomie",
+      "poids": 10,
+      "indicateurs": [
+        "Recherche de solutions",
+        "Gestion du temps"
+      ]
+    }
+  ],
+  "badges": [
+    {
+      "id": "badge-06-completion",
+      "nom": "Bases de données — Complété",
+      "condition": "Module terminé à 100%"
+    },
+    {
+      "id": "badge-06-excellence",
+      "nom": "Bases de données — Excellence",
+      "condition": "Score global > 90%"
+    }
+  ],
+  "certification": {
+    "eligible": true,
+    "nom": "Certificat Module 06 — Bases de données",
+    "seuil": 70
+  }
+}

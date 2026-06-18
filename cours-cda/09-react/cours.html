@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 09 — React | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="09-react"
+  data-module-id="09"
+  data-module-title="React"
+  data-module-duration="50h"
+  data-module-level="Intermédiaire à Avancé">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 09 — React</h1>
+        <p>Hooks, routing, state management et architecture</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 50h</span>
+          <span class="cours-badge">📊 Intermédiaire à Avancé</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>React est la bibliothèque frontend la plus demandée. Utilisée par Meta, Netflix, Airbnb.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>SPAs, dashboards, applications web complexes, React Native.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout la complexité des interfaces interactives et la gestion d'état à grande échelle.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>React : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Maîtriser useState, useEffect, useMemo, useCallback</li>
+          <li>Configurer React Router pour le routing</li>
+          <li>Gérer l'état avec Context, Redux et Zustand</li>
+          <li>Structurer une application React scalable</li>
+          <li>Tester des composants React</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 09 — React
+    ↓
+Introduction à React et JSX
+    ↓
+Composants et props
+    ↓
+useState et gestion d'état local
+    ↓
+useEffect et effets de bord
+    ↓
+useMemo, useCallback et performance
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de react.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec react.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Application complète avec routing, auth et API.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Dashboard React <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Dashboard admin avec graphiques et tableaux de données.</p>
+          <p><em>Durée : 8h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>E-commerce frontend <span class="cours-badge">Avancé</span></h4>
+          <p>Frontend e-commerce avec panier, auth et Redux.</p>
+          <p><em>Durée : 12h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>App multi-pages <span class="cours-badge">Avancé</span></h4>
+          <p>Application complète avec routing, auth et API.</p>
+          <p><em>Durée : 10h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Introduction à React et JSX</a></li>
+          <li><a href="#chapitre-2">Composants et props</a></li>
+          <li><a href="#chapitre-3">useState et gestion d'état local</a></li>
+          <li><a href="#chapitre-4">useEffect et effets de bord</a></li>
+          <li><a href="#chapitre-5">useMemo, useCallback et performance</a></li>
+          <li><a href="#chapitre-6">React Router v6</a></li>
+          <li><a href="#chapitre-7">Context API</a></li>
+          <li><a href="#chapitre-8">Redux Toolkit</a></li>
+          <li><a href="#chapitre-9">Zustand et alternatives</a></li>
+          <li><a href="#chapitre-10">Architecture et bonnes pratiques React</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Introduction à React et JSX</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Introduction à React et JSX</strong> dans le cadre du module React.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de introduction à react et jsx en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Introduction à React et JSX intervient à l'étape 1 du module « React ».
+      En projet professionnel, cette compétence permet de maîtriser usestate, useeffect, usememo, usecallback.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Introduction à React et JSX
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer introduction à react et jsx et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer introduction à react et jsx dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Introduction à React et JSX — chapitre 1 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Dashboard React »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Composants et props</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Composants et props</strong> dans le cadre du module React.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de composants et props en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Composants et props intervient à l'étape 2 du module « React ».
+      En projet professionnel, cette compétence permet de configurer react router pour le routing.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Composants et props
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer composants et props et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer composants et props dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Composants et props — chapitre 2 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « E-commerce frontend »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — useState et gestion d'état local</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>useState et gestion d'état local</strong> dans le cadre du module React.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de usestate et gestion d'état local en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      useState et gestion d'état local intervient à l'étape 3 du module « React ».
+      En projet professionnel, cette compétence permet de gérer l'état avec context, redux et zustand.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — useState et gestion d'état local
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer usestate et gestion d'état local et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer usestate et gestion d'état local dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>useState et gestion d'état local — chapitre 3 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « App multi-pages »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — useEffect et effets de bord</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>useEffect et effets de bord</strong> dans le cadre du module React.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de useeffect et effets de bord en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      useEffect et effets de bord intervient à l'étape 4 du module « React ».
+      En projet professionnel, cette compétence permet de structurer une application react scalable.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — useEffect et effets de bord
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer useeffect et effets de bord et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer useeffect et effets de bord dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>useEffect et effets de bord — chapitre 4 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « App multi-pages »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — useMemo, useCallback et performance</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>useMemo, useCallback et performance</strong> dans le cadre du module React.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de usememo, usecallback et performance en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      useMemo, useCallback et performance intervient à l'étape 5 du module « React ».
+      En projet professionnel, cette compétence permet de tester des composants react.
+    </p>
+
+    <h3>Exemple de code</h3><pre class="code-block">function Counter() {
+  const [count, setCount] = useState(0);
+  return <button onClick={() => setCount(c => c + 1)}>{count}</button>;
+}</pre>
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — useMemo, useCallback et performance
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer usememo, usecallback et performance et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer usememo, usecallback et performance dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>useMemo, useCallback et performance — chapitre 5 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « App multi-pages »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — React Router v6</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>React Router v6</strong> dans le cadre du module React.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de react router v6 en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      React Router v6 intervient à l'étape 6 du module « React ».
+      En projet professionnel, cette compétence permet de maîtriser usestate, useeffect, usememo, usecallback.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — React Router v6
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer react router v6 et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer react router v6 dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>React Router v6 — chapitre 6 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « App multi-pages »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Context API</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Context API</strong> dans le cadre du module React.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de context api en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Context API intervient à l'étape 7 du module « React ».
+      En projet professionnel, cette compétence permet de configurer react router pour le routing.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Context API
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer context api et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer context api dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Context API — chapitre 7 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « App multi-pages »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Redux Toolkit</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Redux Toolkit</strong> dans le cadre du module React.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de redux toolkit en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Redux Toolkit intervient à l'étape 8 du module « React ».
+      En projet professionnel, cette compétence permet de gérer l'état avec context, redux et zustand.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Redux Toolkit
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer redux toolkit et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer redux toolkit dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Redux Toolkit — chapitre 8 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « App multi-pages »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Zustand et alternatives</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Zustand et alternatives</strong> dans le cadre du module React.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de zustand et alternatives en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Zustand et alternatives intervient à l'étape 9 du module « React ».
+      En projet professionnel, cette compétence permet de structurer une application react scalable.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Zustand et alternatives
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer zustand et alternatives et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer zustand et alternatives dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Zustand et alternatives — chapitre 9 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « App multi-pages »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Architecture et bonnes pratiques React</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Architecture et bonnes pratiques React</strong> dans le cadre du module React.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de architecture et bonnes pratiques react en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Architecture et bonnes pratiques React intervient à l'étape 10 du module « React ».
+      En projet professionnel, cette compétence permet de tester des composants react.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Architecture et bonnes pratiques React
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer architecture et bonnes pratiques react et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer architecture et bonnes pratiques react dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Architecture et bonnes pratiques React — chapitre 10 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « App multi-pages »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

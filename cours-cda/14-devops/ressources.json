@@ -1,0 +1,54 @@
+{
+  "module": "14-devops",
+  "documentation": [
+    {
+      "titre": "Documentation officielle — DevOps",
+      "url": "#",
+      "type": "officielle"
+    },
+    {
+      "titre": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/fr/",
+      "type": "reference"
+    }
+  ],
+  "videos": [
+    {
+      "titre": "Introduction à DevOps",
+      "url": "#",
+      "duree": "15min",
+      "source": "YouTube"
+    }
+  ],
+  "livres": [
+    {
+      "titre": "Livre de référence — DevOps",
+      "auteur": "À définir",
+      "isbn": null
+    }
+  ],
+  "outils": [
+    {
+      "nom": "VS Code",
+      "url": "https://code.visualstudio.com/",
+      "usage": "Éditeur de code"
+    },
+    {
+      "nom": "Git",
+      "url": "https://git-scm.com/",
+      "usage": "Versionning"
+    }
+  ],
+  "communautes": [
+    {
+      "nom": "Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "type": "forum"
+    },
+    {
+      "nom": "Dev.to",
+      "url": "https://dev.to/",
+      "type": "blog"
+    }
+  ]
+}

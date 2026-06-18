@@ -1,0 +1,80 @@
+{
+  "module": "16-monitoring",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Stack de logs",
+      "level": "Intermédiaire",
+      "duration": "4h",
+      "description": "Configurer Pino + agrégation de logs.",
+      "objectifs": [
+        "Configurer des logs structurés avec Winston et Pino",
+        "Mettre en place Grafana et Prometheus",
+        "Configurer des alertes proactives"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Dashboard Grafana",
+      "level": "Avancé",
+      "duration": "5h",
+      "description": "Dashboard Prometheus/Grafana pour une API Node.js.",
+      "objectifs": [
+        "Configurer des logs structurés avec Winston et Pino",
+        "Mettre en place Grafana et Prometheus",
+        "Configurer des alertes proactives"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Alerting complet",
+      "level": "Expert",
+      "duration": "6h",
+      "description": "Alertes Sentry + Prometheus avec notifications Slack.",
+      "objectifs": [
+        "Configurer des logs structurés avec Winston et Pino",
+        "Mettre en place Grafana et Prometheus",
+        "Configurer des alertes proactives"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

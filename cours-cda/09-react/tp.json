@@ -1,0 +1,80 @@
+{
+  "module": "09-react",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Dashboard React",
+      "level": "Intermédiaire",
+      "duration": "8h",
+      "description": "Dashboard admin avec graphiques et tableaux de données.",
+      "objectifs": [
+        "Maîtriser useState, useEffect, useMemo, useCallback",
+        "Configurer React Router pour le routing",
+        "Gérer l'état avec Context, Redux et Zustand"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "E-commerce frontend",
+      "level": "Avancé",
+      "duration": "12h",
+      "description": "Frontend e-commerce avec panier, auth et Redux.",
+      "objectifs": [
+        "Maîtriser useState, useEffect, useMemo, useCallback",
+        "Configurer React Router pour le routing",
+        "Gérer l'état avec Context, Redux et Zustand"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "App multi-pages",
+      "level": "Avancé",
+      "duration": "10h",
+      "description": "Application complète avec routing, auth et API.",
+      "objectifs": [
+        "Maîtriser useState, useEffect, useMemo, useCallback",
+        "Configurer React Router pour le routing",
+        "Gérer l'état avec Context, Redux et Zustand"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

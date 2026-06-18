@@ -1,0 +1,132 @@
+{
+  "module": "18-deploiement",
+  "exercices": [
+    {
+      "id": "exo-debutant-1",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 1 — Déploiement",
+      "enonce": "Mettre en pratique les concepts de Stratégies de déploiement au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Stratégies de déploiement",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-debutant-2",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 2 — Déploiement",
+      "enonce": "Mettre en pratique les concepts de Stratégies de déploiement au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Stratégies de déploiement",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-intermediaire-1",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 1 — Déploiement",
+      "enonce": "Mettre en pratique les concepts de Déploiement frontend : Vercel au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Déploiement frontend : Vercel",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-intermediaire-2",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 2 — Déploiement",
+      "enonce": "Mettre en pratique les concepts de Déploiement frontend : Vercel au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Déploiement frontend : Vercel",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-1",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 1 — Déploiement",
+      "enonce": "Mettre en pratique les concepts de Déploiement frontend : Netlify et Cloudflare au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Déploiement frontend : Netlify et Cloudflare",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-2",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 2 — Déploiement",
+      "enonce": "Mettre en pratique les concepts de Déploiement frontend : Netlify et Cloudflare au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Déploiement frontend : Netlify et Cloudflare",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-expert-1",
+      "niveau": "expert",
+      "titre": "Exercice Expert 1 — Déploiement",
+      "enonce": "Mettre en pratique les concepts de Déploiement backend : Railway et Render au niveau Expert.",
+      "objectifs": [
+        "Comprendre Déploiement backend : Railway et Render",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "120min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 4",
+        "Consulter les ressources.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "module": "18-deploiement",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Deploy frontend Vercel",
+      "level": "Débutant",
+      "duration": "2h",
+      "description": "Déployer une SPA React sur Vercel avec domaine custom.",
+      "objectifs": [
+        "Déployer un frontend sur Vercel, Netlify ou Cloudflare",
+        "Déployer un backend sur VPS, Railway ou Render",
+        "Configurer un serveur Linux (Ubuntu/Debian)"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "VPS complet",
+      "level": "Avancé",
+      "duration": "8h",
+      "description": "Configurer un VPS Ubuntu avec Nginx, SSL et API Node.js.",
+      "objectifs": [
+        "Déployer un frontend sur Vercel, Netlify ou Cloudflare",
+        "Déployer un backend sur VPS, Railway ou Render",
+        "Configurer un serveur Linux (Ubuntu/Debian)"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Stack Coolify",
+      "level": "Expert",
+      "duration": "6h",
+      "description": "Déployer une stack fullstack avec Coolify et CI/CD.",
+      "objectifs": [
+        "Déployer un frontend sur Vercel, Netlify ou Cloudflare",
+        "Déployer un backend sur VPS, Railway ou Render",
+        "Configurer un serveur Linux (Ubuntu/Debian)"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

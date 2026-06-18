@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 12 — Tests logiciels | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="12-tests"
+  data-module-id="12"
+  data-module-title="Tests logiciels"
+  data-module-duration="35h"
+  data-module-level="Intermédiaire à Avancé">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 12 — Tests logiciels</h1>
+        <p>Unitaires, API, E2E et couverture 80 %</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 35h</span>
+          <span class="cours-badge">📊 Intermédiaire à Avancé</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>Les tests sont souvent absents des formations mais indispensables en entreprise. Ils garantissent la qualité et la maintenabilité.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>À chaque commit, dans chaque pipeline CI, avant chaque déploiement.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout les régressions, la peur de refactorer et les bugs en production.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>Tests logiciels : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Écrire des tests unitaires avec Jest et Vitest</li>
+          <li>Tester des APIs avec Supertest</li>
+          <li>Automatiser des tests E2E avec Playwright et Cypress</li>
+          <li>Atteindre 80 % de couverture de code minimum</li>
+          <li>Intégrer les tests dans le workflow de développement</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 12 — Tests logiciels
+    ↓
+Pourquoi tester ? Pyramide des tests
+    ↓
+Tests unitaires avec Jest
+    ↓
+Tests unitaires avec Vitest
+    ↓
+Mocks, stubs et spies
+    ↓
+Tests d'intégration API avec Supertest
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de tests logiciels.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec tests logiciels.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Scénarios E2E pour un parcours utilisateur complet.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Suite de tests unitaires <span class="cours-badge">Intermédiaire</span></h4>
+          <p>80 % de couverture sur une API Express existante.</p>
+          <p><em>Durée : 5h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Tests API Supertest <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Tests d'intégration complets pour une API REST.</p>
+          <p><em>Durée : 4h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Tests E2E Playwright <span class="cours-badge">Avancé</span></h4>
+          <p>Scénarios E2E pour un parcours utilisateur complet.</p>
+          <p><em>Durée : 8h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Pourquoi tester ? Pyramide des tests</a></li>
+          <li><a href="#chapitre-2">Tests unitaires avec Jest</a></li>
+          <li><a href="#chapitre-3">Tests unitaires avec Vitest</a></li>
+          <li><a href="#chapitre-4">Mocks, stubs et spies</a></li>
+          <li><a href="#chapitre-5">Tests d'intégration API avec Supertest</a></li>
+          <li><a href="#chapitre-6">Tests E2E avec Playwright</a></li>
+          <li><a href="#chapitre-7">Tests E2E avec Cypress</a></li>
+          <li><a href="#chapitre-8">Couverture de code et métriques</a></li>
+          <li><a href="#chapitre-9">TDD : Test-Driven Development</a></li>
+          <li><a href="#chapitre-10">Tests dans la CI/CD</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Pourquoi tester ? Pyramide des tests</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Pourquoi tester ? Pyramide des tests</strong> dans le cadre du module Tests logiciels.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de pourquoi tester ? pyramide des tests en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Pourquoi tester ? Pyramide des tests intervient à l'étape 1 du module « Tests logiciels ».
+      En projet professionnel, cette compétence permet de écrire des tests unitaires avec jest et vitest.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Pourquoi tester ? Pyramide des tests
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer pourquoi tester ? pyramide des tests et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer pourquoi tester ? pyramide des tests dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Pourquoi tester ? Pyramide des tests — chapitre 1 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Suite de tests unitaires »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Tests unitaires avec Jest</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Tests unitaires avec Jest</strong> dans le cadre du module Tests logiciels.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de tests unitaires avec jest en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Tests unitaires avec Jest intervient à l'étape 2 du module « Tests logiciels ».
+      En projet professionnel, cette compétence permet de tester des apis avec supertest.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Tests unitaires avec Jest
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer tests unitaires avec jest et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer tests unitaires avec jest dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Tests unitaires avec Jest — chapitre 2 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Tests API Supertest »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Tests unitaires avec Vitest</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Tests unitaires avec Vitest</strong> dans le cadre du module Tests logiciels.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de tests unitaires avec vitest en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Tests unitaires avec Vitest intervient à l'étape 3 du module « Tests logiciels ».
+      En projet professionnel, cette compétence permet de automatiser des tests e2e avec playwright et cypress.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Tests unitaires avec Vitest
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer tests unitaires avec vitest et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer tests unitaires avec vitest dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Tests unitaires avec Vitest — chapitre 3 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Tests E2E Playwright »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Mocks, stubs et spies</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Mocks, stubs et spies</strong> dans le cadre du module Tests logiciels.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de mocks, stubs et spies en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Mocks, stubs et spies intervient à l'étape 4 du module « Tests logiciels ».
+      En projet professionnel, cette compétence permet de atteindre 80 % de couverture de code minimum.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Mocks, stubs et spies
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer mocks, stubs et spies et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer mocks, stubs et spies dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Mocks, stubs et spies — chapitre 4 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Tests E2E Playwright »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — Tests d'intégration API avec Supertest</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Tests d'intégration API avec Supertest</strong> dans le cadre du module Tests logiciels.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de tests d'intégration api avec supertest en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Tests d'intégration API avec Supertest intervient à l'étape 5 du module « Tests logiciels ».
+      En projet professionnel, cette compétence permet de intégrer les tests dans le workflow de développement.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Tests d'intégration API avec Supertest
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer tests d'intégration api avec supertest et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer tests d'intégration api avec supertest dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Tests d'intégration API avec Supertest — chapitre 5 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Tests E2E Playwright »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Tests E2E avec Playwright</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Tests E2E avec Playwright</strong> dans le cadre du module Tests logiciels.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de tests e2e avec playwright en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Tests E2E avec Playwright intervient à l'étape 6 du module « Tests logiciels ».
+      En projet professionnel, cette compétence permet de écrire des tests unitaires avec jest et vitest.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Tests E2E avec Playwright
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer tests e2e avec playwright et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer tests e2e avec playwright dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Tests E2E avec Playwright — chapitre 6 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Tests E2E Playwright »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Tests E2E avec Cypress</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Tests E2E avec Cypress</strong> dans le cadre du module Tests logiciels.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de tests e2e avec cypress en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Tests E2E avec Cypress intervient à l'étape 7 du module « Tests logiciels ».
+      En projet professionnel, cette compétence permet de tester des apis avec supertest.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Tests E2E avec Cypress
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer tests e2e avec cypress et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer tests e2e avec cypress dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Tests E2E avec Cypress — chapitre 7 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Tests E2E Playwright »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Couverture de code et métriques</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Couverture de code et métriques</strong> dans le cadre du module Tests logiciels.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de couverture de code et métriques en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Couverture de code et métriques intervient à l'étape 8 du module « Tests logiciels ».
+      En projet professionnel, cette compétence permet de automatiser des tests e2e avec playwright et cypress.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Couverture de code et métriques
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer couverture de code et métriques et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer couverture de code et métriques dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Couverture de code et métriques — chapitre 8 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Tests E2E Playwright »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — TDD : Test-Driven Development</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>TDD : Test-Driven Development</strong> dans le cadre du module Tests logiciels.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de tdd : test-driven development en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      TDD : Test-Driven Development intervient à l'étape 9 du module « Tests logiciels ».
+      En projet professionnel, cette compétence permet de atteindre 80 % de couverture de code minimum.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — TDD : Test-Driven Development
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer tdd : test-driven development et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer tdd : test-driven development dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>TDD : Test-Driven Development — chapitre 9 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Tests E2E Playwright »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Tests dans la CI/CD</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Tests dans la CI/CD</strong> dans le cadre du module Tests logiciels.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de tests dans la ci/cd en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Tests dans la CI/CD intervient à l'étape 10 du module « Tests logiciels ».
+      En projet professionnel, cette compétence permet de intégrer les tests dans le workflow de développement.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Tests dans la CI/CD
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer tests dans la ci/cd et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer tests dans la ci/cd dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Tests dans la CI/CD — chapitre 10 / 10</li>
+      <li>Durée module : 35h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Tests E2E Playwright »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

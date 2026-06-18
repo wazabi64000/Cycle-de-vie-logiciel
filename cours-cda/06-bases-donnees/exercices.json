@@ -1,0 +1,132 @@
+{
+  "module": "06-bases-donnees",
+  "exercices": [
+    {
+      "id": "exo-debutant-1",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 1 — Bases de données",
+      "enonce": "Mettre en pratique les concepts de Introduction aux bases de données relationnelles au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Introduction aux bases de données relationnelles",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-debutant-2",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 2 — Bases de données",
+      "enonce": "Mettre en pratique les concepts de Introduction aux bases de données relationnelles au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Introduction aux bases de données relationnelles",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-intermediaire-1",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 1 — Bases de données",
+      "enonce": "Mettre en pratique les concepts de Modélisation et normalisation au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Modélisation et normalisation",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-intermediaire-2",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 2 — Bases de données",
+      "enonce": "Mettre en pratique les concepts de Modélisation et normalisation au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Modélisation et normalisation",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-1",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 1 — Bases de données",
+      "enonce": "Mettre en pratique les concepts de SQL : CRUD et filtres au niveau Avancé.",
+      "objectifs": [
+        "Comprendre SQL : CRUD et filtres",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-2",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 2 — Bases de données",
+      "enonce": "Mettre en pratique les concepts de SQL : CRUD et filtres au niveau Avancé.",
+      "objectifs": [
+        "Comprendre SQL : CRUD et filtres",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-expert-1",
+      "niveau": "expert",
+      "titre": "Exercice Expert 1 — Bases de données",
+      "enonce": "Mettre en pratique les concepts de Jointures et agrégations au niveau Expert.",
+      "objectifs": [
+        "Comprendre Jointures et agrégations",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "120min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 4",
+        "Consulter les ressources.json"
+      ]
+    }
+  ]
+}

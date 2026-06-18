@@ -1,0 +1,80 @@
+{
+  "module": "17-osint",
+  "corrections": [
+    {
+      "type": "exercice",
+      "id": "exo-debutant-1",
+      "correction": "Solution détaillée de l'exercice debutant — à compléter lors de la rédaction.",
+      "explications": [
+        "Approche recommandée pour OSINT défensif",
+        "Points d'attention courants"
+      ]
+    },
+    {
+      "type": "exercice",
+      "id": "exo-intermediaire-1",
+      "correction": "Solution détaillée de l'exercice intermediaire — à compléter lors de la rédaction.",
+      "explications": [
+        "Approche recommandée pour OSINT défensif",
+        "Points d'attention courants"
+      ]
+    },
+    {
+      "type": "exercice",
+      "id": "exo-avance-1",
+      "correction": "Solution détaillée de l'exercice avance — à compléter lors de la rédaction.",
+      "explications": [
+        "Approche recommandée pour OSINT défensif",
+        "Points d'attention courants"
+      ]
+    },
+    {
+      "type": "exercice",
+      "id": "exo-expert-1",
+      "correction": "Solution détaillée de l'exercice expert — à compléter lors de la rédaction.",
+      "explications": [
+        "Approche recommandée pour OSINT défensif",
+        "Points d'attention courants"
+      ]
+    },
+    {
+      "type": "tp",
+      "id": "tp-01",
+      "correction": "Correction complète du TP « Audit DNS ».",
+      "fichiers": [
+        "solutions/tp-01/"
+      ],
+      "explications": [
+        "Architecture de la solution",
+        "Choix techniques justifiés",
+        "Améliorations possibles"
+      ]
+    },
+    {
+      "type": "tp",
+      "id": "tp-02",
+      "correction": "Correction complète du TP « Rapport Shodan ».",
+      "fichiers": [
+        "solutions/tp-02/"
+      ],
+      "explications": [
+        "Architecture de la solution",
+        "Choix techniques justifiés",
+        "Améliorations possibles"
+      ]
+    },
+    {
+      "type": "tp",
+      "id": "tp-03",
+      "correction": "Correction complète du TP « Audit OSINT complet ».",
+      "fichiers": [
+        "solutions/tp-03/"
+      ],
+      "explications": [
+        "Architecture de la solution",
+        "Choix techniques justifiés",
+        "Améliorations possibles"
+      ]
+    }
+  ]
+}

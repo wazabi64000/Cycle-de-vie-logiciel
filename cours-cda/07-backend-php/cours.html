@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 07 — Backend PHP moderne | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="07-backend-php"
+  data-module-id="07"
+  data-module-title="Backend PHP moderne"
+  data-module-duration="50h"
+  data-module-level="Intermédiaire à Avancé">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 07 — Backend PHP moderne</h1>
+        <p>PHP 8+, architecture MVC et Laravel</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 50h</span>
+          <span class="cours-badge">📊 Intermédiaire à Avancé</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>PHP alimente 77 % du web (WordPress, Symfony, Laravel). Compétence indispensable sur le marché français.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>CMS, e-commerce, APIs REST, applications métier.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout la logique serveur, la persistance et l'exposition d'APIs.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>Backend PHP moderne : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Programmer en PHP 8+ avec typage strict</li>
+          <li>Appliquer l'architecture MVC, Services, Repository et DTO</li>
+          <li>Créer des middlewares et gérer l'authentification</li>
+          <li>Développer une API REST avec Laravel</li>
+          <li>Réaliser un projet complet Laravel</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 07 — Backend PHP moderne
+    ↓
+PHP 8+ : syntaxe moderne et typage
+    ↓
+POO avancée en PHP
+    ↓
+Architecture MVC
+    ↓
+Services et Repository pattern
+    ↓
+DTO et validation
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de backend php moderne.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec backend php moderne.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Auth complète : register, login, JWT, RBAC avec Laravel.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>API REST PHP vanilla <span class="cours-badge">Intermédiaire</span></h4>
+          <p>API REST avec architecture MVC sans framework.</p>
+          <p><em>Durée : 6h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>CRUD Laravel <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Application CRUD complète avec Laravel et Eloquent.</p>
+          <p><em>Durée : 8h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Système d'authentification <span class="cours-badge">Avancé</span></h4>
+          <p>Auth complète : register, login, JWT, RBAC avec Laravel.</p>
+          <p><em>Durée : 10h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">PHP 8+ : syntaxe moderne et typage</a></li>
+          <li><a href="#chapitre-2">POO avancée en PHP</a></li>
+          <li><a href="#chapitre-3">Architecture MVC</a></li>
+          <li><a href="#chapitre-4">Services et Repository pattern</a></li>
+          <li><a href="#chapitre-5">DTO et validation</a></li>
+          <li><a href="#chapitre-6">Middleware et pipeline HTTP</a></li>
+          <li><a href="#chapitre-7">Introduction à Laravel</a></li>
+          <li><a href="#chapitre-8">Eloquent ORM et migrations</a></li>
+          <li><a href="#chapitre-9">API REST avec Laravel</a></li>
+          <li><a href="#chapitre-10">Projet Laravel complet</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — PHP 8+ : syntaxe moderne et typage</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>PHP 8+ : syntaxe moderne et typage</strong> dans le cadre du module Backend PHP moderne.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de php 8+ : syntaxe moderne et typage en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      PHP 8+ : syntaxe moderne et typage intervient à l'étape 1 du module « Backend PHP moderne ».
+      En projet professionnel, cette compétence permet de programmer en php 8+ avec typage strict.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — PHP 8+ : syntaxe moderne et typage
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer php 8+ : syntaxe moderne et typage et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer php 8+ : syntaxe moderne et typage dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>PHP 8+ : syntaxe moderne et typage — chapitre 1 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « API REST PHP vanilla »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — POO avancée en PHP</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>POO avancée en PHP</strong> dans le cadre du module Backend PHP moderne.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de poo avancée en php en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      POO avancée en PHP intervient à l'étape 2 du module « Backend PHP moderne ».
+      En projet professionnel, cette compétence permet de appliquer l'architecture mvc, services, repository et dto.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — POO avancée en PHP
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer poo avancée en php et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer poo avancée en php dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>POO avancée en PHP — chapitre 2 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « CRUD Laravel »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Architecture MVC</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Architecture MVC</strong> dans le cadre du module Backend PHP moderne.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de architecture mvc en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Architecture MVC intervient à l'étape 3 du module « Backend PHP moderne ».
+      En projet professionnel, cette compétence permet de créer des middlewares et gérer l'authentification.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Architecture MVC
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer architecture mvc et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer architecture mvc dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Architecture MVC — chapitre 3 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Système d'authentification »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Services et Repository pattern</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Services et Repository pattern</strong> dans le cadre du module Backend PHP moderne.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de services et repository pattern en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Services et Repository pattern intervient à l'étape 4 du module « Backend PHP moderne ».
+      En projet professionnel, cette compétence permet de développer une api rest avec laravel.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Services et Repository pattern
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer services et repository pattern et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer services et repository pattern dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Services et Repository pattern — chapitre 4 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Système d'authentification »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — DTO et validation</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>DTO et validation</strong> dans le cadre du module Backend PHP moderne.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de dto et validation en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      DTO et validation intervient à l'étape 5 du module « Backend PHP moderne ».
+      En projet professionnel, cette compétence permet de réaliser un projet complet laravel.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — DTO et validation
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer dto et validation et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer dto et validation dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>DTO et validation — chapitre 5 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Système d'authentification »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Middleware et pipeline HTTP</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Middleware et pipeline HTTP</strong> dans le cadre du module Backend PHP moderne.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de middleware et pipeline http en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Middleware et pipeline HTTP intervient à l'étape 6 du module « Backend PHP moderne ».
+      En projet professionnel, cette compétence permet de programmer en php 8+ avec typage strict.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Middleware et pipeline HTTP
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer middleware et pipeline http et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer middleware et pipeline http dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Middleware et pipeline HTTP — chapitre 6 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Système d'authentification »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Introduction à Laravel</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Introduction à Laravel</strong> dans le cadre du module Backend PHP moderne.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de introduction à laravel en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Introduction à Laravel intervient à l'étape 7 du module « Backend PHP moderne ».
+      En projet professionnel, cette compétence permet de appliquer l'architecture mvc, services, repository et dto.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Introduction à Laravel
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer introduction à laravel et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer introduction à laravel dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Introduction à Laravel — chapitre 7 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Système d'authentification »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Eloquent ORM et migrations</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Eloquent ORM et migrations</strong> dans le cadre du module Backend PHP moderne.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de eloquent orm et migrations en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Eloquent ORM et migrations intervient à l'étape 8 du module « Backend PHP moderne ».
+      En projet professionnel, cette compétence permet de créer des middlewares et gérer l'authentification.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Eloquent ORM et migrations
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer eloquent orm et migrations et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer eloquent orm et migrations dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Eloquent ORM et migrations — chapitre 8 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Système d'authentification »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — API REST avec Laravel</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>API REST avec Laravel</strong> dans le cadre du module Backend PHP moderne.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de api rest avec laravel en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      API REST avec Laravel intervient à l'étape 9 du module « Backend PHP moderne ».
+      En projet professionnel, cette compétence permet de développer une api rest avec laravel.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — API REST avec Laravel
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer api rest avec laravel et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer api rest avec laravel dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>API REST avec Laravel — chapitre 9 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Système d'authentification »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Projet Laravel complet</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Projet Laravel complet</strong> dans le cadre du module Backend PHP moderne.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de projet laravel complet en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Projet Laravel complet intervient à l'étape 10 du module « Backend PHP moderne ».
+      En projet professionnel, cette compétence permet de réaliser un projet complet laravel.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Projet Laravel complet
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer projet laravel complet et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer projet laravel complet dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Projet Laravel complet — chapitre 10 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Système d'authentification »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

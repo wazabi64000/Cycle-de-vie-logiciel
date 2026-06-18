@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 10 — Flutter | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="10-flutter"
+  data-module-id="10"
+  data-module-title="Flutter"
+  data-module-duration="40h"
+  data-module-level="Intermédiaire">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 10 — Flutter</h1>
+        <p>Développement mobile cross-platform</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 40h</span>
+          <span class="cours-badge">📊 Intermédiaire</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>Flutter permet de développer pour Android et iOS avec une seule codebase.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>Applications mobiles, desktop, web embarqué.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout le coût du développement multi-plateforme et les performances natives.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>Flutter : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Comprendre le modèle Widget de Flutter</li>
+          <li>Gérer l'état (setState, Provider, Riverpod)</li>
+          <li>Implémenter la navigation multi-écrans</li>
+          <li>Consommer des APIs REST</li>
+          <li>Publier sur Android et iOS</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 10 — Flutter
+    ↓
+Introduction à Flutter et Dart
+    ↓
+Widgets Stateless et Stateful
+    ↓
+Layouts et responsive
+    ↓
+State management
+    ↓
+Navigation et routing
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de flutter.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec flutter.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Application e-commerce complète avec auth et panier.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>App météo <span class="cours-badge">Débutant</span></h4>
+          <p>Application météo consommant une API publique.</p>
+          <p><em>Durée : 5h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Todo mobile <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Todo list avec stockage local et navigation.</p>
+          <p><em>Durée : 6h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>App e-commerce mobile <span class="cours-badge">Avancé</span></h4>
+          <p>Application e-commerce complète avec auth et panier.</p>
+          <p><em>Durée : 12h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Introduction à Flutter et Dart</a></li>
+          <li><a href="#chapitre-2">Widgets Stateless et Stateful</a></li>
+          <li><a href="#chapitre-3">Layouts et responsive</a></li>
+          <li><a href="#chapitre-4">State management</a></li>
+          <li><a href="#chapitre-5">Navigation et routing</a></li>
+          <li><a href="#chapitre-6">Consommation d'API</a></li>
+          <li><a href="#chapitre-7">Stockage local</a></li>
+          <li><a href="#chapitre-8">Tests Flutter</a></li>
+          <li><a href="#chapitre-9">Publication Android</a></li>
+          <li><a href="#chapitre-10">Publication iOS</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Introduction à Flutter et Dart</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Introduction à Flutter et Dart</strong> dans le cadre du module Flutter.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de introduction à flutter et dart en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Introduction à Flutter et Dart intervient à l'étape 1 du module « Flutter ».
+      En projet professionnel, cette compétence permet de comprendre le modèle widget de flutter.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Introduction à Flutter et Dart
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer introduction à flutter et dart et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer introduction à flutter et dart dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Introduction à Flutter et Dart — chapitre 1 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « App météo »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Widgets Stateless et Stateful</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Widgets Stateless et Stateful</strong> dans le cadre du module Flutter.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de widgets stateless et stateful en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Widgets Stateless et Stateful intervient à l'étape 2 du module « Flutter ».
+      En projet professionnel, cette compétence permet de gérer l'état (setstate, provider, riverpod).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Widgets Stateless et Stateful
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer widgets stateless et stateful et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer widgets stateless et stateful dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Widgets Stateless et Stateful — chapitre 2 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Todo mobile »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Layouts et responsive</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Layouts et responsive</strong> dans le cadre du module Flutter.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de layouts et responsive en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Layouts et responsive intervient à l'étape 3 du module « Flutter ».
+      En projet professionnel, cette compétence permet de implémenter la navigation multi-écrans.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Layouts et responsive
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer layouts et responsive et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer layouts et responsive dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Layouts et responsive — chapitre 3 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « App e-commerce mobile »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — State management</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>State management</strong> dans le cadre du module Flutter.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de state management en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      State management intervient à l'étape 4 du module « Flutter ».
+      En projet professionnel, cette compétence permet de consommer des apis rest.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — State management
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer state management et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer state management dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>State management — chapitre 4 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « App e-commerce mobile »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — Navigation et routing</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Navigation et routing</strong> dans le cadre du module Flutter.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de navigation et routing en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Navigation et routing intervient à l'étape 5 du module « Flutter ».
+      En projet professionnel, cette compétence permet de publier sur android et ios.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Navigation et routing
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer navigation et routing et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer navigation et routing dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Navigation et routing — chapitre 5 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « App e-commerce mobile »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Consommation d'API</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Consommation d'API</strong> dans le cadre du module Flutter.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de consommation d'api en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Consommation d'API intervient à l'étape 6 du module « Flutter ».
+      En projet professionnel, cette compétence permet de comprendre le modèle widget de flutter.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Consommation d'API
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer consommation d'api et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer consommation d'api dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Consommation d'API — chapitre 6 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « App e-commerce mobile »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Stockage local</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Stockage local</strong> dans le cadre du module Flutter.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de stockage local en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Stockage local intervient à l'étape 7 du module « Flutter ».
+      En projet professionnel, cette compétence permet de gérer l'état (setstate, provider, riverpod).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Stockage local
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer stockage local et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer stockage local dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Stockage local — chapitre 7 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « App e-commerce mobile »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Tests Flutter</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Tests Flutter</strong> dans le cadre du module Flutter.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de tests flutter en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Tests Flutter intervient à l'étape 8 du module « Flutter ».
+      En projet professionnel, cette compétence permet de implémenter la navigation multi-écrans.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Tests Flutter
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer tests flutter et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer tests flutter dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Tests Flutter — chapitre 8 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « App e-commerce mobile »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Publication Android</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Publication Android</strong> dans le cadre du module Flutter.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de publication android en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Publication Android intervient à l'étape 9 du module « Flutter ».
+      En projet professionnel, cette compétence permet de consommer des apis rest.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Publication Android
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer publication android et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer publication android dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Publication Android — chapitre 9 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « App e-commerce mobile »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Publication iOS</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Publication iOS</strong> dans le cadre du module Flutter.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de publication ios en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Publication iOS intervient à l'étape 10 du module « Flutter ».
+      En projet professionnel, cette compétence permet de publier sur android et ios.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Publication iOS
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer publication ios et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer publication ios dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Publication iOS — chapitre 10 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « App e-commerce mobile »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

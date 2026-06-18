@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 17 — OSINT défensif | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="17-osint"
+  data-module-id="17"
+  data-module-title="OSINT défensif"
+  data-module-duration="20h"
+  data-module-level="Intermédiaire">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 17 — OSINT défensif</h1>
+        <p>Recherche d'informations et sécurité défensive</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 20h</span>
+          <span class="cours-badge">📊 Intermédiaire</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>Connaître son exposition permet de la réduire avant qu'un attaquant ne l'exploite.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>Audits de sécurité, bug bounty, conformité, SOC.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout la méconnaissance de sa surface d'attaque et les fuites de données non détectées.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>OSINT défensif : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Comprendre l'OSINT dans une démarche défensive</li>
+          <li>Utiliser Whois, DNS et énumération de sous-domaines</li>
+          <li>Analyser l'exposition avec Shodan</li>
+          <li>Vérifier les security headers et fuites de données</li>
+          <li>Produire un rapport d'exposition</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 17 — OSINT défensif
+    ↓
+Introduction à l'OSINT défensif
+    ↓
+Cadre légal et éthique
+    ↓
+Whois et registres DNS
+    ↓
+Énumération de sous-domaines
+    ↓
+Shodan et exposition des services
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de osint défensif.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec osint défensif.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Rapport d'exposition complet avec recommandations.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Audit DNS <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Cartographier l'infrastructure DNS d'un domaine.</p>
+          <p><em>Durée : 3h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Rapport Shodan <span class="cours-badge">Avancé</span></h4>
+          <p>Analyser l'exposition d'un serveur avec Shodan.</p>
+          <p><em>Durée : 4h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Audit OSINT complet <span class="cours-badge">Expert</span></h4>
+          <p>Rapport d'exposition complet avec recommandations.</p>
+          <p><em>Durée : 6h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Introduction à l'OSINT défensif</a></li>
+          <li><a href="#chapitre-2">Cadre légal et éthique</a></li>
+          <li><a href="#chapitre-3">Whois et registres DNS</a></li>
+          <li><a href="#chapitre-4">Énumération de sous-domaines</a></li>
+          <li><a href="#chapitre-5">Shodan et exposition des services</a></li>
+          <li><a href="#chapitre-6">Security Headers analysis</a></li>
+          <li><a href="#chapitre-7">Leak checkers et fuites de credentials</a></li>
+          <li><a href="#chapitre-8">Reconnaissance passive</a></li>
+          <li><a href="#chapitre-9">Rapport d'audit OSINT</a></li>
+          <li><a href="#chapitre-10">Durcissement post-audit</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Introduction à l'OSINT défensif</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Introduction à l'OSINT défensif</strong> dans le cadre du module OSINT défensif.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de introduction à l'osint défensif en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Introduction à l'OSINT défensif intervient à l'étape 1 du module « OSINT défensif ».
+      En projet professionnel, cette compétence permet de comprendre l'osint dans une démarche défensive.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Introduction à l'OSINT défensif
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer introduction à l'osint défensif et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer introduction à l'osint défensif dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Introduction à l'OSINT défensif — chapitre 1 / 10</li>
+      <li>Durée module : 20h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Audit DNS »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Cadre légal et éthique</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Cadre légal et éthique</strong> dans le cadre du module OSINT défensif.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de cadre légal et éthique en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Cadre légal et éthique intervient à l'étape 2 du module « OSINT défensif ».
+      En projet professionnel, cette compétence permet de utiliser whois, dns et énumération de sous-domaines.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Cadre légal et éthique
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer cadre légal et éthique et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer cadre légal et éthique dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Cadre légal et éthique — chapitre 2 / 10</li>
+      <li>Durée module : 20h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Rapport Shodan »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Whois et registres DNS</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Whois et registres DNS</strong> dans le cadre du module OSINT défensif.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de whois et registres dns en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Whois et registres DNS intervient à l'étape 3 du module « OSINT défensif ».
+      En projet professionnel, cette compétence permet de analyser l'exposition avec shodan.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Whois et registres DNS
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer whois et registres dns et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer whois et registres dns dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Whois et registres DNS — chapitre 3 / 10</li>
+      <li>Durée module : 20h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Audit OSINT complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Énumération de sous-domaines</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Énumération de sous-domaines</strong> dans le cadre du module OSINT défensif.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de énumération de sous-domaines en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Énumération de sous-domaines intervient à l'étape 4 du module « OSINT défensif ».
+      En projet professionnel, cette compétence permet de vérifier les security headers et fuites de données.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Énumération de sous-domaines
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer énumération de sous-domaines et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer énumération de sous-domaines dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Énumération de sous-domaines — chapitre 4 / 10</li>
+      <li>Durée module : 20h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Audit OSINT complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — Shodan et exposition des services</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Shodan et exposition des services</strong> dans le cadre du module OSINT défensif.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de shodan et exposition des services en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Shodan et exposition des services intervient à l'étape 5 du module « OSINT défensif ».
+      En projet professionnel, cette compétence permet de produire un rapport d'exposition.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Shodan et exposition des services
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer shodan et exposition des services et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer shodan et exposition des services dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Shodan et exposition des services — chapitre 5 / 10</li>
+      <li>Durée module : 20h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Audit OSINT complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Security Headers analysis</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Security Headers analysis</strong> dans le cadre du module OSINT défensif.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de security headers analysis en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Security Headers analysis intervient à l'étape 6 du module « OSINT défensif ».
+      En projet professionnel, cette compétence permet de comprendre l'osint dans une démarche défensive.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Security Headers analysis
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer security headers analysis et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer security headers analysis dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Security Headers analysis — chapitre 6 / 10</li>
+      <li>Durée module : 20h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Audit OSINT complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Leak checkers et fuites de credentials</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Leak checkers et fuites de credentials</strong> dans le cadre du module OSINT défensif.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de leak checkers et fuites de credentials en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Leak checkers et fuites de credentials intervient à l'étape 7 du module « OSINT défensif ».
+      En projet professionnel, cette compétence permet de utiliser whois, dns et énumération de sous-domaines.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Leak checkers et fuites de credentials
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer leak checkers et fuites de credentials et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer leak checkers et fuites de credentials dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Leak checkers et fuites de credentials — chapitre 7 / 10</li>
+      <li>Durée module : 20h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Audit OSINT complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Reconnaissance passive</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Reconnaissance passive</strong> dans le cadre du module OSINT défensif.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de reconnaissance passive en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Reconnaissance passive intervient à l'étape 8 du module « OSINT défensif ».
+      En projet professionnel, cette compétence permet de analyser l'exposition avec shodan.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Reconnaissance passive
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer reconnaissance passive et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer reconnaissance passive dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Reconnaissance passive — chapitre 8 / 10</li>
+      <li>Durée module : 20h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Audit OSINT complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Rapport d'audit OSINT</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Rapport d'audit OSINT</strong> dans le cadre du module OSINT défensif.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de rapport d'audit osint en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Rapport d'audit OSINT intervient à l'étape 9 du module « OSINT défensif ».
+      En projet professionnel, cette compétence permet de vérifier les security headers et fuites de données.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Rapport d'audit OSINT
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer rapport d'audit osint et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer rapport d'audit osint dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Rapport d'audit OSINT — chapitre 9 / 10</li>
+      <li>Durée module : 20h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Audit OSINT complet »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Durcissement post-audit</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Durcissement post-audit</strong> dans le cadre du module OSINT défensif.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de durcissement post-audit en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Durcissement post-audit intervient à l'étape 10 du module « OSINT défensif ».
+      En projet professionnel, cette compétence permet de produire un rapport d'exposition.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Durcissement post-audit
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer durcissement post-audit et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer durcissement post-audit dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Durcissement post-audit — chapitre 10 / 10</li>
+      <li>Durée module : 20h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Audit OSINT complet »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

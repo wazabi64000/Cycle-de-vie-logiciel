@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 08 — Backend Node.js | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="08-backend-nodejs"
+  data-module-id="08"
+  data-module-title="Backend Node.js"
+  data-module-duration="50h"
+  data-module-level="Intermédiaire à Avancé">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 08 — Backend Node.js</h1>
+        <p>Express, authentification JWT et PostgreSQL</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 50h</span>
+          <span class="cours-badge">📊 Intermédiaire à Avancé</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>Node.js permet d'utiliser JavaScript côté serveur, unifiant la stack technique fullstack.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>APIs REST, microservices, temps réel (WebSocket), serverless.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout la logique serveur JavaScript, la scalabilité I/O et le développement fullstack unifié.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>Backend Node.js : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Créer une API REST avec Express</li>
+          <li>Structurer en Routes, Controllers, Services, Repositories</li>
+          <li>Implémenter JWT, Refresh Token et RBAC</li>
+          <li>Interagir avec PostgreSQL (jointures, transactions, index)</li>
+          <li>Optimiser les performances backend</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 08 — Backend Node.js
+    ↓
+Node.js et l'écosystème npm
+    ↓
+Express : routes et middleware
+    ↓
+Architecture en couches
+    ↓
+Controllers et Services
+    ↓
+Repository pattern avec PostgreSQL
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de backend node.js.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec backend node.js.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>API REST marketplace avec paiement simulé et messagerie.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>API REST Express <span class="cours-badge">Intermédiaire</span></h4>
+          <p>API CRUD complète avec architecture en couches.</p>
+          <p><em>Durée : 6h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Authentification JWT <span class="cours-badge">Avancé</span></h4>
+          <p>Système auth complet : JWT, refresh, RBAC.</p>
+          <p><em>Durée : 8h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>API marketplace <span class="cours-badge">Expert</span></h4>
+          <p>API REST marketplace avec paiement simulé et messagerie.</p>
+          <p><em>Durée : 15h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Node.js et l'écosystème npm</a></li>
+          <li><a href="#chapitre-2">Express : routes et middleware</a></li>
+          <li><a href="#chapitre-3">Architecture en couches</a></li>
+          <li><a href="#chapitre-4">Controllers et Services</a></li>
+          <li><a href="#chapitre-5">Repository pattern avec PostgreSQL</a></li>
+          <li><a href="#chapitre-6">Authentification JWT</a></li>
+          <li><a href="#chapitre-7">Refresh Token et sessions</a></li>
+          <li><a href="#chapitre-8">RBAC et autorisation</a></li>
+          <li><a href="#chapitre-9">Validation et gestion d'erreurs</a></li>
+          <li><a href="#chapitre-10">Optimisation et bonnes pratiques</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Node.js et l'écosystème npm</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Node.js et l'écosystème npm</strong> dans le cadre du module Backend Node.js.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de node.js et l'écosystème npm en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Node.js et l'écosystème npm intervient à l'étape 1 du module « Backend Node.js ».
+      En projet professionnel, cette compétence permet de créer une api rest avec express.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Node.js et l'écosystème npm
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer node.js et l'écosystème npm et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer node.js et l'écosystème npm dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Node.js et l'écosystème npm — chapitre 1 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « API REST Express »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Express : routes et middleware</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Express : routes et middleware</strong> dans le cadre du module Backend Node.js.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de express : routes et middleware en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Express : routes et middleware intervient à l'étape 2 du module « Backend Node.js ».
+      En projet professionnel, cette compétence permet de structurer en routes, controllers, services, repositories.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Express : routes et middleware
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer express : routes et middleware et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer express : routes et middleware dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Express : routes et middleware — chapitre 2 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « Authentification JWT »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — Architecture en couches</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Architecture en couches</strong> dans le cadre du module Backend Node.js.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de architecture en couches en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Architecture en couches intervient à l'étape 3 du module « Backend Node.js ».
+      En projet professionnel, cette compétence permet de implémenter jwt, refresh token et rbac.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Architecture en couches
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer architecture en couches et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer architecture en couches dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Architecture en couches — chapitre 3 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « API marketplace »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Controllers et Services</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Controllers et Services</strong> dans le cadre du module Backend Node.js.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de controllers et services en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Controllers et Services intervient à l'étape 4 du module « Backend Node.js ».
+      En projet professionnel, cette compétence permet de interagir avec postgresql (jointures, transactions, index).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Controllers et Services
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer controllers et services et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer controllers et services dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Controllers et Services — chapitre 4 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « API marketplace »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — Repository pattern avec PostgreSQL</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Repository pattern avec PostgreSQL</strong> dans le cadre du module Backend Node.js.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de repository pattern avec postgresql en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Repository pattern avec PostgreSQL intervient à l'étape 5 du module « Backend Node.js ».
+      En projet professionnel, cette compétence permet de optimiser les performances backend.
+    </p>
+
+    <h3>Exemple de code</h3><pre class="code-block">app.get('/api/users', async (req, res) => {
+  const users = await userService.findAll();
+  res.json(users);
+});</pre>
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Repository pattern avec PostgreSQL
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer repository pattern avec postgresql et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer repository pattern avec postgresql dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Repository pattern avec PostgreSQL — chapitre 5 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « API marketplace »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Authentification JWT</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Authentification JWT</strong> dans le cadre du module Backend Node.js.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de authentification jwt en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Authentification JWT intervient à l'étape 6 du module « Backend Node.js ».
+      En projet professionnel, cette compétence permet de créer une api rest avec express.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Authentification JWT
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer authentification jwt et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer authentification jwt dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Authentification JWT — chapitre 6 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « API marketplace »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — Refresh Token et sessions</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Refresh Token et sessions</strong> dans le cadre du module Backend Node.js.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de refresh token et sessions en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Refresh Token et sessions intervient à l'étape 7 du module « Backend Node.js ».
+      En projet professionnel, cette compétence permet de structurer en routes, controllers, services, repositories.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Refresh Token et sessions
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer refresh token et sessions et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer refresh token et sessions dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Refresh Token et sessions — chapitre 7 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « API marketplace »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — RBAC et autorisation</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>RBAC et autorisation</strong> dans le cadre du module Backend Node.js.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de rbac et autorisation en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      RBAC et autorisation intervient à l'étape 8 du module « Backend Node.js ».
+      En projet professionnel, cette compétence permet de implémenter jwt, refresh token et rbac.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — RBAC et autorisation
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer rbac et autorisation et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer rbac et autorisation dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>RBAC et autorisation — chapitre 8 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « API marketplace »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Validation et gestion d'erreurs</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Validation et gestion d'erreurs</strong> dans le cadre du module Backend Node.js.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de validation et gestion d'erreurs en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Validation et gestion d'erreurs intervient à l'étape 9 du module « Backend Node.js ».
+      En projet professionnel, cette compétence permet de interagir avec postgresql (jointures, transactions, index).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Validation et gestion d'erreurs
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer validation et gestion d'erreurs et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer validation et gestion d'erreurs dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Validation et gestion d'erreurs — chapitre 9 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « API marketplace »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — Optimisation et bonnes pratiques</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Optimisation et bonnes pratiques</strong> dans le cadre du module Backend Node.js.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de optimisation et bonnes pratiques en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Optimisation et bonnes pratiques intervient à l'étape 10 du module « Backend Node.js ».
+      En projet professionnel, cette compétence permet de optimiser les performances backend.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Optimisation et bonnes pratiques
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer optimisation et bonnes pratiques et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer optimisation et bonnes pratiques dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Optimisation et bonnes pratiques — chapitre 10 / 10</li>
+      <li>Durée module : 50h · Niveau : Intermédiaire à Avancé</li>
+      <li>Prépare le TP : « API marketplace »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

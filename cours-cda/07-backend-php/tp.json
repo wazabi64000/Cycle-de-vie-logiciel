@@ -1,0 +1,80 @@
+{
+  "module": "07-backend-php",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "API REST PHP vanilla",
+      "level": "Intermédiaire",
+      "duration": "6h",
+      "description": "API REST avec architecture MVC sans framework.",
+      "objectifs": [
+        "Programmer en PHP 8+ avec typage strict",
+        "Appliquer l'architecture MVC, Services, Repository et DTO",
+        "Créer des middlewares et gérer l'authentification"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "CRUD Laravel",
+      "level": "Intermédiaire",
+      "duration": "8h",
+      "description": "Application CRUD complète avec Laravel et Eloquent.",
+      "objectifs": [
+        "Programmer en PHP 8+ avec typage strict",
+        "Appliquer l'architecture MVC, Services, Repository et DTO",
+        "Créer des middlewares et gérer l'authentification"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Système d'authentification",
+      "level": "Avancé",
+      "duration": "10h",
+      "description": "Auth complète : register, login, JWT, RBAC avec Laravel.",
+      "objectifs": [
+        "Programmer en PHP 8+ avec typage strict",
+        "Appliquer l'architecture MVC, Services, Repository et DTO",
+        "Créer des middlewares et gérer l'authentification"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

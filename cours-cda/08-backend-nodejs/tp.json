@@ -1,0 +1,80 @@
+{
+  "module": "08-backend-nodejs",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "API REST Express",
+      "level": "Intermédiaire",
+      "duration": "6h",
+      "description": "API CRUD complète avec architecture en couches.",
+      "objectifs": [
+        "Créer une API REST avec Express",
+        "Structurer en Routes, Controllers, Services, Repositories",
+        "Implémenter JWT, Refresh Token et RBAC"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Authentification JWT",
+      "level": "Avancé",
+      "duration": "8h",
+      "description": "Système auth complet : JWT, refresh, RBAC.",
+      "objectifs": [
+        "Créer une API REST avec Express",
+        "Structurer en Routes, Controllers, Services, Repositories",
+        "Implémenter JWT, Refresh Token et RBAC"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "API marketplace",
+      "level": "Expert",
+      "duration": "15h",
+      "description": "API REST marketplace avec paiement simulé et messagerie.",
+      "objectifs": [
+        "Créer une API REST avec Express",
+        "Structurer en Routes, Controllers, Services, Repositories",
+        "Implémenter JWT, Refresh Token et RBAC"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

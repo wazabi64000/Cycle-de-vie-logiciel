@@ -1,0 +1,80 @@
+{
+  "module": "02-gestion-projet",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Backlog Scrum",
+      "level": "Débutant",
+      "duration": "3h",
+      "description": "Créer un backlog complet avec Epics et User Stories pour un projet e-commerce.",
+      "objectifs": [
+        "Comprendre le cycle en V et ses phases",
+        "Appliquer Scrum, Kanban et Lean",
+        "Utiliser Jira pour gérer Epics, Stories, Tasks et Bugs"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Tableau Kanban",
+      "level": "Intermédiaire",
+      "duration": "2h",
+      "description": "Configurer un flux Kanban avec WIP limits et métriques.",
+      "objectifs": [
+        "Comprendre le cycle en V et ses phases",
+        "Appliquer Scrum, Kanban et Lean",
+        "Utiliser Jira pour gérer Epics, Stories, Tasks et Bugs"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Planning 100h",
+      "level": "Avancé",
+      "duration": "4h",
+      "description": "Répartir 100h sur analyse, conception, dev, tests, doc et déploiement.",
+      "objectifs": [
+        "Comprendre le cycle en V et ses phases",
+        "Appliquer Scrum, Kanban et Lean",
+        "Utiliser Jira pour gérer Epics, Stories, Tasks et Bugs"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

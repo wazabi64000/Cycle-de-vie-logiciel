@@ -1,0 +1,80 @@
+{
+  "module": "13-securite",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Audit OWASP",
+      "level": "Avancé",
+      "duration": "6h",
+      "description": "Auditer une application vulnérable et corriger les 10 failles OWASP.",
+      "objectifs": [
+        "Maîtriser l'OWASP Top 10 en détail",
+        "Implémenter JWT, sessions, OAuth et 2FA",
+        "Sécuriser une API (rate limit, helmet, validation)"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Auth sécurisée",
+      "level": "Avancé",
+      "duration": "8h",
+      "description": "Implémenter auth JWT + 2FA + rate limiting.",
+      "objectifs": [
+        "Maîtriser l'OWASP Top 10 en détail",
+        "Implémenter JWT, sessions, OAuth et 2FA",
+        "Sécuriser une API (rate limit, helmet, validation)"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "API sécurisée",
+      "level": "Expert",
+      "duration": "10h",
+      "description": "Sécuriser une API complète : helmet, CORS, validation, RBAC.",
+      "objectifs": [
+        "Maîtriser l'OWASP Top 10 en détail",
+        "Implémenter JWT, sessions, OAuth et 2FA",
+        "Sécuriser une API (rate limit, helmet, validation)"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

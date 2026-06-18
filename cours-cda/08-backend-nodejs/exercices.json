@@ -1,0 +1,132 @@
+{
+  "module": "08-backend-nodejs",
+  "exercices": [
+    {
+      "id": "exo-debutant-1",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 1 — Backend Node.js",
+      "enonce": "Mettre en pratique les concepts de Node.js et l'écosystème npm au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Node.js et l'écosystème npm",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-debutant-2",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 2 — Backend Node.js",
+      "enonce": "Mettre en pratique les concepts de Node.js et l'écosystème npm au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Node.js et l'écosystème npm",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-intermediaire-1",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 1 — Backend Node.js",
+      "enonce": "Mettre en pratique les concepts de Express : routes et middleware au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Express : routes et middleware",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-intermediaire-2",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 2 — Backend Node.js",
+      "enonce": "Mettre en pratique les concepts de Express : routes et middleware au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Express : routes et middleware",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-1",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 1 — Backend Node.js",
+      "enonce": "Mettre en pratique les concepts de Architecture en couches au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Architecture en couches",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-2",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 2 — Backend Node.js",
+      "enonce": "Mettre en pratique les concepts de Architecture en couches au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Architecture en couches",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-expert-1",
+      "niveau": "expert",
+      "titre": "Exercice Expert 1 — Backend Node.js",
+      "enonce": "Mettre en pratique les concepts de Controllers et Services au niveau Expert.",
+      "objectifs": [
+        "Comprendre Controllers et Services",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "120min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 4",
+        "Consulter les ressources.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+/* Styles contenu pédagogique — modules cours-cda */
+
+.cours-page .cours-hero {
+  background: linear-gradient(135deg, var(--accent), #1e40af);
+  color: white;
+  padding: 2.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.cours-page .cours-hero h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+
+.cours-page .cours-hero p {
+  opacity: 0.92;
+}
+
+.cours-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.cours-badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.cours-container {
+  max-width: 900px;
+  padding-bottom: 3rem;
+}
+
+.cours-container section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.cours-container h2 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+  font-size: 1.25rem;
+}
+
+.cours-container h3 {
+  color: var(--text);
+  font-size: 1rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.cours-container .diagram {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 1.25rem;
+  border-radius: 8px;
+  font-family: ui-monospace, monospace;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  margin: 1rem 0;
+  line-height: 1.55;
+}
+
+.cours-container pre.code-block {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  margin: 1rem 0;
+}
+
+.cours-container .demo-bad {
+  border-left: 4px solid var(--danger);
+  padding: 1rem;
+  background: rgba(220, 38, 38, 0.06);
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.cours-container .demo-good {
+  border-left: 4px solid var(--success);
+  padding: 1rem;
+  background: rgba(34, 197, 94, 0.06);
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.cours-container .example-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.cours-container .example-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--bg);
+}
+
+.cours-container .level-debutant { border-top: 3px solid #22c55e; }
+.cours-container .level-intermediaire { border-top: 3px solid #3b82f6; }
+.cours-container .level-avance { border-top: 3px solid #a855f7; }
+.cours-container .level-pro { border-top: 3px solid #f59e0b; }
+
+.cours-toc {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cours-toc ol {
+  padding-left: 1.5rem;
+}
+
+.cours-toc a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.cours-toc a:hover {
+  text-decoration: underline;
+}
+
+.chapitre {
+  scroll-margin-top: 5rem;
+}
+
+.cours-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Mode embed (iframe module.html) — masquer shell */
+body.cours-embed #navbar-root,
+body.cours-embed #footer-root,
+body.cours-embed .cours-back {
+  display: none !important;
+}
+
+body.cours-embed .cours-hero {
+  padding: 1.5rem 0;
+}
+
+body.cours-embed .page-main {
+  padding-top: 0;
+}

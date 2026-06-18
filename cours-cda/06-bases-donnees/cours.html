@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 06 — Bases de données | WazabyCode</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/cours.css">
+</head>
+<body class="cours-page"
+  data-module-slug="06-bases-donnees"
+  data-module-id="06"
+  data-module-title="Bases de données"
+  data-module-duration="40h"
+  data-module-level="Intermédiaire">
+
+  <div id="navbar-root"></div>
+
+  <main class="page-main">
+    <div class="cours-hero">
+      <div class="container">
+        <a href="../../dashboard.html" class="cours-back">← Retour au tableau de bord</a>
+        <h1>Module 06 — Bases de données</h1>
+        <p>Modélisation, SQL, PostgreSQL et optimisation</p>
+        <div class="cours-meta">
+          <span class="cours-badge">⏱ 40h</span>
+          <span class="cours-badge">📊 Intermédiaire</span>
+          <span class="cours-badge">📚 10 chapitres</span>
+        </div>
+      </div>
+    </div>
+
+    <article class="cours-container container">
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <h3>Pourquoi ce sujet existe ?</h3>
+        <p>Les données sont le cœur de toute application. Sans base de données, pas de persistance, pas de métier.</p>
+        <h3>Où intervient-il ?</h3>
+        <p>Backend, analytics, data engineering, administration système.</p>
+        <h3>Quels problèmes résout-il ?</h3>
+        <p>Résout le stockage structuré, les requêtes complexes et la cohérence des données.</p>
+      </section>
+
+      <section id="theorie">
+        <h2>2. Théorie simplifiée</h2>
+        <h3>Définition simple</h3>
+        <p>Bases de données : compétence centrale du développeur d'applications moderne.</p>
+        <h3>Définition métier</h3>
+        <p>Attendue en entreprise pour contribuer à des projets logiciels en équipe.</p>
+        <h3>Définition technique</h3>
+        <p>10 chapitres progressifs, du concept à la pratique professionnelle.</p>
+        <h3>Cas d'usage réels</h3>
+        <ul><li>Concevoir un schéma relationnel normalisé</li>
+          <li>Écrire des requêtes SQL complexes (jointures, sous-requêtes)</li>
+          <li>Utiliser PostgreSQL en production</li>
+          <li>Gérer les transactions et l'intégrité référentielle</li>
+          <li>Optimiser avec index et EXPLAIN ANALYZE</li></ul>
+      </section>
+
+      <section id="visualisation">
+        <h2>3. Visualisation</h2>
+        <div class="diagram">Apprenant WazabyCode
+    ↓
+Module 06 — Bases de données
+    ↓
+Introduction aux bases de données relationnelles
+    ↓
+Modélisation et normalisation
+    ↓
+SQL : CRUD et filtres
+    ↓
+Jointures et agrégations
+    ↓
+Sous-requêtes et CTE
+    ↓
+Quiz + TP + Certification</div>
+      </section>
+
+      <section id="demonstration">
+        <h2>4. Démonstration</h2>
+        <div class="demo-bad">
+          <strong>❌ Mauvaise pratique :</strong> sauter la théorie de bases de données.<br>
+          <strong>Conséquence :</strong> erreurs coûteuses en projet.
+        </div>
+        <div class="demo-good">
+          <strong>✅ Bonne pratique :</strong> suivre le parcours chapitre par chapitre.<br>
+          <strong>Résultat :</strong> compétence durable et score WazabyCode en hausse.
+        </div>
+      </section>
+
+      <section id="exemples">
+        <h2>5. Exemples</h2>
+        <div class="example-grid">
+          <div class="example-card level-debutant"><h4>Simple</h4><p>Premiers pas avec bases de données.</p></div>
+          <div class="example-card level-intermediaire"><h4>Intermédiaire</h4><p>Cas proche d'un projet réel.</p></div>
+          <div class="example-card level-avance"><h4>Avancé</h4><p>Architecture et bonnes pratiques.</p></div>
+          <div class="example-card level-pro"><h4>Professionnel</h4><p>Diagnostiquer et optimiser des requêtes lentes avec EXPLAIN.</p></div>
+        </div>
+      </section>
+
+      <section id="exercices">
+        <h2>6. Exercices</h2>
+        <p>Consultez <code>exercices.json</code> — niveaux : débutant, intermédiaire, avancé, expert.</p>
+      </section>
+
+      <section id="tp">
+        <h2>7. Travaux pratiques</h2>
+        
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Schéma e-commerce <span class="cours-badge">Intermédiaire</span></h4>
+          <p>Concevoir et implémenter le schéma PostgreSQL d'un e-commerce.</p>
+          <p><em>Durée : 5h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Requêtes analytiques <span class="cours-badge">Avancé</span></h4>
+          <p>Écrire 15 requêtes SQL analytiques sur un jeu de données réel.</p>
+          <p><em>Durée : 4h</em></p>
+        </div>
+        <div class="example-card" style="margin:1rem 0">
+          <h4>Optimisation performance <span class="cours-badge">Expert</span></h4>
+          <p>Diagnostiquer et optimiser des requêtes lentes avec EXPLAIN.</p>
+          <p><em>Durée : 6h</em></p>
+        </div>
+      </section>
+
+      <nav class="cours-toc">
+        <h2>Chapitres du module</h2>
+        <ol><li><a href="#chapitre-1">Introduction aux bases de données relationnelles</a></li>
+          <li><a href="#chapitre-2">Modélisation et normalisation</a></li>
+          <li><a href="#chapitre-3">SQL : CRUD et filtres</a></li>
+          <li><a href="#chapitre-4">Jointures et agrégations</a></li>
+          <li><a href="#chapitre-5">Sous-requêtes et CTE</a></li>
+          <li><a href="#chapitre-6">Transactions et ACID</a></li>
+          <li><a href="#chapitre-7">PostgreSQL : types, extensions, JSONB</a></li>
+          <li><a href="#chapitre-8">Index et optimisation</a></li>
+          <li><a href="#chapitre-9">Migrations et versioning de schéma</a></li>
+          <li><a href="#chapitre-10">NoSQL : introduction et cas d'usage</a></li></ol>
+      </nav>
+
+      
+    <section id="chapitre-1" class="chapitre">
+      <h2>Chapitre 1 — Introduction aux bases de données relationnelles</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Introduction aux bases de données relationnelles</strong> dans le cadre du module Bases de données.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de introduction aux bases de données relationnelles en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Introduction aux bases de données relationnelles intervient à l'étape 1 du module « Bases de données ».
+      En projet professionnel, cette compétence permet de concevoir un schéma relationnel normalisé.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Introduction aux bases de données relationnelles
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer introduction aux bases de données relationnelles et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer introduction aux bases de données relationnelles dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Introduction aux bases de données relationnelles — chapitre 1 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Schéma e-commerce »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-2" class="chapitre">
+      <h2>Chapitre 2 — Modélisation et normalisation</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Modélisation et normalisation</strong> dans le cadre du module Bases de données.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de modélisation et normalisation en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Modélisation et normalisation intervient à l'étape 2 du module « Bases de données ».
+      En projet professionnel, cette compétence permet de écrire des requêtes sql complexes (jointures, sous-requêtes).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Modélisation et normalisation
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer modélisation et normalisation et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer modélisation et normalisation dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Modélisation et normalisation — chapitre 2 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Requêtes analytiques »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-3" class="chapitre">
+      <h2>Chapitre 3 — SQL : CRUD et filtres</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>SQL : CRUD et filtres</strong> dans le cadre du module Bases de données.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de sql : crud et filtres en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      SQL : CRUD et filtres intervient à l'étape 3 du module « Bases de données ».
+      En projet professionnel, cette compétence permet de utiliser postgresql en production.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — SQL : CRUD et filtres
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer sql : crud et filtres et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer sql : crud et filtres dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>SQL : CRUD et filtres — chapitre 3 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Optimisation performance »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-4" class="chapitre">
+      <h2>Chapitre 4 — Jointures et agrégations</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Jointures et agrégations</strong> dans le cadre du module Bases de données.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de jointures et agrégations en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Jointures et agrégations intervient à l'étape 4 du module « Bases de données ».
+      En projet professionnel, cette compétence permet de gérer les transactions et l'intégrité référentielle.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Jointures et agrégations
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer jointures et agrégations et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer jointures et agrégations dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Jointures et agrégations — chapitre 4 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Optimisation performance »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-5" class="chapitre">
+      <h2>Chapitre 5 — Sous-requêtes et CTE</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Sous-requêtes et CTE</strong> dans le cadre du module Bases de données.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de sous-requêtes et cte en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Sous-requêtes et CTE intervient à l'étape 5 du module « Bases de données ».
+      En projet professionnel, cette compétence permet de optimiser avec index et explain analyze.
+    </p>
+
+    <h3>Exemple de code</h3><pre class="code-block">SELECT u.name, COUNT(o.id) AS orders
+FROM users u
+LEFT JOIN orders o ON o.user_id = u.id
+GROUP BY u.id;</pre>
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Sous-requêtes et CTE
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer sous-requêtes et cte et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer sous-requêtes et cte dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Sous-requêtes et CTE — chapitre 5 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Optimisation performance »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-6" class="chapitre">
+      <h2>Chapitre 6 — Transactions et ACID</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Transactions et ACID</strong> dans le cadre du module Bases de données.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de transactions et acid en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Transactions et ACID intervient à l'étape 6 du module « Bases de données ».
+      En projet professionnel, cette compétence permet de concevoir un schéma relationnel normalisé.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Transactions et ACID
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer transactions et acid et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer transactions et acid dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Transactions et ACID — chapitre 6 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Optimisation performance »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-7" class="chapitre">
+      <h2>Chapitre 7 — PostgreSQL : types, extensions, JSONB</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>PostgreSQL : types, extensions, JSONB</strong> dans le cadre du module Bases de données.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de postgresql : types, extensions, jsonb en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      PostgreSQL : types, extensions, JSONB intervient à l'étape 7 du module « Bases de données ».
+      En projet professionnel, cette compétence permet de écrire des requêtes sql complexes (jointures, sous-requêtes).
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — PostgreSQL : types, extensions, JSONB
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer postgresql : types, extensions, jsonb et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer postgresql : types, extensions, jsonb dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>PostgreSQL : types, extensions, JSONB — chapitre 7 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Optimisation performance »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-8" class="chapitre">
+      <h2>Chapitre 8 — Index et optimisation</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Index et optimisation</strong> dans le cadre du module Bases de données.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de index et optimisation en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Index et optimisation intervient à l'étape 8 du module « Bases de données ».
+      En projet professionnel, cette compétence permet de utiliser postgresql en production.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Index et optimisation
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer index et optimisation et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer index et optimisation dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Index et optimisation — chapitre 8 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Optimisation performance »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-9" class="chapitre">
+      <h2>Chapitre 9 — Migrations et versioning de schéma</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>Migrations et versioning de schéma</strong> dans le cadre du module Bases de données.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de migrations et versioning de schéma en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      Migrations et versioning de schéma intervient à l'étape 9 du module « Bases de données ».
+      En projet professionnel, cette compétence permet de gérer les transactions et l'intégrité référentielle.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — Migrations et versioning de schéma
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer migrations et versioning de schéma et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer migrations et versioning de schéma dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>Migrations et versioning de schéma — chapitre 9 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Optimisation performance »</li>
+    </ul></div>
+    </section>
+
+    <section id="chapitre-10" class="chapitre">
+      <h2>Chapitre 10 — NoSQL : introduction et cas d'usage</h2>
+      <div class="contenu-chapitre">
+    <h3>Objectifs du chapitre</h3>
+    <p>À l'issue de ce chapitre, vous maîtriserez <strong>NoSQL : introduction et cas d'usage</strong> dans le cadre du module Bases de données.</p>
+
+    <h3>Concepts clés</h3>
+    <ul>
+      <li>Définition et rôle de nosql : introduction et cas d'usage en entreprise</li>
+      <li>Lien avec les objectifs du titre CDA</li>
+      <li>Outils et méthodes recommandés</li>
+      <li>Erreurs fréquentes et comment les éviter</li>
+    </ul>
+
+    <h3>Théorie appliquée</h3>
+    <p>
+      NoSQL : introduction et cas d'usage intervient à l'étape 10 du module « Bases de données ».
+      En projet professionnel, cette compétence permet de optimiser avec index et explain analyze.
+    </p>
+
+    
+
+    <h3>Workflow</h3>
+    <div class="diagram">Théorie — NoSQL : introduction et cas d'usage
+    ↓
+Exemple guidé
+    ↓
+Exercice (niveau adapté)
+    ↓
+Quiz de validation</div>
+
+    <h3>Démonstration</h3>
+    <div class="demo-bad">
+      <strong>Mauvaise pratique :</strong> ignorer nosql : introduction et cas d'usage et improviser.<br>
+      <strong>Conséquence :</strong> dette technique, retards, bugs en production.
+    </div>
+    <div class="demo-good">
+      <strong>Bonne pratique :</strong> appliquer nosql : introduction et cas d'usage dès le début du projet.<br>
+      <strong>Résultat :</strong> code maintenable, équipe alignée, livraison maîtrisée.
+    </div>
+
+    <h3>À retenir</h3>
+    <ul>
+      <li>NoSQL : introduction et cas d'usage — chapitre 10 / 10</li>
+      <li>Durée module : 40h · Niveau : Intermédiaire</li>
+      <li>Prépare le TP : « Optimisation performance »</li>
+    </ul></div>
+    </section>
+
+    </article>
+  </main>
+
+  <div id="footer-root"></div>
+  <script type="module">
+    import { initShell } from '../../js/ui/layout.js';
+    initShell('module');
+  </script>
+  <script type="module" src="../../js/app/course-view.js"></script>
+</body>
+</html>

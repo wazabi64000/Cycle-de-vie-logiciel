@@ -1,0 +1,80 @@
+{
+  "module": "11-react-native",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "App de notes",
+      "level": "Intermédiaire",
+      "duration": "6h",
+      "description": "Application de prise de notes avec stockage local.",
+      "objectifs": [
+        "Développer des applications mobiles avec React Native",
+        "Configurer la navigation (React Navigation)",
+        "Gérer l'état avec Redux"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Chat mobile",
+      "level": "Avancé",
+      "duration": "10h",
+      "description": "Application de chat avec WebSocket et notifications.",
+      "objectifs": [
+        "Développer des applications mobiles avec React Native",
+        "Configurer la navigation (React Navigation)",
+        "Gérer l'état avec Redux"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Clone Instagram simplifié",
+      "level": "Expert",
+      "duration": "15h",
+      "description": "Feed, stories et profil utilisateur.",
+      "objectifs": [
+        "Développer des applications mobiles avec React Native",
+        "Configurer la navigation (React Navigation)",
+        "Gérer l'état avec Redux"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

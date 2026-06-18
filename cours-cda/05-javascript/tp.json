@@ -1,0 +1,80 @@
+{
+  "module": "05-javascript",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Todo List vanilla JS",
+      "level": "Débutant",
+      "duration": "4h",
+      "description": "Application Todo avec localStorage et architecture MVC.",
+      "objectifs": [
+        "Maîtriser variables, conditions, boucles et fonctions",
+        "Comprendre closures, promises et async/await",
+        "Utiliser les modules ES6+"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "API Client",
+      "level": "Intermédiaire",
+      "duration": "6h",
+      "description": "Client REST consommant une API publique avec gestion d'erreurs.",
+      "objectifs": [
+        "Maîtriser variables, conditions, boucles et fonctions",
+        "Comprendre closures, promises et async/await",
+        "Utiliser les modules ES6+"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Mini-framework MVC",
+      "level": "Avancé",
+      "duration": "10h",
+      "description": "Implémenter un mini-framework MVC from scratch.",
+      "objectifs": [
+        "Maîtriser variables, conditions, boucles et fonctions",
+        "Comprendre closures, promises et async/await",
+        "Utiliser les modules ES6+"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

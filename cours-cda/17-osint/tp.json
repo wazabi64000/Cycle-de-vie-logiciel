@@ -1,0 +1,80 @@
+{
+  "module": "17-osint",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Audit DNS",
+      "level": "Intermédiaire",
+      "duration": "3h",
+      "description": "Cartographier l'infrastructure DNS d'un domaine.",
+      "objectifs": [
+        "Comprendre l'OSINT dans une démarche défensive",
+        "Utiliser Whois, DNS et énumération de sous-domaines",
+        "Analyser l'exposition avec Shodan"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Rapport Shodan",
+      "level": "Avancé",
+      "duration": "4h",
+      "description": "Analyser l'exposition d'un serveur avec Shodan.",
+      "objectifs": [
+        "Comprendre l'OSINT dans une démarche défensive",
+        "Utiliser Whois, DNS et énumération de sous-domaines",
+        "Analyser l'exposition avec Shodan"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Audit OSINT complet",
+      "level": "Expert",
+      "duration": "6h",
+      "description": "Rapport d'exposition complet avec recommandations.",
+      "objectifs": [
+        "Comprendre l'OSINT dans une démarche défensive",
+        "Utiliser Whois, DNS et énumération de sous-domaines",
+        "Analyser l'exposition avec Shodan"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

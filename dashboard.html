@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de bord — WazabyCode</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="navbar-root"></div>
+
+  <main class="container dashboard-grid page-main">
+
+    <section id="resume-bar-section" class="dashboard-card" hidden></section>
+
+    <section class="dashboard-card score-hero">
+      <div>
+        <p class="card-title">Score global</p>
+        <div class="score-display"><span id="score-value">0</span><small>/1000</small></div>
+        <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.9rem">
+          Temps passé : <strong id="time-spent">0</strong> min
+        </p>
+      </div>
+      <div style="text-align:right">
+        <div id="level-badge" class="level-badge">🧭 Explorateur</div>
+        <p id="level-label" style="margin-top:0.75rem;font-size:0.85rem;color:var(--text-muted)"></p>
+        <div class="progress-track" style="margin-top:0.5rem;width:200px;margin-left:auto">
+          <div id="level-bar" class="progress-fill" style="width:0"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="progress-cards">
+      <div class="dashboard-card progress-card"><div id="ring-global"></div><h3>Progression globale</h3></div>
+      <div class="dashboard-card progress-card"><div id="ring-courses"></div><h3>Progression des cours</h3></div>
+      <div class="dashboard-card progress-card"><div id="ring-project"></div><h3>Progression du projet</h3></div>
+    </section>
+
+    <section id="maturity-banner" class="maturity-banner dashboard-card"></section>
+
+    <section class="dashboard-card">
+      <h2 class="card-title">Recommandations</h2>
+      <div id="recommendations" class="rec-list"></div>
+    </section>
+
+    <div class="two-col">
+      <section class="dashboard-card">
+        <h2 class="card-title">Compétences (1000 pts)</h2>
+        <div id="category-scores" class="category-grid"></div>
+      </section>
+      <section class="dashboard-card">
+        <h2 class="card-title">Badges</h2>
+        <div id="badges-grid" class="badges-grid"></div>
+      </section>
+    </div>
+
+    <section class="dashboard-card">
+      <h2 class="card-title">Checklist projet</h2>
+      <div id="project-checklist"></div>
+    </section>
+
+    <section class="dashboard-card" id="modules-list-section">
+      <h2 class="card-title">Modules du cursus (22)</h2>
+      <div id="modules-list"></div>
+    </section>
+
+    <section class="dashboard-card">
+      <h2 class="card-title">Statistiques</h2>
+      <div id="learning-stats"></div>
+    </section>
+
+    <section class="dashboard-card">
+      <h2 class="card-title">Historique</h2>
+      <div id="learning-history"></div>
+    </section>
+
+  </main>
+
+  <div id="footer-root"></div>
+
+  <script type="module">
+    import { initShell } from './js/ui/layout.js';
+    initShell('dashboard', { showNameInput: true });
+  </script>
+  <script type="module" src="js/app/dashboard.js"></script>
+</body>
+</html>

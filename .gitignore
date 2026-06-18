@@ -1,0 +1,14 @@
+# Dépendances Node (générateur + ancien lms/)
+lms/node_modules/
+node_modules/
+
+# OS / éditeur
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*

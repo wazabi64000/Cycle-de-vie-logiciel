@@ -1,0 +1,132 @@
+{
+  "module": "02-gestion-projet",
+  "exercices": [
+    {
+      "id": "exo-debutant-1",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 1 — Gestion de projet",
+      "enonce": "Mettre en pratique les concepts de Introduction à la gestion de projet IT au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Introduction à la gestion de projet IT",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-debutant-2",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 2 — Gestion de projet",
+      "enonce": "Mettre en pratique les concepts de Introduction à la gestion de projet IT au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Introduction à la gestion de projet IT",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-intermediaire-1",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 1 — Gestion de projet",
+      "enonce": "Mettre en pratique les concepts de Le cycle en V au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Le cycle en V",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-intermediaire-2",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 2 — Gestion de projet",
+      "enonce": "Mettre en pratique les concepts de Le cycle en V au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Le cycle en V",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-1",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 1 — Gestion de projet",
+      "enonce": "Mettre en pratique les concepts de Les méthodes Agile au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Les méthodes Agile",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-2",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 2 — Gestion de projet",
+      "enonce": "Mettre en pratique les concepts de Les méthodes Agile au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Les méthodes Agile",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-expert-1",
+      "niveau": "expert",
+      "titre": "Exercice Expert 1 — Gestion de projet",
+      "enonce": "Mettre en pratique les concepts de Scrum en profondeur au niveau Expert.",
+      "objectifs": [
+        "Comprendre Scrum en profondeur",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "120min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 4",
+        "Consulter les ressources.json"
+      ]
+    }
+  ]
+}

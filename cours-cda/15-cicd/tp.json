@@ -1,0 +1,80 @@
+{
+  "module": "15-cicd",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Pipeline lint + test",
+      "level": "Intermédiaire",
+      "duration": "3h",
+      "description": "Pipeline GitHub Actions avec ESLint et Jest.",
+      "objectifs": [
+        "Comprendre les principes CI/CD",
+        "Créer des pipelines GitHub Actions complets",
+        "Automatiser lint, tests, build et deploy"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Pipeline complet",
+      "level": "Avancé",
+      "duration": "6h",
+      "description": "Push → Lint → Tests → Build → Deploy sur VPS.",
+      "objectifs": [
+        "Comprendre les principes CI/CD",
+        "Créer des pipelines GitHub Actions complets",
+        "Automatiser lint, tests, build et deploy"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Multi-environnements",
+      "level": "Expert",
+      "duration": "8h",
+      "description": "CI/CD avec dev, staging et production automatisés.",
+      "objectifs": [
+        "Comprendre les principes CI/CD",
+        "Créer des pipelines GitHub Actions complets",
+        "Automatiser lint, tests, build et deploy"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

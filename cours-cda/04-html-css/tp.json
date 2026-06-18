@@ -1,0 +1,80 @@
+{
+  "module": "04-html-css",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Landing page accessible",
+      "level": "Débutant",
+      "duration": "4h",
+      "description": "Créer une landing page responsive et accessible WCAG AA.",
+      "objectifs": [
+        "Structurer une page avec header, main, aside, footer",
+        "Appliquer les normes WCAG et ARIA pour l'accessibilité",
+        "Optimiser le SEO technique"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Dashboard CSS Grid",
+      "level": "Intermédiaire",
+      "duration": "6h",
+      "description": "Construire un dashboard admin avec Grid et Flexbox.",
+      "objectifs": [
+        "Structurer une page avec header, main, aside, footer",
+        "Appliquer les normes WCAG et ARIA pour l'accessibilité",
+        "Optimiser le SEO technique"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Portfolio animé",
+      "level": "Avancé",
+      "duration": "8h",
+      "description": "Portfolio personnel avec animations CSS avancées.",
+      "objectifs": [
+        "Structurer une page avec header, main, aside, footer",
+        "Appliquer les normes WCAG et ARIA pour l'accessibilité",
+        "Optimiser le SEO technique"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

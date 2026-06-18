@@ -1,0 +1,80 @@
+{
+  "module": "03-git-github",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Workflow collaboratif",
+      "level": "Intermédiaire",
+      "duration": "4h",
+      "description": "Simuler un projet à 3 développeurs avec branches, PR et reviews.",
+      "objectifs": [
+        "Comprendre pourquoi Git existe et quels problèmes il résout",
+        "Maîtriser les commandes Git essentielles",
+        "Appliquer Git Flow, GitHub Flow et Trunk Based Development"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Résolution de conflits",
+      "level": "Avancé",
+      "duration": "3h",
+      "description": "Résoudre 5 scénarios de conflits Git complexes.",
+      "objectifs": [
+        "Comprendre pourquoi Git existe et quels problèmes il résout",
+        "Maîtriser les commandes Git essentielles",
+        "Appliquer Git Flow, GitHub Flow et Trunk Based Development"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Git Flow complet",
+      "level": "Expert",
+      "duration": "5h",
+      "description": "Mettre en place Git Flow sur un projet avec releases et hotfixes.",
+      "objectifs": [
+        "Comprendre pourquoi Git existe et quels problèmes il résout",
+        "Maîtriser les commandes Git essentielles",
+        "Appliquer Git Flow, GitHub Flow et Trunk Based Development"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}

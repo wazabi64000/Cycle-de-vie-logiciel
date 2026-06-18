@@ -1,0 +1,132 @@
+{
+  "module": "16-monitoring",
+  "exercices": [
+    {
+      "id": "exo-debutant-1",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 1 — Monitoring et observabilité",
+      "enonce": "Mettre en pratique les concepts de Introduction à l'observabilité au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Introduction à l'observabilité",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-debutant-2",
+      "niveau": "debutant",
+      "titre": "Exercice Débutant 2 — Monitoring et observabilité",
+      "enonce": "Mettre en pratique les concepts de Introduction à l'observabilité au niveau Débutant.",
+      "objectifs": [
+        "Comprendre Introduction à l'observabilité",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "30min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": []
+    },
+    {
+      "id": "exo-intermediaire-1",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 1 — Monitoring et observabilité",
+      "enonce": "Mettre en pratique les concepts de Logs structurés avec Winston au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Logs structurés avec Winston",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-intermediaire-2",
+      "niveau": "intermediaire",
+      "titre": "Exercice Intermédiaire 2 — Monitoring et observabilité",
+      "enonce": "Mettre en pratique les concepts de Logs structurés avec Winston au niveau Intermédiaire.",
+      "objectifs": [
+        "Comprendre Logs structurés avec Winston",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "60min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 2",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-1",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 1 — Monitoring et observabilité",
+      "enonce": "Mettre en pratique les concepts de Logs haute performance avec Pino au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Logs haute performance avec Pino",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-avance-2",
+      "niveau": "avance",
+      "titre": "Exercice Avancé 2 — Monitoring et observabilité",
+      "enonce": "Mettre en pratique les concepts de Logs haute performance avec Pino au niveau Avancé.",
+      "objectifs": [
+        "Comprendre Logs haute performance avec Pino",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "90min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 3",
+        "Consulter les ressources.json"
+      ]
+    },
+    {
+      "id": "exo-expert-1",
+      "niveau": "expert",
+      "titre": "Exercice Expert 1 — Monitoring et observabilité",
+      "enonce": "Mettre en pratique les concepts de Métriques avec Prometheus au niveau Expert.",
+      "objectifs": [
+        "Comprendre Métriques avec Prometheus",
+        "Appliquer en autonomie"
+      ],
+      "duree_estimee": "120min",
+      "livrables": [
+        "Code source ou document selon l'exercice",
+        "Capture d'écran du résultat"
+      ],
+      "indices": [
+        "Revoir le chapitre 4",
+        "Consulter les ressources.json"
+      ]
+    }
+  ]
+}

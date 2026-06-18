@@ -1,0 +1,80 @@
+{
+  "module": "12-tests",
+  "travaux_pratiques": [
+    {
+      "id": "tp-01",
+      "title": "Suite de tests unitaires",
+      "level": "Intermédiaire",
+      "duration": "5h",
+      "description": "80 % de couverture sur une API Express existante.",
+      "objectifs": [
+        "Écrire des tests unitaires avec Jest et Vitest",
+        "Tester des APIs avec Supertest",
+        "Automatiser des tests E2E avec Playwright et Cypress"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-02",
+      "title": "Tests API Supertest",
+      "level": "Intermédiaire",
+      "duration": "4h",
+      "description": "Tests d'intégration complets pour une API REST.",
+      "objectifs": [
+        "Écrire des tests unitaires avec Jest et Vitest",
+        "Tester des APIs avec Supertest",
+        "Automatiser des tests E2E avec Playwright et Cypress"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "tp-03",
+      "title": "Tests E2E Playwright",
+      "level": "Avancé",
+      "duration": "8h",
+      "description": "Scénarios E2E pour un parcours utilisateur complet.",
+      "objectifs": [
+        "Écrire des tests unitaires avec Jest et Vitest",
+        "Tester des APIs avec Supertest",
+        "Automatiser des tests E2E avec Playwright et Cypress"
+      ],
+      "etapes": [
+        "Lire le chapitre théorique correspondant",
+        "Analyser le cas réel proposé",
+        "Implémenter la solution",
+        "Tester et valider",
+        "Documenter le résultat"
+      ],
+      "criteres_evaluation": [
+        "Fonctionnalité complète",
+        "Qualité du code / document",
+        "Respect des bonnes pratiques",
+        "Documentation"
+      ]
+    }
+  ]
+}
