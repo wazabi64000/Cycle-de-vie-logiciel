@@ -29,8 +29,10 @@ export function renderChecklist(container, items, state, onChange) {
     input.addEventListener('change', (e) => {
       const id = e.target.dataset.id;
       const checked = e.target.checked;
-      e.target.closest('.checklist-item')?.classList.toggle('checked', checked);
-      e.target.closest('.checklist-item')?.querySelector('.checklist-check').textContent = checked ? '✓' : '';
+      const row = e.target.closest('.checklist-item');
+      row?.classList.toggle('checked', checked);
+      const checkMark = row?.querySelector('.checklist-check');
+      if (checkMark) checkMark.textContent = checked ? '✓' : '';
       onChange(id, checked);
     });
   });

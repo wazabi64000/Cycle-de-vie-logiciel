@@ -10,8 +10,12 @@
   <div id="navbar-root"></div>
 
   <main class="container module-layout page-main">
-    <div>
+    <div class="course-frame-wrap">
       <iframe id="course-frame" class="course-frame" title="Cours"></iframe>
+      <div id="course-frame-fallback" class="course-frame-fallback" hidden>
+        <p>Le cours ne s'affiche pas dans le cadre ?</p>
+        <a id="course-direct-link" class="btn btn-primary" href="#">Ouvrir le cours →</a>
+      </div>
     </div>
     <aside class="module-sidebar">
       <section class="dashboard-card">

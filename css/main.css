@@ -539,12 +539,31 @@
   padding: 2rem 0;
 }
 
+.course-frame-wrap {
+  position: relative;
+}
+
 .course-frame {
   width: 100%;
   min-height: 70vh;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: white;
+}
+
+.course-frame-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  padding: 2rem;
 }
 
 .module-sidebar {

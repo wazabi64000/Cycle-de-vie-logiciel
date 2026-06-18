@@ -194,11 +194,12 @@ async function init() {
     </div>`);
 
   const courseFrame = document.getElementById('course-frame');
-  courseFrame.src = courseUrl(slug);
+  const courseSrc = new URL(courseUrl(slug), window.location.href).href;
+  courseFrame.src = courseSrc;
 
   const fullCourseLink = document.getElementById('open-full-course');
   if (fullCourseLink) {
-    fullCourseLink.href = courseUrl(slug);
+    fullCourseLink.href = courseSrc;
     fullCourseLink.target = '_blank';
   }
 
@@ -208,6 +209,20 @@ async function init() {
   }
 
   setupIframeTracking(courseFrame, currentChapters);
+
+  const directLink = document.getElementById('course-direct-link');
+  if (directLink) directLink.href = courseSrc;
+
+  courseFrame.addEventListener('load', () => {
+    try {
+      const doc = courseFrame.contentDocument;
+      const empty = !doc?.body?.textContent?.trim();
+      const fallback = document.getElementById('course-frame-fallback');
+      if (fallback) fallback.hidden = !empty;
+    } catch {
+      document.getElementById('course-frame-fallback')?.removeAttribute('hidden');
+    }
+  });
 
   const state = progressEngine.getState();
   renderModuleChecklists(document.getElementById('module-checklists'), slug, state);
