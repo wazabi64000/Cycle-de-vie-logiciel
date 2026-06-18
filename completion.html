@@ -4,62 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parcours terminé — WazabyCode</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/roadmap.css">
 </head>
 <body>
-  <div id="navbar-root"></div>
-
-  <main class="page-main">
-    <div id="completion-locked" class="container dashboard-card" style="text-align:center;padding:3rem;margin:2rem auto;max-width:600px">
-      <p>Continuez votre formation pour débloquer cette page.</p>
-      <a href="dashboard.html" class="btn btn-primary" style="margin-top:1rem">Tableau de bord</a>
-    </div>
-
-    <div id="completion-content" hidden>
-      <section class="completion-hero">
-        <p style="font-size:4rem;margin-bottom:1rem" aria-hidden="true">🎉</p>
-        <h1>Félicitations !</h1>
-        <p class="completion-message">
-          Vous avez terminé votre parcours WazabyCode.<br><br>
-          Votre projet a atteint un niveau professionnel.<br><br>
-          Vous disposez désormais des compétences nécessaires pour concevoir, développer,
-          tester, sécuriser et déployer une application moderne en environnement professionnel.
-        </p>
-
-        <div class="final-stats">
-          <div class="final-stat">
-            <strong id="final-score">0</strong>
-            <span>Score final / 1000</span>
-          </div>
-          <div class="final-stat">
-            <strong id="final-level" style="font-size:1.5rem">—</strong>
-            <span>Niveau final</span>
-          </div>
-          <div class="final-stat">
-            <strong id="final-name" style="font-size:1.25rem;color:var(--text)">—</strong>
-            <span>Apprenant</span>
-          </div>
-        </div>
-
-        <h2 style="font-size:1rem;color:var(--text-muted);margin-bottom:0.75rem">Compétences validées</h2>
-        <ul id="validated-skills" style="list-style:none;max-width:400px;margin:0 auto 1.5rem;text-align:left"></ul>
-
-        <h2 style="font-size:1rem;color:var(--text-muted);margin-bottom:0.75rem">Badges obtenus</h2>
-        <div id="final-badges" class="final-badges"></div>
-
-        <button id="view-certificate" class="btn btn-primary" style="margin-top:2rem;font-size:1rem;padding:0.75rem 2rem">
-          Voir mon certificat →
-        </button>
-      </section>
-    </div>
-  </main>
-
-  <div id="footer-root"></div>
+  <div class="completion-page">
+    <article class="completion-box">
+      <p style="font-size:3rem">🎉</p>
+      <h1>Félicitations</h1>
+      <p>Vous avez parcouru l'ensemble du cycle de vie d'un projet logiciel moderne.</p>
+      <p>Vous disposez désormais d'une feuille de route complète couvrant :</p>
+      <ul class="completion-list">
+        <li>Analyse & conception</li>
+        <li>Architecture & développement</li>
+        <li>Tests & QA</li>
+        <li>Performance & stress test</li>
+        <li>Sécurité (OWASP)</li>
+        <li>DevOps & CI/CD</li>
+        <li>Infrastructure & déploiement</li>
+        <li>Monitoring & maintenance</li>
+      </ul>
+      <p><strong>Votre projet est prêt pour une mise en production professionnelle.</strong></p>
+      <p style="color:var(--text-muted);margin-top:1rem">Merci d'utiliser WazabyCode.</p>
+      <div style="display:flex;gap:0.75rem;justify-content:center;margin-top:2rem;flex-wrap:wrap">
+        <a href="roadmap.html" class="btn btn-primary">Revoir la roadmap</a>
+        <a href="index.html" class="btn btn-ghost">Accueil</a>
+      </div>
+      <p id="final-stats" style="margin-top:1.5rem;font-size:0.9rem;color:var(--text-muted)"></p>
+    </article>
+  </div>
 
   <script type="module">
-    import { initShell } from './js/ui/layout.js';
-    initShell('completion');
+    import { roadmapEngine } from './js/core/roadmap-engine.js';
+    import { roadmapStorage } from './js/core/roadmap-storage.js';
+
+    const pct = roadmapEngine.getGlobalProgress();
+    const score = roadmapEngine.getScore();
+    const level = roadmapEngine.getLevel();
+
+    if (pct < 100) {
+      window.location.href = 'roadmap.html';
+    } else {
+      document.getElementById('final-stats').textContent =
+        `Score final : ${score} / 1000 — Niveau : ${level.icon} ${level.name}`;
+    }
+
+    document.getElementById('theme-toggle')?.addEventListener('click', () => roadmapStorage.toggleTheme());
   </script>
-  <script type="module" src="js/app/completion.js"></script>
 </body>
 </html>

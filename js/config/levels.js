@@ -1,12 +1,13 @@
-/** Niveaux WazabyCode — 7 paliers de 0 à 1000 points */
+/** Niveaux WazabyCode Roadmap — score / 1000 */
 export const LEVELS = [
-  { id: 1, name: 'Explorateur', min: 0, max: 100, color: '#94a3b8', icon: '🧭' },
-  { id: 2, name: 'Apprenti Développeur', min: 101, max: 250, color: '#22c55e', icon: '🌱' },
-  { id: 3, name: 'Développeur Junior', min: 251, max: 450, color: '#3b82f6', icon: '💻' },
-  { id: 4, name: 'Développeur Confirmé', min: 451, max: 650, color: '#8b5cf6', icon: '⚡' },
-  { id: 5, name: 'Développeur Fullstack', min: 651, max: 800, color: '#f59e0b', icon: '🚀' },
-  { id: 6, name: 'Architecte Logiciel', min: 801, max: 950, color: '#ef4444', icon: '🏗️' },
-  { id: 7, name: 'Expert WazabyCode', min: 951, max: 1000, color: '#eab308', icon: '👑' },
+  { id: 1, name: 'Débutant', min: 0, max: 124, color: '#94a3b8', icon: '🌱' },
+  { id: 2, name: 'Junior', min: 125, max: 249, color: '#22c55e', icon: '💻' },
+  { id: 3, name: 'Intermédiaire', min: 250, max: 374, color: '#3b82f6', icon: '⚡' },
+  { id: 4, name: 'Confirmé', min: 375, max: 499, color: '#8b5cf6', icon: '🎯' },
+  { id: 5, name: 'Senior', min: 500, max: 624, color: '#f59e0b', icon: '🚀' },
+  { id: 6, name: 'Lead', min: 625, max: 749, color: '#ef4444', icon: '👥' },
+  { id: 7, name: 'Architecte', min: 750, max: 899, color: '#ec4899', icon: '🏗️' },
+  { id: 8, name: 'Expert WazabyCode', min: 900, max: 1000, color: '#eab308', icon: '👑' },
 ];
 
 export const MAX_SCORE = 1000;
