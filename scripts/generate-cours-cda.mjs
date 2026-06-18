@@ -1110,6 +1110,11 @@ async function main() {
       niveau: m.level,
       chapitres: m.chapters.length,
       prerequis: m.prerequisites,
+      chapters: m.chapters.map((title, i) => ({
+        id: `chapitre-${i + 1}`,
+        name: title,
+        index: i + 1,
+      })),
     })),
   };
 

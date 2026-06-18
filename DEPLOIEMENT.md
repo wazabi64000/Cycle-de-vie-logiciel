@@ -1,116 +1,59 @@
-# Déploiement WazabyCode
+# Déploiement (optionnel)
 
-Site **100 % statique** — HTML, CSS, JavaScript. Aucun Node.js requis en production.
+WazabyCode fonctionne **sans déploiement** : ouvrez `index.html` localement.
 
-## GitHub Pages (recommandé)
+Ce guide décrit uniquement la publication en ligne sur un hébergeur de **fichiers statiques**.
+
+## Utilisation locale (recommandée)
+
+1. Téléchargez ou clonez le projet
+2. Ouvrez **`index.html`** dans Chrome, Firefox ou Edge
+3. C'est tout — la progression est dans **localStorage**
+
+> Utilisez toujours le même navigateur sur le même appareil pour conserver votre progression.
+
+## GitHub Pages (optionnel)
 
 **URL :** https://wazabi64000.github.io/Cycle-de-vie-logiciel/
 
-### Configuration initiale
+1. Push sur la branche `main`
+2. GitHub → **Settings** → **Pages** → Source : **GitHub Actions**
+3. Le workflow `.github/workflows/deploy-pages.yml` publie le site
 
-1. Pousser le code sur la branche `main`
-2. GitHub → **Settings** → **Pages**
-3. **Build and deployment** → **Source : GitHub Actions**
-4. À chaque push sur `main`, le workflow `deploy-pages.yml` publie le site
+Aucun backend : GitHub sert uniquement des fichiers HTML/CSS/JS.
 
-### Fichiers de déploiement
+## Autres hébergeurs statiques
 
-| Fichier | Rôle |
-|---------|------|
-| `.github/workflows/deploy-pages.yml` | CI/CD GitHub Pages |
-| `.nojekyll` | Désactive Jekyll, sert les fichiers tels quels |
+- Netlify, Cloudflare Pages, GitLab Pages
+- Nginx / Apache : servir le dossier racine du projet
+- Clé USB ou partage réseau : ouvrir `index.html` directement
 
-Les chemins relatifs (`css/`, `js/`, `cours-cda/`) fonctionnent sous le sous-chemin `/Cycle-de-vie-logiciel/`.
+## Données utilisateur
 
-## Développement local
+| Stockage | Contenu |
+|----------|---------|
+| `localStorage` | Progression, score, badges, checklists |
+| `sessionStorage` | Session en cours, module actif |
+| Cookies | Thème, dernière visite (30 jours) |
 
-```bash
-git clone <votre-repo> Cycle-de-vie-logiciel
-cd Cycle-de-vie-logiciel
-python3 -m http.server 3000
-```
+Pas de synchronisation cloud — tout reste sur l'appareil.
 
-| URL | Description |
-|-----|-------------|
-| http://localhost:3000 | Accueil + guide |
-| http://localhost:3000/dashboard.html | Tableau de bord |
-| http://localhost:3000/cours-cda/00-introduction-metier/cours.html | Cours direct |
+## Dépannage
 
-Alternative :
+**Page blanche ou modules absents :** ouvrez via `index.html` (pas un sous-dossier isolé). Vérifiez que le dossier `js/` est présent à côté des pages HTML.
 
-```bash
-npx serve . -l 3000
-```
+**Progression perdue :** cache navigateur effacé ou changement d'appareil.
 
-## 2. Générer / mettre à jour les cours
+**Navbar absente :** le JavaScript doit être activé ; les modules ES nécessitent un navigateur récent (2020+).
 
-Node.js est utilisé **uniquement** pour le script de génération (optionnel) :
+## Dossier `lms/` (obsolète)
+
+Ancienne version avec serveur Express — **non utilisée**. Utilisez les fichiers à la racine du projet.
+
+## Régénération du contenu (développeurs)
+
+Le script Node `scripts/generate-cours-cda.mjs` sert uniquement à **regénérer** les fichiers de cours en local. Il n'est pas requis pour utiliser la plateforme.
 
 ```bash
 node scripts/generate-cours-cda.mjs
 ```
-
-## 3. Production (Nginx)
-
-Servir le dossier racine du projet :
-
-```nginx
-server {
-    listen 80;
-    server_name votredomaine.fr;
-    root /var/www/wazabycode;
-    index index.html;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-}
-```
-
-## 4. Docker (statique)
-
-```dockerfile
-FROM nginx:alpine
-COPY . /usr/share/nginx/html
-EXPOSE 80
-```
-
-```bash
-docker build -t wazabycode .
-docker run -d -p 8080:80 wazabycode
-```
-
-## 5. Structure servie
-
-```
-/                         → index.html
-/dashboard.html           → LMS
-/module.html              → Vue module + iframe cours
-/certificate.html         → Certificat
-/completion.html          → Fin de parcours
-/cours-cda/*/cours.html   → Cours avec navbar WazabyCode
-/css, /js                 → Assets statiques
-```
-
-## 6. Données utilisateur
-
-- Stockage : **localStorage** du navigateur (`wazabycode_progress`, etc.)
-- Pas d'authentification, pas de base de données
-- La progression est liée au navigateur / appareil
-
-## 7. Dépannage
-
-**Navbar absente :** vérifier que la page est servie via HTTP (pas `file://`) et que `js/ui/layout.js` est accessible.
-
-**Port 3000 occupé :**
-
-```bash
-lsof -ti :3000 | xargs kill -9
-python3 -m http.server 3000
-```
-
-**Progression perdue :** effacement du cache navigateur ou changement d'appareil.
-
-## 8. Ancien dossier `lms/`
-
-Le dossier `lms/` contient une ancienne version avec serveur Express Node.js. **Elle n'est plus nécessaire** — utilisez la racine du projet avec un serveur statique.

@@ -67,7 +67,7 @@ function footerHtml() {
         <div class="footer-grid">
           <div class="footer-brand">
             <a href="${href('index.html')}" class="footer-logo">Wazaby<span>Code</span></a>
-            <p class="footer-tagline">Formation CDA — HTML, CSS, JavaScript. Données locales, sans compte.</p>
+            <p class="footer-tagline">Formation CDA — HTML, CSS, JavaScript. Données locales, zéro serveur.</p>
           </div>
           <div class="footer-col">
             <h3 class="footer-heading">Navigation</h3>

@@ -1,5 +1,6 @@
 import { learningProgressService } from '../core/learning-progress-service.js';
-import { courseUrl, href } from '../core/paths.js';
+import { href } from '../core/paths.js';
+import { getModuleChapters } from '../core/modules-loader.js';
 
 const DISMISS_KEY = 'wazabycode_resume_dismissed';
 
@@ -238,33 +239,7 @@ export function renderLearningStats(container, progressState) {
     </div>`;
 }
 
-/** Parse les chapitres depuis cours.html */
-export async function fetchModuleChapters(slug) {
-  try {
-    const html = await fetch(courseUrl(slug)).then((r) => r.text());
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-    const sections = doc.querySelectorAll('section.chapitre');
-    if (sections.length) {
-      return [...sections].map((s, i) => ({
-        id: s.id || `chapitre-${i + 1}`,
-        name: (s.querySelector('h2')?.textContent || `Chapitre ${i + 1}`).replace(
-          /^Chapitre \d+ — /,
-          ''
-        ),
-        index: i + 1,
-      }));
-    }
-    const links = doc.querySelectorAll('nav.toc a');
-    return [...links].map((a, i) => ({
-      id: a.getAttribute('href')?.replace('#', '') || `chapitre-${i + 1}`,
-      name: a.textContent.trim(),
-      index: i + 1,
-    }));
-  } catch {
-    return Array.from({ length: 10 }, (_, i) => ({
-      id: `chapitre-${i + 1}`,
-      name: `Chapitre ${i + 1}`,
-      index: i + 1,
-    }));
-  }
+/** Chapitres d'un module (données embarquées) */
+export function fetchModuleChapters(slug) {
+  return Promise.resolve(getModuleChapters(slug));
 }

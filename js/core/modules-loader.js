@@ -1,26 +1,28 @@
 /**
- * Chargement du catalogue modules — embarqué (fiable) + fetch optionnel
+ * Catalogue modules — 100 % embarqué, sans fetch ni serveur
  */
 import { MODULES_CATALOG } from '../config/modules-catalog.js';
-import { modulesIndexUrl } from './paths.js';
 
-/** @returns {Promise<typeof MODULES_CATALOG>} */
-export async function loadModulesCatalog() {
-  try {
-    const url = new URL(modulesIndexUrl(), window.location.href).href;
-    const res = await fetch(url);
-    if (res.ok) {
-      const data = await res.json();
-      if (Array.isArray(data.modules) && data.modules.length > 0) {
-        return data.modules;
-      }
-    }
-  } catch {
-    /* réseau ou CORS — fallback embarqué */
-  }
+export function getModules() {
   return MODULES_CATALOG;
 }
 
-export function getEmbeddedModules() {
-  return MODULES_CATALOG;
+/** @returns {Promise<typeof MODULES_CATALOG>} */
+export function loadModulesCatalog() {
+  return Promise.resolve(MODULES_CATALOG);
+}
+
+export function getModuleBySlug(slug) {
+  return MODULES_CATALOG.find((m) => m.slug === slug) ?? null;
+}
+
+export function getModuleChapters(slug) {
+  const mod = getModuleBySlug(slug);
+  if (mod?.chapters?.length) return mod.chapters;
+  const n = mod?.chapitres ?? 10;
+  return Array.from({ length: n }, (_, i) => ({
+    id: `chapitre-${i + 1}`,
+    name: `Chapitre ${i + 1}`,
+    index: i + 1,
+  }));
 }

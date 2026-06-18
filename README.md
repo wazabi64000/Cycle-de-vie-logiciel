@@ -1,65 +1,40 @@
-# Cycle-de-vie-logiciel — WazabyCode LMS CDA
+# WazabyCode — Formation CDA
 
-Plateforme pédagogique **100 % statique** pour la formation **Concepteur Développeur d'Applications** (CDA).
+Plateforme **100 % statique** : HTML, CSS, JavaScript. Progression sauvegardée dans **localStorage** du navigateur.
 
-- HTML, CSS, JavaScript uniquement
-- Données en **localStorage** (pas de compte, pas de SQL)
-- 22 modules · progression · badges · certificat
+- Aucun serveur à installer
+- Aucun Node.js, Python, Docker ou base de données
+- Pas de compte utilisateur
 
-## GitHub Pages (production)
+## Utilisation
 
-Site en ligne après push sur `main` :
+1. Ouvrez **`index.html`** dans votre navigateur (double-clic ou glisser-déposer)
+2. Cliquez sur **Voir les cours** ou **Tableau de bord**
+3. Votre progression est enregistrée automatiquement dans le navigateur
 
-**https://wazabi64000.github.io/Cycle-de-vie-logiciel/**
+| Fichier | Rôle |
+|---------|------|
+| `index.html` | Accueil + liste des 22 modules |
+| `dashboard.html` | Score, badges, progression |
+| `module.html?slug=05-javascript` | Vue module + cours |
+| `cours-cda/*/cours.html` | Contenu pédagogique |
 
-| Page | URL |
-|------|-----|
-| Accueil | https://wazabi64000.github.io/Cycle-de-vie-logiciel/ |
-| Dashboard | https://wazabi64000.github.io/Cycle-de-vie-logiciel/dashboard.html |
-| Module JS | https://wazabi64000.github.io/Cycle-de-vie-logiciel/module.html?slug=05-javascript |
+## Hébergement en ligne (optionnel)
 
-### Activer GitHub Pages (une seule fois)
-
-1. Repo GitHub → **Settings** → **Pages**
-2. **Build and deployment** → Source : **GitHub Actions**
-3. Push sur `main` → le workflow `.github/workflows/deploy-pages.yml` déploie automatiquement
-
-## Démarrage local
-
-```bash
-cd Cycle-de-vie-logiciel
-python3 -m http.server 3000
-```
-
-| URL | Description |
-|-----|-------------|
-| http://localhost:3000 | Accueil + guide |
-| http://localhost:3000/dashboard.html | Tableau de bord (navbar incluse) |
-| http://localhost:3000/module.html?slug=05-javascript | Module avec iframe cours |
-
-> Ne pas ouvrir les fichiers en `file://` — un serveur HTTP local est requis pour les modules ES et le `fetch`.
+Le site peut aussi être publié sur **GitHub Pages** ou tout hébergeur de fichiers statiques — voir [DEPLOIEMENT.md](DEPLOIEMENT.md).
 
 ## Structure
 
 ```
-index.html          → Accueil
-dashboard.html      → Tableau de bord
-module.html         → Vue module + iframe
-certificate.html    → Certificat
-completion.html     → Fin de parcours
-css/, js/           → Assets
-cours-cda/          → 22 modules pédagogiques
-scripts/            → Générateur de contenu (Node, dev only)
-```
-
-## Régénérer les cours
-
-```bash
-node scripts/generate-cours-cda.mjs
+index.html, dashboard.html, module.html …
+css/                  → Styles
+js/                   → Logique + localStorage
+cours-cda/            → 22 modules (800h+)
+js/config/modules-catalog.js → Catalogue embarqué (pas de fetch)
 ```
 
 ## Documentation
 
 - [Architecture](ARCHITECTURE.md)
-- [Déploiement](DEPLOIEMENT.md)
+- [Déploiement optionnel](DEPLOIEMENT.md)
 - [Cursus CDA](cours-cda/README.md)

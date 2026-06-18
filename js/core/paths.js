@@ -1,5 +1,5 @@
 /**
- * Chemins relatifs — site 100 % statique, sans serveur Node
+ * Chemins relatifs — site 100 % statique (file:// ou hébergement web)
  */
 export function base() {
   const p = window.location.pathname;
