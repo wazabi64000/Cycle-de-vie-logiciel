@@ -1,0 +1,262 @@
+/** Catalogue modules — généré depuis cours-cda/index.json */
+export const MODULES_CATALOG = [
+  {
+    "id": "00",
+    "slug": "00-introduction-metier",
+    "titre": "Découverte du métier",
+    "duree": "20h",
+    "niveau": "Débutant",
+    "chapitres": 10,
+    "prerequis": [
+      "Aucun prérequis technique"
+    ]
+  },
+  {
+    "id": "01",
+    "slug": "01-analyse-conception",
+    "titre": "Analyse et conception",
+    "duree": "60h",
+    "niveau": "Débutant à Intermédiaire",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 00"
+    ]
+  },
+  {
+    "id": "02",
+    "slug": "02-gestion-projet",
+    "titre": "Gestion de projet",
+    "duree": "40h",
+    "niveau": "Débutant à Intermédiaire",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 01"
+    ]
+  },
+  {
+    "id": "03",
+    "slug": "03-git-github",
+    "titre": "Git, GitHub et GitLab",
+    "duree": "30h",
+    "niveau": "Débutant à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 00"
+    ]
+  },
+  {
+    "id": "04",
+    "slug": "04-html-css",
+    "titre": "HTML5 et CSS3",
+    "duree": "50h",
+    "niveau": "Débutant à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 00"
+    ]
+  },
+  {
+    "id": "05",
+    "slug": "05-javascript",
+    "titre": "JavaScript ES2024",
+    "duree": "60h",
+    "niveau": "Débutant à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 04"
+    ]
+  },
+  {
+    "id": "06",
+    "slug": "06-bases-donnees",
+    "titre": "Bases de données",
+    "duree": "40h",
+    "niveau": "Intermédiaire",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 01",
+      "Module 05"
+    ]
+  },
+  {
+    "id": "07",
+    "slug": "07-backend-php",
+    "titre": "Backend PHP moderne",
+    "duree": "50h",
+    "niveau": "Intermédiaire à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 05",
+      "Module 06"
+    ]
+  },
+  {
+    "id": "08",
+    "slug": "08-backend-nodejs",
+    "titre": "Backend Node.js",
+    "duree": "50h",
+    "niveau": "Intermédiaire à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 05",
+      "Module 06"
+    ]
+  },
+  {
+    "id": "09",
+    "slug": "09-react",
+    "titre": "React",
+    "duree": "50h",
+    "niveau": "Intermédiaire à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 04",
+      "Module 05"
+    ]
+  },
+  {
+    "id": "10",
+    "slug": "10-flutter",
+    "titre": "Flutter",
+    "duree": "40h",
+    "niveau": "Intermédiaire",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 05"
+    ]
+  },
+  {
+    "id": "11",
+    "slug": "11-react-native",
+    "titre": "React Native",
+    "duree": "40h",
+    "niveau": "Intermédiaire à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 05",
+      "Module 09"
+    ]
+  },
+  {
+    "id": "12",
+    "slug": "12-tests",
+    "titre": "Tests logiciels",
+    "duree": "35h",
+    "niveau": "Intermédiaire à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 05",
+      "Module 08"
+    ]
+  },
+  {
+    "id": "13",
+    "slug": "13-securite",
+    "titre": "Sécurité applicative",
+    "duree": "35h",
+    "niveau": "Intermédiaire à Expert",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 08",
+      "Module 06"
+    ]
+  },
+  {
+    "id": "14",
+    "slug": "14-devops",
+    "titre": "DevOps",
+    "duree": "40h",
+    "niveau": "Intermédiaire à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 03",
+      "Module 08"
+    ]
+  },
+  {
+    "id": "15",
+    "slug": "15-cicd",
+    "titre": "CI/CD",
+    "duree": "25h",
+    "niveau": "Intermédiaire à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 03",
+      "Module 12",
+      "Module 14"
+    ]
+  },
+  {
+    "id": "16",
+    "slug": "16-monitoring",
+    "titre": "Monitoring et observabilité",
+    "duree": "25h",
+    "niveau": "Intermédiaire à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 14",
+      "Module 15"
+    ]
+  },
+  {
+    "id": "17",
+    "slug": "17-osint",
+    "titre": "OSINT défensif",
+    "duree": "20h",
+    "niveau": "Intermédiaire",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 13"
+    ]
+  },
+  {
+    "id": "18",
+    "slug": "18-deploiement",
+    "titre": "Déploiement",
+    "duree": "30h",
+    "niveau": "Intermédiaire à Avancé",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 14",
+      "Module 15"
+    ]
+  },
+  {
+    "id": "19",
+    "slug": "19-projet-professionnel",
+    "titre": "Projet professionnel",
+    "duree": "120h",
+    "niveau": "Avancé à Expert",
+    "chapitres": 10,
+    "prerequis": [
+      "Modules 01 à 18"
+    ]
+  },
+  {
+    "id": "20",
+    "slug": "20-entrepreneuriat-dev",
+    "titre": "Entrepreneuriat développeur",
+    "duree": "20h",
+    "niveau": "Tous niveaux",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 00"
+    ]
+  },
+  {
+    "id": "21",
+    "slug": "21-preparation-titre-cda",
+    "titre": "Préparation au titre CDA",
+    "duree": "30h",
+    "niveau": "Expert",
+    "chapitres": 10,
+    "prerequis": [
+      "Module 19"
+    ]
+  }
+];
+export const MODULES_META = {
+  "titre": "Cursus CDA — Concepteur Développeur d'Applications",
+  "nombre_modules": 22,
+  "duree_totale_estimee": "800h+"
+};

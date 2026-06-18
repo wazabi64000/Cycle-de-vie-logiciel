@@ -2,11 +2,10 @@ import { progressEngine } from '../core/progress-engine.js';
 import { storage } from '../core/storage.js';
 import { getLevelForScore } from '../config/levels.js';
 import { animateCounter } from '../ui/animations.js';
-import { modulesIndexUrl, href } from '../core/paths.js';
+import { loadModulesCatalog } from '../core/modules-loader.js';
 
 async function init() {
-  const res = await fetch(modulesIndexUrl());
-  const data = await res.json();
+  const data = { modules: await loadModulesCatalog() };
   const slugs = data.modules.map((m) => m.slug);
   const saved = storage.loadProgress();
   progressEngine.init(slugs, saved?.learner?.name);

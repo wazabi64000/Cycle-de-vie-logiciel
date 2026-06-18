@@ -157,6 +157,67 @@
   text-align: center;
 }
 
+/* ─── Accueil : liste des modules ─── */
+.home-modules-section {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.home-modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.home-module-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.home-module-card:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
+.home-module-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.home-module-card strong {
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+.home-module-card span:last-child {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.home-modules-list .module-meta {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+.home-module-row {
+  margin-bottom: 0.5rem;
+}
+
 @media (max-width: 640px) {
   .hero {
     padding: 3rem 0 2.5rem;

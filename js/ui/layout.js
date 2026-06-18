@@ -3,6 +3,7 @@ import { base, href } from '../core/paths.js';
 
 const NAV = [
   { id: 'home', label: 'Accueil', page: 'index.html' },
+  { id: 'modules', label: 'Cours', page: 'index.html#modules' },
   { id: 'guide', label: 'Guide', page: 'index.html#guide' },
   { id: 'dashboard', label: 'Tableau de bord', page: 'dashboard.html' },
   { id: 'certificate', label: 'Certificat', page: 'certificate.html' },

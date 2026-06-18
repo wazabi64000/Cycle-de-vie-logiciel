@@ -5,11 +5,11 @@ import { SCORE_CATEGORIES, CATEGORY_KEYS } from '../config/score-categories.js';
 import { BADGES } from '../config/badges.js';
 import { animateCounter } from '../ui/animations.js';
 import confetti from '../ui/confetti.js';
-import { modulesIndexUrl, href } from '../core/paths.js';
+import { href } from '../core/paths.js';
+import { loadModulesCatalog } from '../core/modules-loader.js';
 
 async function init() {
-  const res = await fetch(modulesIndexUrl());
-  const data = await res.json();
+  const data = { modules: await loadModulesCatalog() };
   const slugs = data.modules.map((m) => m.slug);
   const saved = storage.loadProgress();
   progressEngine.init(slugs, saved?.learner?.name);

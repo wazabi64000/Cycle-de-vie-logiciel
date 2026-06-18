@@ -5,7 +5,7 @@
  */
 
 import { mkdir, writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { join, dirname } from 'node:path';
 import { generateCoursHtml } from './cours-html.mjs';
 
 const ROOT = join(import.meta.dirname, '..', 'cours-cda');
@@ -1115,6 +1115,10 @@ async function main() {
 
   await writeFile(join(ROOT, 'index.json'), JSON.stringify(index, null, 2), 'utf-8');
   console.log(`\n📋 index.json généré`);
+
+  const catalogJs = `/** Catalogue modules — généré depuis cours-cda/index.json */\nexport const MODULES_CATALOG = ${JSON.stringify(index.modules, null, 2)};\nexport const MODULES_META = ${JSON.stringify({ titre: index.titre, nombre_modules: index.nombre_modules, duree_totale_estimee: index.duree_totale_estimee }, null, 2)};\n`;
+  await writeFile(join(dirname(ROOT), 'js', 'config', 'modules-catalog.js'), catalogJs, 'utf-8');
+  console.log(`📦 modules-catalog.js généré`);
   console.log(`\n🎉 ${MODULES.length} modules créés dans cours-cda/`);
 }
 

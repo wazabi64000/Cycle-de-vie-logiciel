@@ -6,7 +6,8 @@ import { renderModuleChecklists } from '../ui/checklist.js';
 import { animateProgressBar } from '../ui/animations.js';
 import { setNavbarExtra } from '../ui/layout.js';
 import { fetchModuleChapters } from '../ui/memory-ui.js';
-import { href, modulesIndexUrl, courseUrl } from '../core/paths.js';
+import { href, courseUrl } from '../core/paths.js';
+import { loadModulesCatalog } from '../core/modules-loader.js';
 
 let currentSlug = '';
 let currentChapters = [];
@@ -165,7 +166,7 @@ async function init() {
   currentSlug = slug;
   storage.setCurrentModule(slug);
 
-  const indexRes = await fetch(modulesIndexUrl()).then((r) => r.json());
+  const indexRes = { modules: await loadModulesCatalog() };
   moduleMeta = indexRes.modules.find((m) => m.slug === slug);
 
   if (!moduleMeta) {

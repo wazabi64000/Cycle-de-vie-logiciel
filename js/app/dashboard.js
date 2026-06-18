@@ -14,7 +14,8 @@ import {
   staggerIn,
 } from '../ui/animations.js';
 import { renderProjectChecklist } from '../ui/checklist.js';
-import { href, modulesIndexUrl, moduleUrl } from '../core/paths.js';
+import { href, moduleUrl } from '../core/paths.js';
+import { loadModulesCatalog } from '../core/modules-loader.js';
 import { learningProgressService } from '../core/learning-progress-service.js';
 import {
   showResumeModal,
@@ -26,9 +27,7 @@ import {
 let modulesData = [];
 
 async function loadModules() {
-  const res = await fetch(modulesIndexUrl());
-  const data = await res.json();
-  modulesData = data.modules;
+  modulesData = await loadModulesCatalog();
   return modulesData;
 }
 
@@ -148,6 +147,14 @@ function renderBadges(state) {
 
 function renderModulesList(state) {
   const container = document.getElementById('modules-list');
+  if (!container) return;
+
+  if (!modulesData.length) {
+    container.innerHTML = `
+      <p class="empty-state">Impossible de charger les modules. Rechargez la page.</p>`;
+    return;
+  }
+
   container.innerHTML = modulesData
     .map((mod) => {
       const modState = state.modules[mod.slug];
@@ -203,8 +210,9 @@ function refreshDashboard() {
 }
 
 async function init() {
-  const modules = await loadModules();
-  const slugs = modules.map((m) => m.slug);
+  try {
+    const modules = await loadModules();
+    const slugs = modules.map((m) => m.slug);
 
   const nameInput = document.getElementById('name-input');
   const saved = storage.loadProgress();
@@ -229,6 +237,13 @@ async function init() {
   showResumeModal({ globalProgress: progressEngine.getGlobalProgress() });
 
   staggerIn(document.querySelectorAll('.dashboard-card'));
+  } catch (err) {
+    console.error('Dashboard init:', err);
+    const list = document.getElementById('modules-list');
+    if (list) {
+      list.innerHTML = `<p class="empty-state">Erreur de chargement. <a href="${href('index.html')}">Retour accueil</a></p>`;
+    }
+  }
 }
 
 document.addEventListener('DOMContentLoaded', init);
