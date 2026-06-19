@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-label="Pipeline CI/CD">
+  <rect width="400" height="220" fill="#0f172a"/>
+  <text x="200" y="28" text-anchor="middle" fill="#e2e8f0" font-family="system-ui" font-size="14" font-weight="600">Pipeline CI/CD</text>
+  <g font-family="system-ui" font-size="10">
+    <rect x="16" y="80" width="56" height="40" rx="6" fill="#334155"/><text x="44" y="105" text-anchor="middle" fill="#e2e8f0">Push</text>
+    <rect x="88" y="80" width="56" height="40" rx="6" fill="#3b82f6"/><text x="116" y="105" text-anchor="middle" fill="#fff">Lint</text>
+    <rect x="160" y="80" width="56" height="40" rx="6" fill="#8b5cf6"/><text x="188" y="105" text-anchor="middle" fill="#fff">Tests</text>
+    <rect x="232" y="80" width="56" height="40" rx="6" fill="#f59e0b"/><text x="260" y="105" text-anchor="middle" fill="#fff">Build</text>
+    <rect x="304" y="80" width="80" height="40" rx="6" fill="#22c55e"/><text x="344" y="105" text-anchor="middle" fill="#fff">Deploy</text>
+  </g>
+  <line x1="72" y1="100" x2="88" y2="100" stroke="#64748b" stroke-width="2"/>
+  <line x1="144" y1="100" x2="160" y2="100" stroke="#64748b" stroke-width="2"/>
+  <line x1="216" y1="100" x2="232" y2="100" stroke="#64748b" stroke-width="2"/>
+  <line x1="288" y1="100" x2="304" y2="100" stroke="#64748b" stroke-width="2"/>
+  <text x="200" y="160" text-anchor="middle" fill="#64748b" font-family="system-ui" font-size="11">GitHub Actions · GitLab CI · Jenkins</text>
+  <rect x="120" y="175" width="160" height="28" rx="4" fill="none" stroke="#22c55e" stroke-width="1"/>
+  <text x="200" y="194" text-anchor="middle" fill="#22c55e" font-size="10" font-family="system-ui">staging ’ production</text>
+</svg>

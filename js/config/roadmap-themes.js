@@ -1,7 +1,36 @@
 /** WazabyCode Project Roadmap — 19 thèmes du cycle de vie logiciel */
 
+import { getItemWeight } from './checklist-knowledge.js';
+
 function cl(items) {
-  return items.map((label, i) => ({ id: `item-${i + 1}`, label }));
+  return items.map((label, i) => ({ id: `item-${i + 1}`, label, weight: null }));
+}
+
+const LEVEL_DEFAULT_WEIGHT = { debutant: 4, intermediaire: 6, professionnel: 8 };
+
+function assignChecklistWeights(themes) {
+  for (const theme of themes) {
+    for (const [level, items] of Object.entries(theme.checklists)) {
+      for (const item of items) {
+        const override = getItemWeight(theme.id, level, item.label);
+        item.weight = override ?? LEVEL_DEFAULT_WEIGHT[level] ?? 5;
+      }
+    }
+  }
+  let total = 0;
+  for (const theme of themes) {
+    for (const level of Object.keys(theme.checklists)) {
+      for (const item of theme.checklists[level]) total += item.weight;
+    }
+  }
+  const factor = 1000 / total;
+  for (const theme of themes) {
+    for (const level of Object.keys(theme.checklists)) {
+      for (const item of theme.checklists[level]) {
+        item.weight = Math.round(item.weight * factor * 10) / 10;
+      }
+    }
+  }
 }
 
 function theme(num, slug, title, icon, keywords, why, topics, tools, checklists) {
@@ -330,12 +359,20 @@ export function getAllChecklistItems() {
   for (const theme of ROADMAP_THEMES) {
     for (const level of ['debutant', 'intermediaire', 'professionnel']) {
       for (const item of theme.checklists[level]) {
-        items.push({ themeId: theme.id, level, itemId: item.id, label: item.label });
+        items.push({
+          themeId: theme.id,
+          level,
+          itemId: item.id,
+          label: item.label,
+          weight: item.weight ?? 0,
+        });
       }
     }
   }
   return items;
 }
+
+assignChecklistWeights(ROADMAP_THEMES);
 
 export const CHECKLIST_LEVELS = [
   { id: 'debutant', label: 'Débutant', color: '#22c55e' },

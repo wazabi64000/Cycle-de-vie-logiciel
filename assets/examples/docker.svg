@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-label="Docker conteneur">
+  <rect width="400" height="220" fill="#0f172a"/>
+  <text x="200" y="28" text-anchor="middle" fill="#e2e8f0" font-family="system-ui" font-size="14" font-weight="600">Docker</text>
+  <rect x="80" y="50" width="240" height="130" rx="8" fill="none" stroke="#2496ed" stroke-width="2" stroke-dasharray="6"/>
+  <text x="200" y="72" text-anchor="middle" fill="#2496ed" font-size="11" font-family="system-ui">Container</text>
+  <rect x="100" y="85" width="200" height="36" rx="4" fill="#1e293b" stroke="#64748b"/>
+  <text x="200" y="108" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">node:20-alpine</text>
+  <rect x="100" y="130" width="200" height="36" rx="4" fill="#1e293b" stroke="#64748b"/>
+  <text x="200" y="153" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">app / dist</text>
+  <path d="M60 180 h40 v-20 h-20 v-20 h20 v-20 h20 v20 h20 v20 h20 v20 h-80 z" fill="#2496ed" opacity="0.9"/>
+  <text x="200" y="200" text-anchor="middle" fill="#64748b" font-size="10" font-family="system-ui">Image ’ Container ’ Run</text>
+</svg>

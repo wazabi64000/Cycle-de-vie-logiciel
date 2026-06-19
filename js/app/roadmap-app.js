@@ -2,12 +2,41 @@ import { ROADMAP_THEMES, ROADMAP_META, CHECKLIST_LEVELS } from '../config/roadma
 import { roadmapEngine } from '../core/roadmap-engine.js';
 import { searchRoadmap } from '../core/roadmap-search.js';
 import { roadmapStorage } from '../core/roadmap-storage.js';
-import { getLevelProgress } from '../config/levels.js';
+import { getChecklistKnowledge } from '../config/checklist-knowledge.js';
+import { openChecklistModal } from '../ui/knowledge-modal.js';
+import { initToolsSection } from '../ui/tools-section.js';
+import { evaluateRules } from '../config/roadmap-rules.js';
+import { renderCdaPanel } from '../config/cda-roadmap-map.js';
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 
 let activeSlug = null;
+let cdaMode = false;
+
+function isCdaMode() {
+  return cdaMode || localStorage.getItem('wazabycode_cda_mode') === '1';
+}
+
+function setCdaMode(on) {
+  cdaMode = on;
+  localStorage.setItem('wazabycode_cda_mode', on ? '1' : '0');
+}
+
+function renderRecommendations() {
+  const rules = evaluateRules(roadmapEngine);
+  if (!rules.length) return '';
+  return `
+    <section class="recommendations-panel" aria-live="polite">
+      <h2>Recommandations</h2>
+      ${rules
+        .map(
+          (r) =>
+            `<div class="recommendation recommendation-${r.severity}" role="alert">${r.message}</div>`
+        )
+        .join('')}
+    </section>`;
+}
 
 export function renderSidebar(container) {
   const score = roadmapEngine.getScore();
@@ -43,6 +72,7 @@ export function renderSidebar(container) {
     </nav>
     <div class="sidebar-footer">
       <a href="index.html" class="sidebar-footer-link">Accueil</a>
+      <a href="certification-rncp.html" class="sidebar-footer-link">RNCP CDA</a>
       <button type="button" id="sidebar-reset" class="sidebar-footer-link btn-link">Recommencer</button>
     </div>`;
 
@@ -63,15 +93,23 @@ export function renderSidebar(container) {
 }
 
 export function renderTopbar(container) {
+  const cdaOn = isCdaMode();
   container.innerHTML = `
     <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-label="Menu">☰</button>
     <div class="search-wrap">
       <input type="search" id="global-search" class="search-input" placeholder="Rechercher : Docker, Jest, OWASP, CI/CD…" autocomplete="off">
       <div id="search-dropdown" class="search-dropdown" hidden></div>
     </div>
+    <button type="button" id="cda-toggle" class="btn-cda${cdaOn ? ' active' : ''}" title="Mode CDA — compétences RNCP">Mode CDA</button>
     <button type="button" id="theme-toggle" class="btn-icon" aria-label="Thème">🌓</button>`;
 
   $('#theme-toggle', container)?.addEventListener('click', () => roadmapStorage.toggleTheme());
+  $('#cda-toggle', container)?.addEventListener('click', () => {
+    setCdaMode(!isCdaMode());
+    $('#cda-toggle', container)?.classList.toggle('active', isCdaMode());
+    const content = $('#roadmap-content');
+    if (content && activeSlug) renderTheme(content, activeSlug);
+  });
 
   const input = $('#global-search', container);
   const dropdown = $('#search-dropdown', container);
@@ -89,6 +127,7 @@ export function renderTopbar(container) {
         .map(
           (r) => `
         <button type="button" class="search-result" data-slug="${r.themeId}">
+          <span class="search-result-type">${typeLabel(r.type)}</span>
           <strong>${r.title}</strong>
           <span>${r.snippet}</span>
         </button>`
@@ -114,23 +153,81 @@ export function renderTopbar(container) {
   });
 }
 
+function typeLabel(type) {
+  const map = {
+    theme: 'Thème',
+    tool: 'Outil',
+    keyword: 'Mot-clé',
+    topic: 'Sujet',
+    checklist: 'Checklist',
+    registry: 'Technologie',
+    'registry-alias': 'Technologie',
+  };
+  return map[type] ?? type;
+}
+
 function renderChecklistGroup(theme, levelId, levelLabel, color) {
   const items = theme.checklists[levelId];
   return `
     <div class="checklist-group">
       <h3 class="checklist-level-title" style="--cl-color:${color}">${levelLabel}</h3>
       ${items
-        .map(
-          (item) => `
-        <label class="roadmap-check${roadmapEngine.isChecked(theme.id, levelId, item.id) ? ' checked' : ''}">
-          <input type="checkbox" data-theme="${theme.id}" data-level="${levelId}" data-item="${item.id}"
-            ${roadmapEngine.isChecked(theme.id, levelId, item.id) ? 'checked' : ''}>
-          <span class="roadmap-check-box"></span>
-          <span>${item.label}</span>
-        </label>`
-        )
+        .map((item) => {
+          const weight = item.weight ?? roadmapEngine.getItemWeight(theme.id, levelId, item.id);
+          return `
+        <div class="roadmap-check-row${roadmapEngine.isChecked(theme.id, levelId, item.id) ? ' checked' : ''}">
+          <label class="roadmap-check${roadmapEngine.isChecked(theme.id, levelId, item.id) ? ' checked' : ''}">
+            <input type="checkbox" data-theme="${theme.id}" data-level="${levelId}" data-item="${item.id}"
+              ${roadmapEngine.isChecked(theme.id, levelId, item.id) ? 'checked' : ''}>
+            <span class="roadmap-check-box"></span>
+            <span>${item.label}</span>
+          </label>
+          <span class="check-weight" title="Points">${Math.round(weight)} pts</span>
+          <button type="button" class="btn-details" data-theme="${theme.id}" data-level="${levelId}" data-item="${item.id}" data-label="${item.label.replace(/"/g, '&quot;')}">Détails</button>
+        </div>`;
+        })
         .join('')}
     </div>`;
+}
+
+function bindChecklistEvents(container, theme) {
+  $$('input[type="checkbox"]', container).forEach((cb) => {
+    cb.addEventListener('change', () => {
+      roadmapEngine.toggle(cb.dataset.theme, cb.dataset.level, cb.dataset.item, cb.checked);
+      const row = cb.closest('.roadmap-check-row');
+      row?.classList.toggle('checked', cb.checked);
+      row?.querySelector('.roadmap-check')?.classList.toggle('checked', cb.checked);
+      updateProgressUI();
+      refreshRecommendations(container);
+      if (roadmapEngine.isComplete()) {
+        setTimeout(() => { window.location.href = 'completion.html'; }, 800);
+      }
+    });
+  });
+
+  $$('.btn-details', container).forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const knowledge = getChecklistKnowledge(
+        btn.dataset.theme,
+        btn.dataset.level,
+        btn.dataset.label,
+        theme.why
+      );
+      const item = theme.checklists[btn.dataset.level]?.find((i) => i.id === btn.dataset.item);
+      openChecklistModal(knowledge, item?.weight);
+    });
+  });
+}
+
+function refreshRecommendations(container) {
+  const existing = $('.recommendations-panel', container);
+  const html = renderRecommendations();
+  if (existing) {
+    existing.outerHTML = html || '';
+  } else if (html) {
+    const header = $('.theme-header', container);
+    header?.insertAdjacentHTML('afterend', html);
+  }
 }
 
 export function renderTheme(container, slug) {
@@ -143,7 +240,6 @@ export function renderTheme(container, slug) {
   const pct = roadmapEngine.getThemeProgress(theme.id);
   const score = roadmapEngine.getScore();
   const level = roadmapEngine.getLevel();
-  const levelPct = getLevelProgress(score);
 
   container.innerHTML = `
     <header class="theme-header">
@@ -159,7 +255,11 @@ export function renderTheme(container, slug) {
       </div>
     </header>
 
+    ${renderRecommendations()}
+
     <div class="progress-track theme-progress"><div class="progress-fill" style="width:${pct}%"></div></div>
+
+    ${isCdaMode() ? renderCdaPanel(theme.id) : ''}
 
     <section class="theme-card">
       <h2>Pourquoi cette étape ?</h2>
@@ -176,16 +276,14 @@ export function renderTheme(container, slug) {
       )
       .join('')}
 
-    <section class="theme-card">
+    <section class="theme-card tools-section-card">
       <h2>Outils recommandés</h2>
-      <div class="tool-chips">
-        ${theme.tools.map((t) => `<span class="tool-chip">${t}</span>`).join('')}
-      </div>
+      <div id="theme-tools-root"></div>
     </section>
 
     <section class="theme-card checklists-section">
       <h2>Checklists</h2>
-      <p class="text-muted">Cochez au fur et à mesure — sauvegarde automatique.</p>
+      <p class="text-muted">Cochez au fur et à mesure — sauvegarde automatique. Chaque item a un poids en points.</p>
       ${CHECKLIST_LEVELS.map((l) => renderChecklistGroup(theme, l.id, l.label, l.color)).join('')}
     </section>
 
@@ -194,16 +292,9 @@ export function renderTheme(container, slug) {
       ${theme.num < ROADMAP_THEMES.length ? `<a href="#${ROADMAP_THEMES[theme.num].slug}" class="btn btn-primary theme-nav-next" data-slug="${ROADMAP_THEMES[theme.num].slug}">Suivant →</a>` : `<a href="completion.html" class="btn btn-primary">Terminer le parcours →</a>`}
     </nav>`;
 
-  $$('input[type="checkbox"]', container).forEach((cb) => {
-    cb.addEventListener('change', () => {
-      roadmapEngine.toggle(cb.dataset.theme, cb.dataset.level, cb.dataset.item, cb.checked);
-      cb.closest('.roadmap-check')?.classList.toggle('checked', cb.checked);
-      updateProgressUI();
-      if (roadmapEngine.isComplete()) {
-        setTimeout(() => { window.location.href = 'completion.html'; }, 800);
-      }
-    });
-  });
+  bindChecklistEvents(container, theme);
+  const toolsRoot = $('#theme-tools-root', container);
+  if (toolsRoot) initToolsSection(toolsRoot, theme.tools);
 
   $$('[data-slug]', container).forEach((link) => {
     link.addEventListener('click', (e) => {
@@ -224,6 +315,8 @@ function updateProgressUI() {
       $('.theme-progress .progress-fill')?.style.setProperty('width', `${pct}%`);
       const firstStat = $('.theme-stat strong', stats);
       if (firstStat) firstStat.textContent = `${pct}%`;
+      const scoreStat = $$('.theme-stat strong', stats)[1];
+      if (scoreStat) scoreStat.textContent = String(roadmapEngine.getScore());
     }
   }
 }
@@ -257,9 +350,10 @@ export function showResumeModal() {
     <div class="resume-modal">
       <div class="resume-icon">👋</div>
       <h2>Bienvenue sur WazabyCode</h2>
+      <p>Guide de référence du développeur moderne — base de connaissances interactive.</p>
       <p>Vous vous êtes arrêté à :</p>
       <p class="resume-theme"><strong>${title}</strong></p>
-      <p>Progression actuelle : <strong>${pct} %</strong></p>
+      <p>Progression actuelle : <strong>${pct} %</strong> — Score : <strong>${roadmapEngine.getScore()} / 1000</strong></p>
       <div class="resume-actions">
         <button type="button" class="btn btn-primary" id="resume-continue">Reprendre</button>
         <button type="button" class="btn btn-ghost" id="resume-restart">Recommencer</button>
@@ -284,6 +378,7 @@ export function showResumeModal() {
 }
 
 export function initRoadmapApp() {
+  cdaMode = localStorage.getItem('wazabycode_cda_mode') === '1';
   renderSidebar($('#sidebar'));
   renderTopbar($('#topbar'));
 

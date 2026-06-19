@@ -1,6 +1,7 @@
 import { ROADMAP_THEMES } from '../config/roadmap-themes.js';
+import { TOOLS_REGISTRY, resolveTool } from '../config/tools-registry.js';
 
-/** Index de recherche globale */
+/** Index de recherche globale enrichie */
 let _index = null;
 
 function buildIndex() {
@@ -28,8 +29,53 @@ function buildIndex() {
         snippet: topic.body.slice(0, 100) + '…',
       });
     }
+    for (const level of ['debutant', 'intermediaire', 'professionnel']) {
+      for (const item of theme.checklists[level]) {
+        entries.push({
+          type: 'checklist',
+          themeId: theme.id,
+          title: item.label,
+          text: `${item.label} ${theme.title} ${level}`.toLowerCase(),
+          snippet: `Checklist — ${theme.title}`,
+        });
+      }
+    }
   }
+
+  for (const [key, tool] of Object.entries(TOOLS_REGISTRY)) {
+    const kwText = (tool.keywords ?? []).join(' ');
+    entries.push({
+      type: 'registry',
+      themeId: findThemeForTool(tool.name),
+      title: tool.name,
+      text: `${tool.name} ${tool.description ?? ''} ${kwText}`.toLowerCase(),
+      snippet: tool.description?.slice(0, 100) ?? `Technologie — ${tool.name}`,
+      toolKey: key,
+    });
+    for (const kw of tool.keywords ?? []) {
+      if (kw === tool.name.toLowerCase()) continue;
+      entries.push({
+        type: 'registry-alias',
+        themeId: findThemeForTool(tool.name),
+        title: kw,
+        text: kw.toLowerCase(),
+        snippet: `${tool.name} — ${tool.description?.slice(0, 60) ?? ''}`,
+        toolKey: key,
+      });
+    }
+  }
+
   return entries;
+}
+
+function findThemeForTool(toolName) {
+  const lower = toolName.toLowerCase();
+  for (const theme of ROADMAP_THEMES) {
+    if (theme.tools.some((t) => t.toLowerCase().includes(lower) || lower.includes(t.toLowerCase()))) {
+      return theme.id;
+    }
+  }
+  return ROADMAP_THEMES[0]?.id ?? 'devops';
 }
 
 export function searchRoadmap(query) {
@@ -40,10 +86,13 @@ export function searchRoadmap(query) {
   const scored = _index
     .map((entry) => {
       let score = 0;
-      if (entry.title.toLowerCase() === q) score += 100;
-      else if (entry.title.toLowerCase().startsWith(q)) score += 60;
+      const title = entry.title.toLowerCase();
+      if (title === q) score += 100;
+      else if (title.startsWith(q)) score += 60;
+      else if (title.includes(q)) score += 45;
       else if (entry.text.includes(q)) score += 30;
       if (entry.type === 'theme') score += 10;
+      if (entry.type === 'registry' || entry.type === 'registry-alias') score += 15;
       return { ...entry, score };
     })
     .filter((e) => e.score > 0)
@@ -51,13 +100,25 @@ export function searchRoadmap(query) {
 
   const seen = new Set();
   return scored.filter((e) => {
-    const k = `${e.themeId}-${e.title}`;
+    const k = `${e.type}-${e.themeId}-${e.title}`;
     if (seen.has(k)) return false;
     seen.add(k);
     return true;
-  }).slice(0, 12);
+  }).slice(0, 15);
+}
+
+export function searchTools(query) {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  return Object.values(TOOLS_REGISTRY).filter(
+    (t) =>
+      t.name.toLowerCase().includes(q)
+      || t.keywords?.some((kw) => kw.includes(q) || q.includes(kw))
+  );
 }
 
 export function invalidateSearchIndex() {
   _index = null;
 }
+
+export { resolveTool };

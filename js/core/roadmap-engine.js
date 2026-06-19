@@ -38,6 +38,18 @@ class RoadmapEngine {
     roadmapStorage.save(this._state);
   }
 
+  getThemeCheckedCount(themeId) {
+    const theme = ROADMAP_THEMES.find((t) => t.id === themeId);
+    if (!theme) return 0;
+    let count = 0;
+    for (const level of ['debutant', 'intermediaire', 'professionnel']) {
+      for (const item of theme.checklists[level]) {
+        if (this.isChecked(themeId, level, item.id)) count++;
+      }
+    }
+    return count;
+  }
+
   getThemeProgress(themeId) {
     const theme = ROADMAP_THEMES.find((t) => t.id === themeId);
     if (!theme) return 0;
@@ -59,9 +71,22 @@ class RoadmapEngine {
     return Math.round((done / all.length) * 100);
   }
 
+  getWeightedScore() {
+    const all = getAllChecklistItems();
+    let earned = 0;
+    let max = 0;
+    for (const item of all) {
+      max += item.weight;
+      if (this.isChecked(item.themeId, item.level, item.itemId)) {
+        earned += item.weight;
+      }
+    }
+    if (!max) return 0;
+    return Math.round((earned / max) * MAX_SCORE);
+  }
+
   getScore() {
-    const pct = this.getGlobalProgress();
-    return Math.round((pct / 100) * MAX_SCORE);
+    return this.getWeightedScore();
   }
 
   getLevel() {
@@ -74,6 +99,13 @@ class RoadmapEngine {
 
   hasProgress() {
     return Object.keys(this._state.checklists).length > 0 || this._state.lastTheme;
+  }
+
+  getItemWeight(themeId, level, itemId) {
+    const theme = ROADMAP_THEMES.find((t) => t.id === themeId);
+    if (!theme) return 0;
+    const item = theme.checklists[level]?.find((i) => i.id === itemId);
+    return item?.weight ?? 0;
   }
 }
 
