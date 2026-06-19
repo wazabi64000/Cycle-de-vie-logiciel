@@ -1,4 +1,5 @@
 import { getFormationModules, getAllModuleItems } from '../config/academy/index.js';
+import { getFormation } from '../config/academy/catalog.js';
 import { getLevelForScore, MAX_SCORE } from '../config/levels.js';
 import { academyStorage } from './academy-storage.js';
 
@@ -107,7 +108,12 @@ class AcademyEngine {
   }
 
   getWeightedScore() {
-    const all = getAllModuleItems(this._modules);
+    const formation = getFormation(this._formationId);
+    let all = getAllModuleItems(this._modules);
+    if (formation?.legacyModuleIds?.length) {
+      const legacy = new Set(formation.legacyModuleIds);
+      all = all.filter((i) => legacy.has(i.moduleId));
+    }
     let earned = 0;
     let max = 0;
     for (const item of all) {

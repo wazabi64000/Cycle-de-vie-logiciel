@@ -1,5 +1,11 @@
 /** Exercices pratiques — solutions masquées */
 
+import {
+  DWWM_EXTENDED_MODULE_IDS,
+  DWWM_EXERCISE_OVERRIDES,
+  getDwwmEnhancedExercises,
+} from './pedagogy-dwwm-enhanced.js';
+
 function ex(id, level, title, prompt, scenario, solution) {
   return { id, level, title, prompt, scenario, solution };
 }
@@ -96,8 +102,13 @@ function genericExercise(mod, level, levelLabel) {
 
 export function getModuleExercises(formationId, mod) {
   const key = `${formationId}::${mod.id}`;
+  const dwwmOverride = DWWM_EXERCISE_OVERRIDES[key];
+  if (dwwmOverride) return dwwmOverride;
   const override = EXERCISE_OVERRIDES[key];
   if (override) return override;
+  if (formationId === 'dwwm' && DWWM_EXTENDED_MODULE_IDS.has(mod.id)) {
+    return getDwwmEnhancedExercises(mod);
+  }
 
   return {
     debutant: [genericExercise(mod, 'debutant', 'Débutant')],

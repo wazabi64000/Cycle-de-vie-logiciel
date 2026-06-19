@@ -40,12 +40,27 @@ export const TOOLS_REGISTRY = {
   sentry: { name: 'Sentry', website: 'https://sentry.io', documentation: 'https://docs.sentry.io', github: 'https://github.com/getsentry/sentry', description: 'Error tracking prod.', useCases: ['Errors'], alternatives: [], recommendedLevel: 'Intermédiaire', keywords: ['sentry'] },
   vercel: { name: 'Vercel', website: 'https://vercel.com', documentation: 'https://vercel.com/docs', github: 'https://github.com/vercel', description: 'Deploy frontend/Next.js.', useCases: ['Static', 'SSR'], alternatives: ['Netlify'], recommendedLevel: 'Débutant', keywords: ['vercel', 'deploy'] },
   postman: { name: 'Postman', website: 'https://www.postman.com', documentation: 'https://learning.postman.com/docs/', github: 'https://github.com/postmanlabs', description: 'Client et tests API.', useCases: ['API tests'], alternatives: ['Insomnia'], recommendedLevel: 'Débutant', keywords: ['postman', 'api'] },
+  insomnia: { name: 'Insomnia', website: 'https://insomnia.rest', documentation: 'https://docs.insomnia.rest', github: 'https://github.com/Kong/insomnia', description: 'Client REST/GraphQL.', useCases: ['API tests'], alternatives: ['Postman'], recommendedLevel: 'Débutant', keywords: ['insomnia', 'api'] },
+  penpot: { name: 'Penpot', website: 'https://penpot.app', documentation: 'https://help.penpot.app', github: 'https://github.com/penpot/penpot', description: 'Design UI open source.', useCases: ['Maquettes', 'Wireframes'], alternatives: ['Figma'], recommendedLevel: 'Débutant', keywords: ['penpot', 'design'] },
+  similarweb: { name: 'SimilarWeb', website: 'https://www.similarweb.com', documentation: 'https://support.similarweb.com', github: null, description: 'Analyse trafic et concurrence web.', useCases: ['Benchmark', 'SEO'], alternatives: ['Semrush'], recommendedLevel: 'Intermédiaire', keywords: ['similarweb', 'benchmark'] },
+  'google-trends': { name: 'Google Trends', website: 'https://trends.google.com', documentation: 'https://support.google.com/trends', github: null, description: 'Tendances de recherche.', useCases: ['Marché', 'SEO'], alternatives: [], recommendedLevel: 'Débutant', keywords: ['google trends', 'trends'] },
+  builtwith: { name: 'BuiltWith', website: 'https://builtwith.com', documentation: 'https://builtwith.com/help', github: null, description: 'Stack technique des sites web.', useCases: ['Benchmark tech'], alternatives: ['Wappalyzer'], recommendedLevel: 'Intermédiaire', keywords: ['builtwith'] },
+  apache: { name: 'Apache HTTP Server', website: 'https://httpd.apache.org', documentation: 'https://httpd.apache.org/docs/', github: 'https://github.com/apache/httpd', description: 'Serveur web historique.', useCases: ['LAMP', 'Virtual hosts'], alternatives: ['Nginx'], recommendedLevel: 'Intermédiaire', keywords: ['apache', 'httpd'] },
+  caddy: { name: 'Caddy', website: 'https://caddyserver.com', documentation: 'https://caddyserver.com/docs/', github: 'https://github.com/caddyserver/caddy', description: 'Serveur web SSL auto.', useCases: ['HTTPS', 'Reverse proxy'], alternatives: ['Nginx'], recommendedLevel: 'Intermédiaire', keywords: ['caddy'] },
+  mariadb: { name: 'MariaDB', website: 'https://mariadb.org', documentation: 'https://mariadb.com/kb/en/documentation/', github: 'https://github.com/MariaDB/server', description: 'SGBD fork MySQL.', useCases: ['LAMP', 'Web apps'], alternatives: ['MySQL'], recommendedLevel: 'Intermédiaire', keywords: ['mariadb'] },
+  sqlite: { name: 'SQLite', website: 'https://www.sqlite.org', documentation: 'https://www.sqlite.org/docs.html', github: 'https://github.com/sqlite/sqlite', description: 'BDD embarquée fichier.', useCases: ['Prototypes', 'Mobile'], alternatives: [], recommendedLevel: 'Débutant', keywords: ['sqlite'] },
+  phpunit: { name: 'PHPUnit', website: 'https://phpunit.de', documentation: 'https://docs.phpunit.de', github: 'https://github.com/sebastianbergmann/phpunit', description: 'Tests unitaires PHP.', useCases: ['Unit tests PHP'], alternatives: ['Pest'], recommendedLevel: 'Intermédiaire', keywords: ['phpunit', 'php'] },
+  cypress: { name: 'Cypress', website: 'https://www.cypress.io', documentation: 'https://docs.cypress.io', github: 'https://github.com/cypress-io/cypress', description: 'Tests E2E interactifs.', useCases: ['E2E'], alternatives: ['Playwright'], recommendedLevel: 'Intermédiaire', keywords: ['cypress'] },
+  jmeter: { name: 'JMeter', website: 'https://jmeter.apache.org', documentation: 'https://jmeter.apache.org/usermanual/index.html', github: 'https://github.com/apache/jmeter', description: 'Tests de charge Java.', useCases: ['Load test'], alternatives: ['K6'], recommendedLevel: 'Avancé', keywords: ['jmeter', 'load'] },
+  supertest: { name: 'Supertest', website: 'https://github.com/ladjs/supertest', documentation: 'https://github.com/ladjs/supertest', github: 'https://github.com/ladjs/supertest', description: 'Tests HTTP Node/Express.', useCases: ['API tests'], alternatives: ['Postman'], recommendedLevel: 'Intermédiaire', keywords: ['supertest'] },
 };
 
 const ALIASES = {
   'draw.io': 'drawio', 'diagrams.net': 'drawio', 'node.js': 'nodejs', 'node': 'nodejs',
   'github actions': 'github-actions', 'postgres': 'postgresql', 'owasp zap': 'owasp-zap',
   'docker compose': 'docker', 'dockerfile': 'docker', 'docker registry': 'docker',
+  'google trends': 'google-trends', 'similar web': 'similarweb', 'php.net': 'php',
+  'search console': 'google-search-console',
 };
 
 function normalizeKey(name) {

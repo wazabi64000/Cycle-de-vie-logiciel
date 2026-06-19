@@ -1,5 +1,7 @@
 /** Base de connaissances — détails par item checklist */
 
+import { buildDwwmChecklistKnowledge, DWWM_MODULE_PEDAGOGY } from './academy/dwwm-module-pedagogy.js';
+
 const IMAGE_BASE = 'assets/examples/';
 
 const KNOWLEDGE_OVERRIDES = {
@@ -147,10 +149,15 @@ export function getItemWeight(themeId, level, label) {
   return KNOWLEDGE_OVERRIDES[key]?.weight ?? null;
 }
 
-export function getChecklistKnowledge(themeId, level, label, themeWhy = '') {
+export function getChecklistKnowledge(themeId, level, label, themeWhy = '', mod = null) {
   const key = knowledgeKey(themeId, level, label);
   if (KNOWLEDGE_OVERRIDES[key]) {
     return { ...KNOWLEDGE_OVERRIDES[key], label, themeId, level };
+  }
+
+  if (DWWM_MODULE_PEDAGOGY[themeId] || mod?.pedagogy) {
+    const dwwm = buildDwwmChecklistKnowledge(themeId, level, label, themeWhy, mod);
+    if (dwwm) return dwwm;
   }
 
   const ctx = THEME_CONTEXT[themeId] ?? {};

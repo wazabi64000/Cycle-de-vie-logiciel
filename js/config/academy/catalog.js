@@ -32,10 +32,15 @@ export const FORMATIONS = [
     icon: '💻',
     color: '#3b82f6',
     category: 'Développement',
-    description: 'HTML, CSS, JavaScript, PHP, SQL, accessibilité, déploiement web.',
+    description: 'Parcours complet DWWM — analyse, maquettes, front/back, BDD, tests, sécurité, DevOps et projet fil rouge.',
     levels: ['debutant', 'intermediaire', 'professionnel'],
     modeKey: 'dwwm',
-    moduleCount: 10,
+    moduleCount: 31,
+    legacyModuleIds: [
+      'html-fondamentaux', 'css-fondamentaux', 'javascript-fondamentaux',
+      'responsive-design', 'accessibilite-web', 'php-fondamentaux',
+      'sql-fondamentaux', 'api-rest', 'git-fondamentaux', 'deploiement-web',
+    ],
   },
   {
     id: 'cyber',

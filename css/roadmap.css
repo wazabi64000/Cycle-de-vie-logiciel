@@ -1983,6 +1983,117 @@
   }
 }
 
+/* ─── Module pédagogie DWWM (ressources, BP, cas réels) ─── */
+.module-pedagogy-section {
+  border-left: 3px solid var(--accent);
+}
+
+.pedagogy-resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pedagogy-resource {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.pedagogy-resource:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
+.pedagogy-resource-official {
+  border-color: rgba(37, 99, 235, 0.25);
+}
+
+.module-pedagogy-levels {
+  border-left: 3px solid #8b5cf6;
+}
+
+.pedagogy-level-block {
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--pl-color, var(--accent));
+}
+
+.pedagogy-level-block:last-child {
+  margin-bottom: 0;
+}
+
+.pedagogy-level-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.pedagogy-level-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.pedagogy-col h4 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.pedagogy-col ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.pedagogy-col-warn h4 { color: var(--warning); }
+.pedagogy-col-case h4 { color: var(--accent); }
+
+.pedagogy-case {
+  padding: 0.5rem 0.65rem;
+  margin-bottom: 0.4rem;
+  background: var(--bg-card);
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid var(--border);
+  font-size: 0.8125rem;
+}
+
+.pedagogy-case strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.8125rem;
+}
+
+.pedagogy-case p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+@media (max-width: 768px) {
+  .pedagogy-level-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .exercise-card {
   padding: 1rem;
   margin-bottom: 1rem;

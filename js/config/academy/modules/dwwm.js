@@ -1,6 +1,11 @@
 import { mod, assignModuleWeights } from '../helpers.js';
+import { DWWM_EXTENDED_MODULES as RAW_DWWM_EXTENDED } from './dwwm-extensions.js';
+import { enrichDwwmModules } from '../dwwm-module-pedagogy.js';
 
-const MODULES = [
+const DWWM_EXTENDED_MODULES = enrichDwwmModules(RAW_DWWM_EXTENDED);
+
+/** Modules 1–10 — contenu inchangé, poids calculés sur ce pool seul (/1000 préservé) */
+const LEGACY_MODULES = [
   mod(1, 'html-fondamentaux', 'HTML', '📄',
     ['html', 'sémantique', 'accessibilité', 'seo'],
     'HTML structure le contenu web. C\'est la base de tout site accessible et bien référencé.',
@@ -93,5 +98,8 @@ const MODULES = [
       professionnel: ['Deploy documenté', 'Rollback possible', 'Monitoring basique'] }),
 ];
 
-assignModuleWeights(MODULES);
+assignModuleWeights(LEGACY_MODULES);
+assignModuleWeights(DWWM_EXTENDED_MODULES);
+
+const MODULES = [...LEGACY_MODULES, ...DWWM_EXTENDED_MODULES];
 export const DWWM_MODULES = MODULES;

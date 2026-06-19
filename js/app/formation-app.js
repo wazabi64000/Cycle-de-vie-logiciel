@@ -19,6 +19,7 @@ import { evaluateRules } from '../config/roadmap-rules.js';
 import { renderFormationModePanel, getFormationMode } from '../config/academy/modes.js';
 import { initQuizSection } from '../ui/quiz-section.js';
 import { initExerciseSection } from '../ui/exercise-section.js';
+import { renderModulePedagogySection } from '../ui/module-pedagogy-section.js';
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
@@ -245,7 +246,7 @@ function bindChecklistEvents(container, mod) {
 
   $$('.btn-details', container).forEach((btn) => {
     btn.addEventListener('click', () => {
-      const knowledge = getChecklistKnowledge(btn.dataset.theme, btn.dataset.level, btn.dataset.label, mod.why);
+      const knowledge = getChecklistKnowledge(btn.dataset.theme, btn.dataset.level, btn.dataset.label, mod.why, mod);
       const item = mod.checklists[btn.dataset.level]?.find((i) => i.id === btn.dataset.item);
       openChecklistModal(knowledge, item?.weight);
     });
@@ -299,6 +300,7 @@ export function renderModule(container, slug) {
       <h2>Outils recommandés</h2>
       <div id="theme-tools-root"></div>
     </section>
+    ${renderModulePedagogySection(mod)}
     <section class="theme-card checklists-section">
       <h2>Checklists</h2>
       <p class="text-muted">Débutant · Intermédiaire · Professionnel — sauvegarde automatique.</p>

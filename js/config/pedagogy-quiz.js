@@ -1,5 +1,11 @@
 /** Générateur et overrides de quiz — 15 questions / module (5×3 niveaux) */
 
+import {
+  DWWM_EXTENDED_MODULE_IDS,
+  DWWM_QUIZ_OVERRIDES,
+  getDwwmEnhancedQuiz,
+} from './pedagogy-dwwm-enhanced.js';
+
 function qSingle(id, question, options, correctLetter, explanation) {
   const letters = ['A', 'B', 'C', 'D', 'E'];
   return {
@@ -134,8 +140,13 @@ function genericQuizForModule(mod, level, levelLabel) {
 
 export function getModuleQuiz(formationId, mod) {
   const key = `${formationId}::${mod.id}`;
+  const dwwmOverride = DWWM_QUIZ_OVERRIDES[key];
+  if (dwwmOverride) return dwwmOverride;
   const override = QUIZ_OVERRIDES[key];
   if (override) return override;
+  if (formationId === 'dwwm' && DWWM_EXTENDED_MODULE_IDS.has(mod.id)) {
+    return getDwwmEnhancedQuiz(mod);
+  }
 
   return {
     debutant: genericQuizForModule(mod, 'debutant', 'Débutant'),
