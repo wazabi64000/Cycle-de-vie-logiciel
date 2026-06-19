@@ -1,8 +1,66 @@
-# WazabyCode — Project Roadmap
+# WazabyCode Academy
 
-Guide interactif et **base de connaissances** pour suivre **toutes les étapes** de réalisation d'une application moderne.
+Plateforme **multi-formations** — une application, une architecture, plusieurs parcours.
 
-> Ce n'est **pas** un LMS. C'est une roadmap de cycle de vie logiciel : de l'idée à la maintenance en production.
+> Développement · Cybersécurité · Réseaux · Linux · Cloud · DevOps
+
+## Formations disponibles
+
+| Formation | Modules | Certification |
+|-----------|---------|---------------|
+| CDA | 19 | RNCP37873 |
+| DWWM | 10 | RNCP37674 |
+| Cybersécurité | 15 | — |
+| Réseaux | 12 | — |
+| Linux | 10 | — |
+| DevOps | 9 | — |
+| Cloud | 9 | — |
+
+## Navigation
+
+1. **`index.html`** — Accueil Academy
+2. **`formations.html`** — Choix de la formation
+3. **`formation.html#cda/module-slug`** — Parcours interactif (checklists, outils, score)
+4. **`roadmap.html`** — Alias parcours CDA
+
+## Progression localStorage
+
+```json
+{
+  "formations": {
+    "cda": { "checklists": {}, "lastModule": "..." },
+    "dwwm": {},
+    "cyber": {},
+    "reseaux": {},
+    "linux": {},
+    "devops": {},
+    "cloud": {}
+  }
+}
+```
+
+Clé : `wazabycode_academy` — migration automatique depuis `wazabycode_roadmap`.
+
+## Architecture
+
+```
+js/config/academy/
+  catalog.js          → 7 formations
+  helpers.js          → modules + poids /1000
+  modes.js            → Mode CDA, DWWM, Cyber…
+  modules/*.js        → contenu par parcours
+js/core/academy-storage.js
+js/core/academy-engine.js
+js/app/formation-app.js
+```
+
+## Fonctionnalités conservées
+
+- Checklists 3 niveaux · Score /1000 · Outils premium · Modales Détails · Mode formation · Recherche · localStorage
+
+## Hébergement
+
+https://wazabi64000.github.io/Cycle-de-vie-logiciel/
 
 ## Stack
 

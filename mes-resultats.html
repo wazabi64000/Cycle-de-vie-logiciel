@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes résultats — WazabyCode Academy</title>
+  <link rel="stylesheet" href="css/roadmap.css">
+</head>
+<body>
+  <nav class="landing-nav">
+    <a href="index.html" class="landing-nav-logo">Wazaby<span>Code</span> Academy</a>
+    <div style="display:flex;gap:0.75rem;align-items:center">
+      <button type="button" id="theme-toggle" class="btn-icon" aria-label="Thème">🌓</button>
+      <a href="formations.html" class="btn btn-ghost">Formations</a>
+    </div>
+  </nav>
+
+  <main class="formations-hub">
+    <div class="container" style="max-width:800px">
+      <header class="formations-hub-header">
+        <h1>📊 Mes résultats</h1>
+        <p>Auto-évaluation — quiz, exercices et badges (données séparées de la progression checklist).</p>
+      </header>
+
+      <section class="theme-card" id="stats-section"></section>
+      <section class="theme-card" id="forces-section"></section>
+      <section class="theme-card" id="weaknesses-section"></section>
+      <section class="theme-card" id="badges-section"></section>
+    </div>
+  </main>
+
+  <script type="module">
+    import { academyStorage } from './js/core/academy-storage.js';
+    import { getStrengthsAndWeaknesses, getEarnedBadges, getPedagogyStats } from './js/core/pedagogy-engine.js';
+
+    document.getElementById('theme-toggle')?.addEventListener('click', () => academyStorage.toggleTheme());
+    academyStorage.init();
+
+    const stats = getPedagogyStats();
+    document.getElementById('stats-section').innerHTML = `
+      <h2>Statistiques pédagogiques</h2>
+      <div class="results-stats-grid">
+        <div><strong>${stats.quizCount}</strong><span>Quiz complétés</span></div>
+        <div><strong>${stats.passed}</strong><span>Quiz réussis</span></div>
+        <div><strong>${stats.exerciseCount}</strong><span>Exercices réalisés</span></div>
+        <div><strong>${stats.badges}</strong><span>Badges</span></div>
+      </div>`;
+
+    const { strengths, weaknesses, untested, message } = getStrengthsAndWeaknesses();
+
+    document.getElementById('forces-section').innerHTML = `
+      <h2>Mes forces</h2>
+      ${message ? `<p class="text-muted">${message}</p>` : ''}
+      <ul class="results-list strengths">
+        ${strengths.length ? strengths.map((s) => `<li>✓ ${s.label} — ${s.pct} %</li>`).join('') : '<li class="text-muted">Complétez des quiz pour identifier vos forces.</li>'}
+      </ul>`;
+
+    document.getElementById('weaknesses-section').innerHTML = `
+      <h2>Axes d'amélioration</h2>
+      <ul class="results-list weaknesses">
+        ${weaknesses.length ? weaknesses.map((w) => `<li>⚠ ${w.label} — ${w.pct} %</li>`).join('') : '<li class="text-muted">Aucun axe critique identifié.</li>'}
+      </ul>
+      ${untested?.length ? `<p class="text-muted">Non évalué encore : ${untested.map((t) => t).join(', ')}</p>` : ''}`;
+
+    const badges = getEarnedBadges();
+    document.getElementById('badges-section').innerHTML = `
+      <h2>Badges pédagogiques</h2>
+      <div class="badges-grid-pedagogy">
+        ${badges.length ? badges.map((b) => `
+          <div class="badge-pedagogy"><span>${b.icon}</span><strong>${b.name}</strong></div>`).join('')
+        : '<p class="text-muted">Réussissez des quiz (≥ 60 %) pour débloquer des badges.</p>'}
+      </div>`;
+  </script>
+</body>
+</html>

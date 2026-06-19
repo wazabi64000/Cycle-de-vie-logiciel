@@ -1,0 +1,122 @@
+import { mod, assignModuleWeights } from '../helpers.js';
+import { NETWORK_TYPES } from './reseaux-types.js';
+
+const typesTopics = NETWORK_TYPES.map((t) => ({
+  title: `${t.abbr} — ${t.name}`,
+  body: `${t.definition} Exemple : ${t.example}`,
+  networkType: t,
+}));
+
+const MODULES = [
+  mod(1, 'histoire-reseaux', 'Histoire des réseaux', '📜',
+    ['arpanet', 'internet', 'histoire'],
+    'Comprendre l\'évolution des réseaux aide à contextualiser les protocoles actuels.',
+    [{ title: 'Timeline', body: 'ARPANET (1969) → TCP/IP (1983) → World Wide Web (1991) → Cloud era.' }],
+    ['Internet Society'],
+    { debutant: ['ARPANET identifié', 'Rôle TCP/IP compris', 'Différence web/internet'],
+      intermediaire: ['Timeline rédigée', 'Acteurs clés cités', 'IPv6 contexte'],
+      professionnel: ['Présentation historique', 'Impact business', 'Évolution 5G/IoT'] }),
+
+  mod(2, 'modele-osi', 'Modèle OSI', '📚',
+    ['osi', '7 layers', 'encapsulation'],
+    'Le modèle OSI décrit 7 couches — référence pédagogique pour comprendre les échanges réseau.',
+    [{ title: '7 couches', body: 'Physique, Liaison, Réseau, Transport, Session, Présentation, Application.' }],
+    ['OSI Model charts'],
+    { debutant: ['7 couches nommées', 'Rôle couche 3 vs 4', 'Encapsulation comprise'],
+      intermediaire: ['PDU par couche', 'Exemple ping/traceroute', 'Schéma dessiné'],
+      professionnel: ['Dépannage par couche', 'Mapping TCP/IP', 'Formation équipe'] }),
+
+  mod(3, 'tcp-ip', 'TCP/IP', '🔗',
+    ['tcp', 'udp', 'ip', 'port'],
+    'Suite TCP/IP — standard réel d\'Internet : IP, TCP, UDP, ports, sockets.',
+    [{ title: 'Protocoles', body: 'IP adressage/routage, TCP fiable, UDP rapide, ports well-known.' }],
+    ['Wireshark', 'netstat'],
+    { debutant: ['TCP vs UDP', 'Ports 80/443', 'IP compris'],
+      intermediaire: ['Three-way handshake', 'Capture Wireshark', 'Socket basique'],
+      professionnel: ['Tuning TCP', 'Analyse perf réseau', 'IPv6 dual stack'] }),
+
+  mod(4, 'adressage-ip', 'Adressage IP', '🔢',
+    ['ipv4', 'cidr', 'subnet', 'masque'],
+    'Attribuer et calculer des adresses IP — masques, CIDR, sous-réseaux.',
+    [{ title: 'CIDR', body: '/24 = 254 hôtes, /32 = 1 IP. Calcul sous-réseaux VLSM.' }],
+    ['Subnet calculators'],
+    { debutant: ['IPv4 format', 'Masque /24', 'Gateway et DNS'],
+      intermediaire: ['Subnetting calculé', 'VLSM', 'Plan adressage'],
+      professionnel: ['Documentation IPAM', 'Optimisation espace', 'Migration IPv6 plan'] }),
+
+  mod(5, 'ipv4-ipv6', 'IPv4 & IPv6', '🌍',
+    ['ipv6', 'dual stack', 'nat'],
+    'IPv4 s\'épuise — IPv6 apporte un espace d\'adressage immense et des simplifications.',
+    [{ title: 'Transition', body: 'Dual stack, tunneling, NAT64, SLAAC vs DHCPv6.' }],
+    ['IPv6 test sites'],
+    { debutant: ['Format IPv6', 'Loopback ::1', 'Link-local fe80'],
+      intermediaire: ['Dual stack testé', 'AAAA DNS', 'ICMPv6 ND'],
+      professionnel: ['Plan IPv6 prod', 'Décommission NAT si possible', 'Monitoring v6'] }),
+
+  mod(6, 'dhcp', 'DHCP', '📡',
+    ['dhcp', 'lease', 'pool'],
+    'DHCP attribue automatiquement IP, masque, gateway et DNS aux clients.',
+    [{ title: 'Processus', body: 'Discover, Offer, Request, Ack — leases et réservations.' }],
+    ['isc-dhcp', 'Windows DHCP'],
+    { debutant: ['DHCP défini', 'Réservation statique', 'Lease time'],
+      intermediaire: ['Scope configuré', 'Option 66/67 PXE', 'Failover DHCP'],
+      professionnel: ['DHCP haute dispo', 'Logging centralisé', 'Sécurité DHCP snooping'] }),
+
+  mod(7, 'dns', 'DNS', '📇',
+    ['dns', 'a record', 'cname', 'mx'],
+    'DNS traduit noms de domaine en IP — colonne vertébrale d\'Internet.',
+    [{ title: 'Enregistrements', body: 'A, AAAA, CNAME, MX, TXT, NS, TTL, propagation.' }],
+    ['dig', 'nslookup', 'Cloudflare DNS'],
+    { debutant: ['Résolution comprise', 'A et CNAME', 'TTL basique'],
+      intermediaire: ['Zone DNS configurée', 'Split-horizon', 'DNSSEC awareness'],
+      professionnel: ['DNS haute dispo', 'Monitoring DNS', 'DDoS DNS protection'] }),
+
+  mod(8, 'nat-routage', 'NAT & Routage', '🛤️',
+    ['nat', 'routeur', 'gateway', 'bgp'],
+    'NAT partage une IP publique ; le routage dirige les paquets entre réseaux.',
+    [{ title: 'NAT', body: 'SNAT, DNAT, PAT — avantages et limites (IPv6).' }],
+    ['traceroute', 'ip route'],
+    { debutant: ['NAT défini', 'Route par défaut', 'traceroute lu'],
+      intermediaire: ['Tables routage', 'OSPF basics', 'NAT rules documentées'],
+      professionnel: ['BGP peering', 'Redondance routes', 'Analyse asymétrie'] }),
+
+  mod(9, 'vlan', 'VLAN', '🏷️',
+    ['vlan', '802.1q', 'trunk', 'segmentation'],
+    'Les VLAN segmentent logiquement un switch — isolation broadcast et sécurité.',
+    [{ title: '802.1Q', body: 'Tag VLAN sur trunk, native VLAN, inter-VLAN routing.' }],
+    ['Cisco Packet Tracer', 'GNS3'],
+    { debutant: ['VLAN défini', 'VLAN 1 default', 'Port access vs trunk'],
+      intermediaire: ['Inter-VLAN routing', 'Native VLAN sécurisé', 'Schéma VLAN'],
+      professionnel: ['Voice VLAN', 'Private VLAN', 'Audit segmentation'] }),
+
+  mod(10, 'types-reseaux', 'Types de réseaux', '🗺️',
+    ['pan', 'lan', 'wan', 'vpn', 'san', 'wlan'],
+    'PAN, LAN, WLAN, CAN, MAN, WAN, SAN, VPN — chaque type a un périmètre et des usages.',
+    typesTopics,
+    ['Wireshark', 'Draw.io'],
+    { debutant: ['8 types identifiés', 'LAN vs WAN', 'VPN défini'],
+      intermediaire: ['Schéma par type', 'Cas d\'usage documentés', 'Quiz types réseaux'],
+      professionnel: ['Architecture multi-sites', 'Choix type justifié', 'Documentation réseau'] }),
+
+  mod(11, 'wifi-fondamentaux', 'WiFi', '📶',
+    ['wifi', '802.11', 'wpa', 'ssid'],
+    'Standards 802.11ax (WiFi 6), sécurité WPA3, planification canaux.',
+    [{ title: 'Sécurité', body: 'WPA3 > WPA2. Éviter WEP. Isolation client invité.' }],
+    ['WiFi Analyzer', 'Ekahau'],
+    { debutant: ['SSID et mot de passe', 'WPA2 minimum', 'Canal auto'],
+      intermediaire: ['Site survey basique', 'Roaming', 'Captive portal'],
+      professionnel: ['Design WiFi enterprise', 'WPA3-Enterprise', 'Monitoring RF'] }),
+
+  mod(12, 'depannage-reseau', 'Dépannage réseau', '🔧',
+    ['ping', 'traceroute', 'wireshark', 'tcpdump'],
+    'Méthodologie de dépannage — couche par couche, outils essentiels.',
+    [{ title: 'Outils', body: 'ping, traceroute, nslookup, netstat, ss, Wireshark, tcpdump.' }],
+    ['Wireshark', 'mtr', 'nmap'],
+    { debutant: ['ping et ipconfig/ifconfig', 'Câble/link LED', 'Reboot routeur'],
+      intermediaire: ['Capture Wireshark', 'Analyse latence', 'Checklist dépannage'],
+      professionnel: ['Runbook NOC', 'Post-mortem outage', 'Baseline perf'] }),
+];
+
+assignModuleWeights(MODULES);
+export { NETWORK_TYPES };
+export const RESEAU_MODULES = MODULES;

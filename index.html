@@ -3,89 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WazabyCode — Project Roadmap</title>
+  <title>WazabyCode Academy</title>
   <link rel="stylesheet" href="css/roadmap.css">
 </head>
 <body>
   <nav class="landing-nav">
-    <a href="index.html" class="landing-nav-logo">Wazaby<span>Code</span></a>
+    <a href="index.html" class="landing-nav-logo">Wazaby<span>Code</span> Academy</a>
     <div style="display:flex;gap:0.75rem;align-items:center">
       <button type="button" id="theme-toggle" class="btn-icon" aria-label="Thème">🌓</button>
-      <a href="roadmap.html" class="btn btn-primary">Ouvrir la roadmap →</a>
+      <a href="formations.html" class="btn btn-primary">🎓 Formations</a>
     </div>
   </nav>
 
   <main>
     <section class="landing-hero">
       <div class="container">
-        <span class="landing-badge">HTML · CSS · JavaScript · localStorage</span>
-        <h1>WazabyCode</h1>
-        <p class="tagline">Le guide du développeur moderne — de l'idée à la maintenance en production.</p>
-        <a href="roadmap.html" class="btn btn-primary btn-lg">Commencer la roadmap →</a>
+       
+        <h1>WazabyCode Academy</h1>
+        <p class="tagline">Une plateforme · Plusieurs parcours — Développement, Cybersécurité, Réseaux, Linux, Cloud, DevOps.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:1.5rem">
+          <a href="formations.html" class="btn btn-primary btn-lg">Explorer les formations →</a>
+          <a href="formation.html#cda" class="btn btn-ghost btn-lg">Parcours CDA (roadmap)</a>
+        </div>
       </div>
     </section>
 
     <section class="landing-section container">
-      <h2>Pourquoi suivre une méthodologie projet ?</h2>
-      <div class="landing-grid">
-        <article class="landing-card">
-          <h3>📉 Pourquoi les projets échouent</h3>
-          <p>Scope flou, dette technique, absence de tests, déploiement improvisé, sécurité négligée et communication défaillante avec le client.</p>
-        </article>
-        <article class="landing-card">
-          <h3>⚠️ Erreurs fréquentes</h3>
-          <p>Coder avant d'analyser, choisir la stack au hasard, ignorer l'accessibilité, zapper la QA, déployer sans monitoring ni sauvegardes.</p>
-        </article>
-        <article class="landing-card">
-          <h3>✅ Bénéfices d'une démarche structurée</h3>
-          <p>Livraisons prévisibles, moins de bugs en production, équipe alignée, client confiant et projet maintenable sur le long terme.</p>
-        </article>
+      <h2 style="text-align:center">7 parcours disponibles</h2>
+      <div class="formations-grid formations-grid-landing">
+        <a href="formation.html#cda" class="formation-card-mini" style="--f-accent:#6366f1">🎓 CDA</a>
+        <a href="formation.html#dwwm" class="formation-card-mini" style="--f-accent:#3b82f6">💻 DWWM</a>
+        <a href="formation.html#cyber" class="formation-card-mini" style="--f-accent:#ef4444">🛡️ Cybersécurité</a>
+        <a href="formation.html#reseaux" class="formation-card-mini" style="--f-accent:#06b6d4">🌐 Réseaux</a>
+        <a href="formation.html#linux" class="formation-card-mini" style="--f-accent:#f59e0b">🐧 Linux</a>
+        <a href="formation.html#devops" class="formation-card-mini" style="--f-accent:#22c55e">🐳 DevOps</a>
+        <a href="formation.html#cloud" class="formation-card-mini" style="--f-accent:#8b5cf6">☁️ Cloud</a>
       </div>
-    </section>
-
-    <section class="landing-section container" style="background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
-      <h2 style="text-align:center">Cycle de vie complet d'une application</h2>
-      <p style="text-align:center;color:var(--text-muted);max-width:600px;margin:0.5rem auto 0">Web · Mobile · Desktop · API · SaaS · E-commerce · ERP · CRM · Applications métiers</p>
-      <div class="lifecycle">
-        <span class="lifecycle-step">💡 Idée</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">📋 Analyse</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">🏗️ Conception</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">⚙️ Stack</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">🗄️ BDD</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">🎨 UX</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">💻 Frontend</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">⚙️ Backend</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">🔐 Auth</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">🧪 Tests</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">✅ QA</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">⚡ Perf</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">🛡️ Sécurité</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">🐳 DevOps</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">🔄 CI/CD</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">🚀 Deploy</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">📊 Monitoring</span><span class="lifecycle-arrow">→</span>
-        <span class="lifecycle-step">🔧 Maintenance</span>
-      </div>
-      <p style="text-align:center;margin-top:2rem">
-        <a href="roadmap.html" class="btn btn-primary btn-lg">Parcourir les 19 thèmes →</a>
-      </p>
     </section>
 
     <section class="landing-section container">
-      <h2 style="text-align:center">19 thèmes · Score /1000 · 8 niveaux</h2>
-      <p style="text-align:center;color:var(--text-muted)">Checklists débutant, intermédiaire et professionnel. Sauvegarde automatique. Recherche globale.</p>
+      <h2 style="text-align:center">Ce qui est conservé</h2>
       <div class="landing-grid" style="margin-top:2rem">
-        <article class="landing-card"><h3>🔍 Recherche</h3><p>Tapez Docker, Jest, Playwright, OWASP, Kubernetes… accédez instantanément au bon thème.</p></article>
-        <article class="landing-card"><h3>📊 Progression</h3><p>Score sur 1000, niveaux de Débutant à Expert WazabyCode, barres par thème.</p></article>
-        <article class="landing-card"><h3>💾 100 % local</h3><p>Pas de compte. localStorage + cookies. Reprise automatique de votre parcours.</p></article>
+        <article class="landing-card"><h3>📋 Checklists</h3><p>3 niveaux par module — Débutant, Intermédiaire, Professionnel.</p></article>
+        <article class="landing-card"><h3>📊 Score /1000</h3><p>Progression et score individuels par formation dans localStorage.</p></article>
+        <article class="landing-card"><h3>🔧 Outils & Détails</h3><p>Cartes outils premium, modales Détails, comparateur, modes formation.</p></article>
+        <article class="landing-card"><h3>📝 Quiz & Exercices</h3><p>15 questions/module, cas pratiques, corrections, badges — <a href="mes-resultats.html">Mes résultats</a>.</p></article>
       </div>
     </section>
   </main>
 
   <script type="module">
-    import { roadmapStorage } from './js/core/roadmap-storage.js';
-    document.getElementById('theme-toggle')?.addEventListener('click', () => roadmapStorage.toggleTheme());
-    roadmapStorage.getTheme();
+    import { academyStorage } from './js/core/academy-storage.js';
+    document.getElementById('theme-toggle')?.addEventListener('click', () => academyStorage.toggleTheme());
+    academyStorage.init();
   </script>
 </body>
 </html>

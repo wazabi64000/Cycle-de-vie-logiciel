@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formations — WazabyCode Academy</title>
+  <link rel="stylesheet" href="css/roadmap.css">
+</head>
+<body>
+  <nav class="landing-nav">
+    <a href="index.html" class="landing-nav-logo">Wazaby<span>Code</span> Academy</a>
+    <div style="display:flex;gap:0.75rem;align-items:center">
+      <button type="button" id="theme-toggle" class="btn-icon" aria-label="Thème">🌓</button>
+      <a href="mes-resultats.html" class="btn btn-ghost">📊 Mes résultats</a>
+      <a href="index.html" class="btn btn-ghost">Accueil</a>
+    </div>
+  </nav>
+
+  <main class="formations-hub">
+    <div class="container">
+      <header class="formations-hub-header">
+        <h1>🎓 Formations</h1>
+        <p>Choisissez un parcours — progression, score et checklists sauvegardés par formation.</p>
+      </header>
+      <div id="formations-grid" class="formations-grid"></div>
+    </div>
+  </main>
+
+  <script type="module">
+    import { FORMATIONS, ACADEMY_META } from './js/config/academy/catalog.js';
+    import { academyStorage } from './js/core/academy-storage.js';
+    import { academyEngine } from './js/core/academy-engine.js';
+
+    document.getElementById('theme-toggle')?.addEventListener('click', () => academyStorage.toggleTheme());
+    academyStorage.init();
+
+    const state = academyEngine.getState();
+    const grid = document.getElementById('formations-grid');
+
+    grid.innerHTML = FORMATIONS.map((f) => {
+      const fs = state.formations[f.id] ?? {};
+      const checks = Object.keys(fs.checklists ?? {}).length;
+      return `
+        <a href="formation.html#${f.id}" class="formation-card" style="--f-accent:${f.color}">
+          <span class="formation-card-icon">${f.icon}</span>
+          <h2>${f.title}</h2>
+          <p class="formation-card-sub">${f.fullTitle}</p>
+          ${f.cert ? `<span class="formation-card-cert">${f.cert}</span>` : ''}
+          <p class="formation-card-desc">${f.description}</p>
+          <div class="formation-card-meta">
+            <span>${f.moduleCount} modules</span>
+            <span>${checks ? checks + ' items cochés' : 'Nouveau parcours'}</span>
+          </div>
+          <span class="formation-card-levels">Débutant · Intermédiaire · Professionnel</span>
+          <span class="formation-card-cta">Commencer →</span>
+        </a>`;
+    }).join('');
+  </script>
+</body>
+</html>
